@@ -23,11 +23,21 @@ public class ValidationUtils {
 
     private static final Pattern PATTERN_XML_NCNAME = Pattern.compile("[a-zA-Z_][\\-_.0-9_a-zA-Z$]*");
 
+    /**
+     * 是否是手机号
+     * @param mobile
+     * @return
+     */
     public static boolean isMobile(String mobile) {
         return StringUtils.hasText(mobile)
                 && PATTERN_MOBILE.matcher(mobile).matches();
     }
 
+    /**
+     * 是否是URL
+     * @param url
+     * @return
+     */
     public static boolean isURL(String url) {
         return StringUtils.hasText(url)
                 && PATTERN_URL.matcher(url).matches();
