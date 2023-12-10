@@ -22,10 +22,10 @@
         如果是业务组件，Maven 名字会包含 biz
     </description>
 
+
     <modules>
         <module>blossom-common</module>
+        <module>blossom-spring-boot-starter-banner</module>
+        <module>blossom-spring-boot-starter-monitor</module>
     </modules>
-
-
-
 </project>

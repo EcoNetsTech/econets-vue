@@ -14,6 +14,8 @@
     <modules>
         <module>blossom-dependencies</module>
         <module>blossom-framework</module>
+        <!-- Server 主项目 -->
+        <module>blossom-server</module>
     </modules>
 
     <properties>

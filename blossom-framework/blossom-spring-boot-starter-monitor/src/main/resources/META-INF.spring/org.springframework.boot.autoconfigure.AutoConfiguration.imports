@@ -1,0 +1,2 @@
+cn.econets.blossom.framework.monitor.config.BlossomMetricsAutoConfiguration
+cn.econets.blossom.framework.monitor.config.BlossomTracerAutoConfiguration
