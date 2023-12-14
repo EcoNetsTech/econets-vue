@@ -1,7 +1,6 @@
 spring:
   application:
     name: blossom-server
-
   profiles:
     active: dev
 
@@ -35,7 +34,6 @@ spring:
       time-to-live: 1h # 设置过期时间为 1 小时
 
 --- #################### 接口文档配置 ####################
-
 springdoc:
   api-docs:
     enabled: true
@@ -53,9 +51,22 @@ knife4j:
 mybatis-plus-join:
   banner: true # 关闭控制台的 Banner 打印
 
---- #################### 芋道相关配置 ####################
 
-blossom:
+--- #################### 相关配置 ####################
+application:
   info:
     base-package: cn.econets.blossom
     version: 1.0.1
+  web:
+    admin-ui:
+      url: http://www.ximu233.xom # Admin 管理后台 UI 的地址
+  swagger:
+    title: 快速开发平台
+    description: 提供管理后台、用户 App 的所有功能
+    version: ${application.info.version}
+    url: ${application.web.admin-ui.url}
+    email: ryximu@qq.com
+    license: MIT
+    license-url: https://github.com/EcoNetsTech/econets-vue.git
+  captcha:
+    enable: true # 验证码的开关，默认为 true

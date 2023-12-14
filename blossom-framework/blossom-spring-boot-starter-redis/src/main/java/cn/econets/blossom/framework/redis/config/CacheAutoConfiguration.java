@@ -20,7 +20,7 @@ import org.springframework.util.StringUtils;
 import java.util.Objects;
 
 @AutoConfiguration
-@EnableConfigurationProperties({CacheProperties.class, BlossomCacheProperties.class})
+@EnableConfigurationProperties({CacheProperties.class, CachesProperties.class})
 @EnableCaching
 public class CacheAutoConfiguration {
 
@@ -62,11 +62,11 @@ public class CacheAutoConfiguration {
     @Bean
     public RedisCacheManager redisCacheManager(RedisTemplate<String, Object> redisTemplate,
                                                RedisCacheConfiguration redisCacheConfiguration,
-                                               BlossomCacheProperties blossomCacheProperties) {
+                                               CachesProperties cachesProperties) {
         // 创建 RedisCacheWriter 对象
         RedisConnectionFactory connectionFactory = Objects.requireNonNull(redisTemplate.getConnectionFactory());
         RedisCacheWriter cacheWriter = RedisCacheWriter.nonLockingRedisCacheWriter(connectionFactory,
-                BatchStrategies.scan(blossomCacheProperties.getRedisScanBatchSize()));
+                BatchStrategies.scan(cachesProperties.getRedisScanBatchSize()));
         // 创建 TenantRedisCacheManager 对象
         return new TimeoutRedisCacheManager(cacheWriter, redisCacheConfiguration);
     }

@@ -7,7 +7,7 @@ import org.springframework.validation.annotation.Validated;
 @ConfigurationProperties("spring.cache")
 @Data
 @Validated
-public class BlossomCacheProperties {
+public class CachesProperties {
     /**
      * {@link #redisScanBatchSize} 默认值
      */

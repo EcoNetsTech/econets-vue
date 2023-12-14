@@ -1,1 +1,2 @@
 cn.econets.blossom.framework.web.jackson.config.JacksonAutoConfiguration
+cn.econets.blossom.framework.web.web.config.WebAutoConfiguration

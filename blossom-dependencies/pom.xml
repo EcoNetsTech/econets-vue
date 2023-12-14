@@ -108,21 +108,21 @@
             </dependency>
 
             <!-- Web 相关 -->
+            <dependency>
+                <groupId>cn.econets.boot</groupId>
+                <artifactId>blossom-spring-boot-starter-web</artifactId>
+                <version>${revision}</version>
+            </dependency>
+
 <!--            <dependency>-->
 <!--                <groupId>cn.econets.boot</groupId>-->
-<!--                <artifactId>yudao-spring-boot-starter-web</artifactId>-->
+<!--                <artifactId>blossom-spring-boot-starter-security</artifactId>-->
 <!--                <version>${revision}</version>-->
 <!--            </dependency>-->
 
 <!--            <dependency>-->
 <!--                <groupId>cn.econets.boot</groupId>-->
-<!--                <artifactId>yudao-spring-boot-starter-security</artifactId>-->
-<!--                <version>${revision}</version>-->
-<!--            </dependency>-->
-
-<!--            <dependency>-->
-<!--                <groupId>cn.econets.boot</groupId>-->
-<!--                <artifactId>yudao-spring-boot-starter-websocket</artifactId>-->
+<!--                <artifactId>blossom-spring-boot-starter-websocket</artifactId>-->
 <!--                <version>${revision}</version>-->
 <!--            </dependency>-->
 
@@ -138,12 +138,6 @@
             </dependency>
 
             <!-- DB 相关 -->
-<!--            <dependency>-->
-<!--                <groupId>cn.econets.boot</groupId>-->
-<!--                <artifactId>yudao-spring-boot-starter-mybatis</artifactId>-->
-<!--                <version>${revision}</version>-->
-<!--            </dependency>-->
-
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>druid-spring-boot-starter</artifactId>
@@ -169,13 +163,13 @@
                 <artifactId>mybatis-plus-join-boot-starter</artifactId> <!-- MyBatis 联表查询 -->
                 <version>${mybatis-plus-join.version}</version>
             </dependency>
+            <dependency>
+                <groupId>cn.econets.boot</groupId>
+                <artifactId>blossom-spring-boot-starter-mybatis</artifactId>
+                <version>${revision}</version>
+            </dependency>
 
-<!--            <dependency>-->
-<!--                <groupId>cn.econets.boot</groupId>-->
-<!--                <artifactId>yudao-spring-boot-starter-redis</artifactId>-->
-<!--                <version>${revision}</version>-->
-<!--            </dependency>-->
-
+<!--            redis 相关-->
             <dependency>
                 <groupId>org.redisson</groupId>
                 <artifactId>redisson-spring-boot-starter</artifactId>
@@ -186,6 +180,11 @@
                         <artifactId>spring-boot-starter-actuator</artifactId>
                     </exclusion>
                 </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>cn.econets.boot</groupId>
+                <artifactId>blossom-spring-boot-starter-redis</artifactId>
+                <version>${revision}</version>
             </dependency>
 
             <dependency>
@@ -202,17 +201,17 @@
 <!--            </dependency>-->
 
             <!-- 消息队列相关 -->
+            <dependency>
+                <groupId>org.apache.rocketmq</groupId>
+                <artifactId>rocketmq-spring-boot-starter</artifactId>
+                <version>${rocketmq-spring.version}</version>
+            </dependency>
 <!--            <dependency>-->
 <!--                <groupId>cn.econets.boot</groupId>-->
 <!--                <artifactId>yudao-spring-boot-starter-mq</artifactId>-->
 <!--                <version>${revision}</version>-->
 <!--            </dependency>-->
 
-            <dependency>
-                <groupId>org.apache.rocketmq</groupId>
-                <artifactId>rocketmq-spring-boot-starter</artifactId>
-                <version>${rocketmq-spring.version}</version>
-            </dependency>
 
             <!-- 服务保障相关 -->
 <!--            <dependency>-->
