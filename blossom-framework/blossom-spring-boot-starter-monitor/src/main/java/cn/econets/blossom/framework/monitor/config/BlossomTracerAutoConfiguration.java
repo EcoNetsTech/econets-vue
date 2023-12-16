@@ -18,7 +18,7 @@ import org.springframework.context.annotation.Bean;
 @AutoConfiguration
 @ConditionalOnClass({BizTraceAspect.class})
 @EnableConfigurationProperties(TracerProperties.class)
-@ConditionalOnProperty(prefix = "blossom.tracer", value = "enable", matchIfMissing = true)
+@ConditionalOnProperty(prefix = "application.tracer", value = "enable", matchIfMissing = true)
 public class BlossomTracerAutoConfiguration {
 
     // TODO @芋艿：重要。目前 opentracing 版本存在冲突，要么保证 skywalking，要么保证阿里云短信 sdk

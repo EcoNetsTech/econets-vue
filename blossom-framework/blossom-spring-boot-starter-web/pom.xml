@@ -20,6 +20,12 @@
             <groupId>cn.econets.boot</groupId>
             <artifactId>blossom-common</artifactId>
         </dependency>
+        <!--业务组件-->
+        <dependency>
+            <groupId>cn.econets.boot</groupId>
+            <artifactId>blossom-module-infrastructure-api</artifactId>
+            <version>${revision}</version>
+        </dependency>
 
         <!-- Web 相关 -->
         <dependency>

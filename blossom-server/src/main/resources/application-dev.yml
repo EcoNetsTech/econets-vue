@@ -36,3 +36,10 @@ logging:
     cn.iocoder.yudao.module.tool.dal.mysql: debug
 
 debug: false
+
+--- #################### 相关配置 ####################
+application:
+  access-log: # 访问日志的配置项
+    enable: true
+  error-code: # 错误码相关配置项
+    enable: true

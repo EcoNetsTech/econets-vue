@@ -1,6 +1,6 @@
 package cn.econets.blossom.framework.web.swagger;
 
-import cn.econets.blossom.framework.web.web.core.WebUtils;
+import cn.econets.blossom.framework.web.web.core.WebFrameworkUtils;
 import io.swagger.v3.oas.models.Components;
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Contact;
@@ -122,10 +122,10 @@ public class SwaggerAutoConfiguration {
      */
     private static Parameter buildTenantHeaderParameter() {
         return new Parameter()
-                .name(WebUtils.HEADER_TENANT_ID) // header 名
+                .name(WebFrameworkUtils.HEADER_TENANT_ID) // header 名
                 .description("租户编号") // 描述
                 .in(String.valueOf(SecurityScheme.In.HEADER)) // 请求 header
-                .schema(new IntegerSchema()._default(1L).name(WebUtils.HEADER_TENANT_ID).description("租户编号")); // 默认：使用租户编号为 1
+                .schema(new IntegerSchema()._default(1L).name(WebFrameworkUtils.HEADER_TENANT_ID).description("租户编号")); // 默认：使用租户编号为 1
     }
 
     /**
@@ -140,6 +140,6 @@ public class SwaggerAutoConfiguration {
                 .name(HttpHeaders.AUTHORIZATION) // header 名
                 .description("认证 Token") // 描述
                 .in(String.valueOf(SecurityScheme.In.HEADER)) // 请求 header
-                .schema(new StringSchema()._default("Bearer test1").name(WebUtils.HEADER_TENANT_ID).description("认证 Token")); // 默认：使用用户编号为 1
+                .schema(new StringSchema()._default("Bearer test1").name(WebFrameworkUtils.HEADER_TENANT_ID).description("认证 Token")); // 默认：使用用户编号为 1
     }
 }

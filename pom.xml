@@ -16,6 +16,8 @@
         <module>blossom-framework</module>
         <!-- Server 主项目 -->
         <module>blossom-server</module>
+        <!-- module 拓展 -->
+        <module>blossom-module-infrastructure</module>
     </modules>
 
     <properties>

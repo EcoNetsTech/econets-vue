@@ -7,7 +7,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  * BizTracer配置类
  *
  */
-@ConfigurationProperties("blossom.tracer")
+@ConfigurationProperties("application.tracer")
 @Data
 public class TracerProperties {
 }
