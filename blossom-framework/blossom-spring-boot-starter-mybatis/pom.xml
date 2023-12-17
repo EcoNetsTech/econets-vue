@@ -20,6 +20,10 @@
             <groupId>cn.econets.boot</groupId>
             <artifactId>blossom-common</artifactId>
         </dependency>
+        <dependency>
+            <groupId>cn.econets.boot</groupId>
+            <artifactId>blossom-spring-boot-starter-web</artifactId>
+        </dependency>
 
         <!-- DB 相关 -->
         <dependency>

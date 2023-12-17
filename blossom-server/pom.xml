@@ -26,6 +26,13 @@
             <artifactId>spring-boot-configuration-processor</artifactId>
             <optional>true</optional>
         </dependency>
+
+        <dependency>
+            <groupId>cn.econets.boot</groupId>
+            <artifactId>blossom-module-infrastructure-biz</artifactId>
+            <version>${revision}/version>
+        </dependency>
+
         <dependency>
             <groupId>cn.econets.boot</groupId>
             <artifactId>blossom-spring-boot-starter-banner</artifactId>

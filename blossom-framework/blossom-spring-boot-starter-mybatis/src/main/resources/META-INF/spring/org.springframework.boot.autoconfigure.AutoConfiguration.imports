@@ -1,0 +1,2 @@
+cn.econets.blossom.framework.datasource.config.DataSourceAutoConfiguration
+cn.econets.blossom.framework.mybatis.config.MybatisAutoConfiguration

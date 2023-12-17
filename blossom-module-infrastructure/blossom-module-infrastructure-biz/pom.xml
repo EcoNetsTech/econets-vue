@@ -26,5 +26,10 @@
             <version>${revision}</version>
         </dependency>
 
+        <dependency>
+            <groupId>cn.econets.boot</groupId>
+            <artifactId>blossom-spring-boot-starter-mybatis</artifactId>
+        </dependency>
+
     </dependencies>
 </project>

@@ -25,6 +25,11 @@ public class WebFrameworkUtils {
     private static WebProperties webProperties;
 
 
+    public WebFrameworkUtils(WebProperties properties) {
+        WebFrameworkUtils.webProperties = properties;
+    }
+
+
     /**
      * 设置用户类型
      *
