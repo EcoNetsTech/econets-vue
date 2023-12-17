@@ -3,6 +3,8 @@ server:
 
 --- #################### 数据库相关配置 ####################
 spring:
+  config:
+    import: optional:file:.env/db.properties
   # 数据源配置项
   autoconfigure:
     exclude:
@@ -43,17 +45,17 @@ spring:
       primary: master
       datasource:
         master:
-          name: ruoyi-vue-pro
-          url: jdbc:mysql://400-infra.server.iocoder.cn:3306/${spring.datasource.dynamic.datasource.master.name}?useSSL=false&serverTimezone=CTT&allowPublicKeyRetrieval=true
+          name: econets-vue
+          url: jdbc:mysql://${HOST}:3306/${spring.datasource.dynamic.datasource.master.name}?useSSL=false&serverTimezone=CTT&allowPublicKeyRetrieval=true
           driver-class-name: com.mysql.jdbc.Driver
-          username: root
-          password: 3WLiVUBEwTbvAfsh
+          username: ${USERNAME}
+          password: ${PASSWORD}
         slave: # 模拟从库，可根据自己需要修改 # 模拟从库，可根据自己需要修改
-          name: ruoyi-vue-pro
-          url: jdbc:mysql://400-infra.server.iocoder.cn:3306/${spring.datasource.dynamic.datasource.slave.name}?useSSL=false&serverTimezone=CTT&allowPublicKeyRetrieval=true
+          name: econets-vue
+          url: jdbc:mysql://${HOST}:3306/${spring.datasource.dynamic.datasource.slave.name}?useSSL=false&serverTimezone=CTT&allowPublicKeyRetrieval=true
           driver-class-name: com.mysql.jdbc.Driver
-          username: root
-          password: 3WLiVUBEwTbvAfsh
+          username: ${USERNAME}
+          password: ${PASSWORD}
 
 --- #################### 服务保障相关配置 ####################
 

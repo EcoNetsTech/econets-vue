@@ -3,17 +3,19 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>blossom-framework</artifactId>
+        <artifactId>blossom-module-system</artifactId>
         <groupId>cn.econets.boot</groupId>
         <version>${revision}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>blossom-spring-boot-starter-banner</artifactId>
+    <artifactId>blossom-module-system-api</artifactId>
     <packaging>jar</packaging>
 
     <name>${project.artifactId}</name>
-    <description>Banner 用于在 console 控制台，打印开发文档、接口文档等</description>
+    <description>
+        system 模块 API，暴露给其它模块调用
+    </description>
 
     <dependencies>
         <dependency>
@@ -21,9 +23,12 @@
             <artifactId>blossom-common</artifactId>
         </dependency>
 
+        <!-- 参数校验 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+            <optional>true</optional>
         </dependency>
     </dependencies>
+
 </project>

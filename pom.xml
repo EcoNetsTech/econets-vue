@@ -18,6 +18,7 @@
         <module>blossom-server</module>
         <!-- module 拓展 -->
         <module>blossom-module-infrastructure</module>
+        <module>blossom-module-system</module>
     </modules>
 
     <properties>

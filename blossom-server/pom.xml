@@ -30,7 +30,12 @@
         <dependency>
             <groupId>cn.econets.boot</groupId>
             <artifactId>blossom-module-infrastructure-biz</artifactId>
-            <version>${revision}/version>
+            <version>${revision}</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.econets.boot</groupId>
+            <artifactId>blossom-module-system-biz</artifactId>
+            <version>${revision}</version>
         </dependency>
 
         <dependency>
