@@ -98,6 +98,11 @@
                 <artifactId>blossom-spring-boot-starter-banner</artifactId>
                 <version>${revision}</version>
             </dependency>
+            <dependency>
+                <groupId>cn.econets.boot</groupId>
+                <artifactId>blossom-spring-boot-starter-biz-dict</artifactId>
+                <version>${revision}</version>
+            </dependency>
 
             <!-- Spring 核心 -->
             <dependency>
@@ -114,11 +119,11 @@
                 <version>${revision}</version>
             </dependency>
 
-<!--            <dependency>-->
-<!--                <groupId>cn.econets.boot</groupId>-->
-<!--                <artifactId>blossom-spring-boot-starter-security</artifactId>-->
-<!--                <version>${revision}</version>-->
-<!--            </dependency>-->
+            <dependency>
+                <groupId>cn.econets.boot</groupId>
+                <artifactId>blossom-spring-boot-starter-security</artifactId>
+                <version>${revision}</version>
+            </dependency>
 
 <!--            <dependency>-->
 <!--                <groupId>cn.econets.boot</groupId>-->
@@ -193,6 +198,12 @@
                 <version>${dm8.jdbc.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>cn.econets.boot</groupId>
+                <artifactId>blossom-spring-boot-starter-biz-tenant</artifactId>
+                <version>${revision}</version>
+            </dependency>
+
             <!-- Job 定时任务相关 -->
 <!--            <dependency>-->
 <!--                <groupId>cn.econets.boot</groupId>-->
@@ -206,11 +217,11 @@
                 <artifactId>rocketmq-spring-boot-starter</artifactId>
                 <version>${rocketmq-spring.version}</version>
             </dependency>
-<!--            <dependency>-->
-<!--                <groupId>cn.econets.boot</groupId>-->
-<!--                <artifactId>yudao-spring-boot-starter-mq</artifactId>-->
-<!--                <version>${revision}</version>-->
-<!--            </dependency>-->
+            <dependency>
+                <groupId>cn.econets.boot</groupId>
+                <artifactId>blossom-spring-boot-starter-mq</artifactId>
+                <version>${revision}</version>
+            </dependency>
 
 
             <!-- 服务保障相关 -->
@@ -308,14 +319,6 @@
                 <version>${spring-boot-admin.version}</version>
             </dependency>
 
-            <!-- Test 测试相关 -->
-<!--            <dependency>-->
-<!--                <groupId>cn.econets.boot</groupId>-->
-<!--                <artifactId>yudao-spring-boot-starter-test</artifactId>-->
-<!--                <version>${revision}</version>-->
-<!--                <scope>test</scope>-->
-<!--            </dependency>-->
-
             <dependency>
                 <groupId>org.mockito</groupId>
                 <artifactId>mockito-inline</artifactId>
@@ -368,11 +371,11 @@
             </dependency>
             <!-- 工作流相关结束 -->
 
-<!--            <dependency>-->
-<!--                <groupId>cn.econets.boot</groupId>-->
-<!--                <artifactId>yudao-spring-boot-starter-excel</artifactId>-->
-<!--                <version>${revision}</version>-->
-<!--            </dependency>-->
+            <dependency>
+                <groupId>cn.econets.boot</groupId>
+                <artifactId>blossom-spring-boot-starter-excel</artifactId>
+                <version>${revision}</version>
+            </dependency>
 
             <dependency>
                 <groupId>org.projectlombok</groupId>

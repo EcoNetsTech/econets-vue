@@ -111,6 +111,8 @@ application:
     enable: true
   error-code: # 错误码相关配置项
     enable: true
+  security:
+    mock-enable: true #
   xss:
     enable: false
     exclude-urls: # 如下两个 url，仅仅是为了演示，去掉配置也没关系

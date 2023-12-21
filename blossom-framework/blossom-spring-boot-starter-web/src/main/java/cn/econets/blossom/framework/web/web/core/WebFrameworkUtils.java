@@ -3,6 +3,7 @@ package cn.econets.blossom.framework.web.web.core;
 import cn.econets.blossom.framework.common.enums.UserTypeEnum;
 import cn.econets.blossom.framework.common.pojo.CommonResult;
 import cn.econets.blossom.framework.web.web.config.WebProperties;
+import cn.hutool.core.util.NumberUtil;
 import org.springframework.web.context.request.RequestAttributes;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
@@ -29,6 +30,22 @@ public class WebFrameworkUtils {
         WebFrameworkUtils.webProperties = properties;
     }
 
+
+    /**
+     * 获得租户编号，从 header 中
+     * 考虑到其它 framework 组件也会使用到租户编号，所以不得不放在 WebFrameworkUtils 统一提供
+     *
+     * @param request 请求
+     * @return 租户编号
+     */
+    public static Long getTenantId(HttpServletRequest request) {
+        String tenantId = request.getHeader(HEADER_TENANT_ID);
+        return NumberUtil.isNumber(tenantId) ? Long.valueOf(tenantId) : null;
+    }
+
+    public static void setLoginUserId(ServletRequest request, Long userId) {
+        request.setAttribute(REQUEST_ATTRIBUTE_LOGIN_USER_ID, userId);
+    }
 
     /**
      * 设置用户类型

@@ -28,7 +28,13 @@
         <module>blossom-spring-boot-starter-web</module>
         <module>blossom-spring-boot-starter-mybatis</module>
         <module>blossom-spring-boot-starter-redis</module>
+        <module>blossom-spring-boot-starter-security</module>
 
         <module>blossom-spring-boot-starter-monitor</module>
+        <module>blossom-spring-boot-starter-excel</module>
+
+        <module>blossom-spring-boot-starter-biz-dict</module>
+        <module>blossom-spring-boot-starter-biz-tenant</module>
+        <module>blossom-spring-boot-starter-mq</module>
     </modules>
 </project>
