@@ -31,6 +31,12 @@
             <version>${revision}</version>
         </dependency>
 
+        <!--业务组件-->
+        <dependency>
+            <groupId>cn.econets.boot</groupId>
+            <artifactId>blossom-spring-boot-starter-security</artifactId>
+        </dependency>
+
         <!--DB 相关-->
         <dependency>
             <groupId>cn.econets.boot</groupId>
@@ -66,6 +72,14 @@
         <dependency>
             <groupId>cn.econets.boot</groupId>
             <artifactId>blossom-spring-boot-starter-excel</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>cn.econets.boot</groupId>
+            <artifactId>blossom-spring-boot-starter-file</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>cn.econets.boot</groupId>
+            <artifactId>blossom-spring-boot-starter-biz-operatelog</artifactId>
         </dependency>
 
     </dependencies>

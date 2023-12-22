@@ -3,6 +3,7 @@ package cn.econets.blossom.module.system.dal.dao.user;
 import cn.econets.blossom.framework.common.pojo.PageResult;
 import cn.econets.blossom.framework.mybatis.core.mapper.BaseMapperX;
 import cn.econets.blossom.framework.mybatis.core.query.LambdaQueryWrapperX;
+import cn.econets.blossom.module.system.controller.user.vo.user.UserPageReqVO;
 import cn.econets.blossom.module.system.dal.dataobject.user.AdminUserDO;
 import org.apache.ibatis.annotations.Mapper;
 

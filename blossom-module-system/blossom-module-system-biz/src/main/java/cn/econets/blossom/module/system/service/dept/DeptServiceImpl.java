@@ -3,6 +3,7 @@ package cn.econets.blossom.module.system.service.dept;
 import cn.econets.blossom.framework.common.enums.CommonStatusEnum;
 import cn.econets.blossom.framework.common.util.collection.CollectionUtils;
 import cn.econets.blossom.framework.common.util.object.BeanUtils;
+import cn.econets.blossom.framework.permission.core.annotation.DataPermission;
 import cn.econets.blossom.module.system.controller.dept.vo.dept.DeptListReqVO;
 import cn.econets.blossom.module.system.controller.dept.vo.dept.DeptSaveReqVO;
 import cn.econets.blossom.module.system.dal.dao.dept.DeptMapper;

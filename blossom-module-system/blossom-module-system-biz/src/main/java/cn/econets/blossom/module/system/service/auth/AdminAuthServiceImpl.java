@@ -5,16 +5,29 @@ import cn.econets.blossom.framework.common.enums.UserTypeEnum;
 import cn.econets.blossom.framework.common.util.monitor.TracerUtils;
 import cn.econets.blossom.framework.common.util.servlet.ServletUtils;
 import cn.econets.blossom.framework.common.util.validation.ValidationUtils;
+import cn.econets.blossom.module.system.api.logger.dto.LoginLogCreateReqDTO;
+import cn.econets.blossom.module.system.api.sms.SmsCodeApi;
+import cn.econets.blossom.module.system.api.sms.dto.code.SmsCodeSendReqDTO;
+import cn.econets.blossom.module.system.api.social.dto.SocialUserBindReqDTO;
+import cn.econets.blossom.module.system.api.social.dto.SocialUserRespDTO;
 import cn.econets.blossom.module.system.controller.auth.vo.*;
+import cn.econets.blossom.module.system.convert.auth.AuthConvert;
 import cn.econets.blossom.module.system.dal.dataobject.oauth2.OAuth2AccessTokenDO;
 import cn.econets.blossom.module.system.dal.dataobject.user.AdminUserDO;
 import cn.econets.blossom.module.system.enums.logger.LoginLogTypeEnum;
 import cn.econets.blossom.module.system.enums.logger.LoginResultEnum;
+import cn.econets.blossom.module.system.enums.oauth2.OAuth2ClientConstants;
 import cn.econets.blossom.module.system.enums.sms.SmsSceneEnum;
+import cn.econets.blossom.module.system.service.logger.LoginLogService;
+import cn.econets.blossom.module.system.service.member.MemberService;
 import cn.econets.blossom.module.system.service.oauth2.OAuth2TokenService;
+import cn.econets.blossom.module.system.service.social.SocialUserService;
 import cn.econets.blossom.module.system.service.user.AdminUserService;
 import cn.hutool.core.util.ObjectUtil;
 import com.google.common.annotations.VisibleForTesting;
+import com.xingyuv.captcha.model.common.ResponseModel;
+import com.xingyuv.captcha.model.vo.CaptchaVO;
+import com.xingyuv.captcha.service.CaptchaService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -54,7 +67,7 @@ public class AdminAuthServiceImpl implements AdminAuthService {
     /**
      * 验证码的开关，默认为 true
      */
-    @Value("${yudao.captcha.enable:true}")
+    @Value("${application.captcha.enable:true}")
     private Boolean captchaEnable;
 
     @Override
@@ -102,7 +115,9 @@ public class AdminAuthServiceImpl implements AdminAuthService {
             throw exception(AUTH_MOBILE_NOT_EXISTS);
         }
         // 发送验证码
-        smsCodeApi.sendSmsCode(AuthConvert.INSTANCE.convert(reqVO).setCreateIp(ServletUtils.getClientIP()));
+        SmsCodeSendReqDTO convert = AuthConvert.INSTANCE.convert(reqVO);
+        convert.setCreateIp(ServletUtils.getClientIP());
+        smsCodeApi.sendSmsCode(convert);
     }
 
     @Override

@@ -5,6 +5,8 @@ import cn.econets.blossom.framework.common.exception.ServiceException;
 import cn.econets.blossom.framework.common.pojo.PageResult;
 import cn.econets.blossom.framework.common.util.collection.CollectionUtils;
 import cn.econets.blossom.framework.common.util.object.BeanUtils;
+import cn.econets.blossom.framework.permission.core.util.DataPermissionUtils;
+import cn.econets.blossom.module.infrastructure.api.file.FileApi;
 import cn.econets.blossom.module.system.controller.user.vo.profile.UserProfileUpdatePasswordReqVO;
 import cn.econets.blossom.module.system.controller.user.vo.profile.UserProfileUpdateReqVO;
 import cn.econets.blossom.module.system.controller.user.vo.user.UserImportExcelVO;
@@ -96,9 +98,9 @@ public class AdminUserServiceImpl implements AdminUserService {
                     postId -> {
                         UserPostDO userPostDO = new UserPostDO();
                         userPostDO.setUserId(user.getId());
-                        userPostDO.setPostId(postId));
+                        userPostDO.setPostId(postId);
                         return userPostDO;
-                    });
+                    }));
         }
         return user.getId();
     }

@@ -5,6 +5,8 @@ import cn.econets.blossom.framework.common.pojo.PageParam;
 import cn.econets.blossom.framework.common.pojo.PageResult;
 import cn.econets.blossom.framework.common.util.object.BeanUtils;
 import cn.econets.blossom.framework.excel.core.util.ExcelUtils;
+import cn.econets.blossom.framework.operatelog.core.annotations.OperateLog;
+import cn.econets.blossom.framework.operatelog.core.enums.OperateTypeEnum;
 import cn.econets.blossom.framework.web.web.core.WebFrameworkUtils;
 import cn.econets.blossom.module.infrastructure.controller.logger.vo.apierrorlog.ApiErrorLogPageReqVO;
 import cn.econets.blossom.module.infrastructure.controller.logger.vo.apierrorlog.ApiErrorLogRespVO;
@@ -14,7 +16,6 @@ import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.Parameters;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import jdk.nashorn.internal.parser.TokenType;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -58,7 +59,7 @@ public class ApiErrorLogController {
     @GetMapping("/export-excel")
     @Operation(summary = "导出 API 错误日志 Excel")
     @PreAuthorize("@ss.hasPermission('infra:api-error-log:export')")
-    @OperateLog(type = TokenType.EXPORT)
+    @OperateLog(type = OperateTypeEnum.EXPORT)
     public void exportApiErrorLogExcel(@Valid ApiErrorLogPageReqVO exportReqVO,
               HttpServletResponse response) throws IOException {
         exportReqVO.setPageSize(PageParam.PAGE_SIZE_NONE);

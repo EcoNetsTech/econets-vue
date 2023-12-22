@@ -3,6 +3,7 @@ package cn.econets.blossom.module.system.service.permission;
 import cn.econets.blossom.framework.common.enums.CommonStatusEnum;
 import cn.econets.blossom.framework.common.util.collection.CollectionUtils;
 import cn.econets.blossom.framework.common.util.json.JsonUtils;
+import cn.econets.blossom.framework.permission.core.annotation.DataPermission;
 import cn.econets.blossom.module.system.api.permission.dto.DeptDataPermissionRespDTO;
 import cn.econets.blossom.module.system.dal.dao.permission.RoleMenuMapper;
 import cn.econets.blossom.module.system.dal.dao.permission.UserRoleMapper;

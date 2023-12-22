@@ -1,5 +1,7 @@
 package cn.econets.blossom.module.system.controller.user.vo.profile;
 
+import cn.econets.blossom.module.system.controller.dept.vo.dept.DeptSimpleRespVO;
+import cn.econets.blossom.module.system.controller.dept.vo.post.PostSimpleRespVO;
 import cn.econets.blossom.module.system.controller.permission.vo.role.RoleSimpleRespVO;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
