@@ -34,6 +34,10 @@
         <!--业务组件-->
         <dependency>
             <groupId>cn.econets.boot</groupId>
+            <artifactId>blossom-spring-boot-starter-biz-tenant</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>cn.econets.boot</groupId>
             <artifactId>blossom-spring-boot-starter-security</artifactId>
         </dependency>
 

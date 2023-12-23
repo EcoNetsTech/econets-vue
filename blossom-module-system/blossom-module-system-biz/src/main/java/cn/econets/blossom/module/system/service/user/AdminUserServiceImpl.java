@@ -50,7 +50,7 @@ import static cn.econets.blossom.module.system.enums.ErrorCodeConstants.*;
 @Slf4j
 public class AdminUserServiceImpl implements AdminUserService {
 
-    @Value("${sys.user.init-password:yudaoyuanma}")
+    @Value("${sys.user.init-password:123456}")
     private String userInitPassword;
 
     @Resource

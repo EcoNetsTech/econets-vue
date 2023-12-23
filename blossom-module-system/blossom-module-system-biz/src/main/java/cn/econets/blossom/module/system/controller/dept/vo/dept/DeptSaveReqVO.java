@@ -36,7 +36,7 @@ public class DeptSaveReqVO {
     @Size(max = 11, message = "联系电话长度不能超过11个字符")
     private String phone;
 
-    @Schema(description = "邮箱", example = "yudao@iocoder.cn")
+    @Schema(description = "邮箱", example = "ryximu@qq.com")
     @Email(message = "邮箱格式不正确")
     @Size(max = 50, message = "邮箱长度不能超过 50 个字符")
     private String email;

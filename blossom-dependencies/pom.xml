@@ -226,7 +226,7 @@
             <!-- Job 定时任务相关 -->
 <!--            <dependency>-->
 <!--                <groupId>cn.econets.boot</groupId>-->
-<!--                <artifactId>yudao-spring-boot-starter-job</artifactId>-->
+<!--                <artifactId>blossom-spring-boot-starter-job</artifactId>-->
 <!--                <version>${revision}</version>-->
 <!--            </dependency>-->
 
@@ -246,7 +246,7 @@
             <!-- 服务保障相关 -->
 <!--            <dependency>-->
 <!--                <groupId>cn.econets.boot</groupId>-->
-<!--                <artifactId>yudao-spring-boot-starter-protection</artifactId>-->
+<!--                <artifactId>blossom-spring-boot-starter-protection</artifactId>-->
 <!--                <version>${revision}</version>-->
 <!--            </dependency>-->
 
@@ -375,7 +375,7 @@
             <!-- 工作流相关 -->
 <!--            <dependency>-->
 <!--                <groupId>cn.econets.boot</groupId>-->
-<!--                <artifactId>yudao-spring-boot-starter-flowable</artifactId>-->
+<!--                <artifactId>blossom-spring-boot-starter-flowable</artifactId>-->
 <!--                <version>${revision}</version>-->
 <!--            </dependency>-->
             <dependency>

@@ -28,7 +28,7 @@ public class SmsChannelRespVO {
     @Schema(description = "备注", example = "好吃！")
     private String remark;
 
-    @Schema(description = "短信 API 的账号", requiredMode = Schema.RequiredMode.REQUIRED, example = "yudao")
+    @Schema(description = "短信 API 的账号", requiredMode = Schema.RequiredMode.REQUIRED, example = "blossom")
     @NotNull(message = "短信 API 的账号不能为空")
     private String apiKey;
 

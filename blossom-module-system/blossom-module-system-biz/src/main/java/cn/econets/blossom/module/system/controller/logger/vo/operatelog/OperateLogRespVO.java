@@ -63,7 +63,7 @@ public class OperateLogRespVO {
     @Schema(description = "浏览器 UserAgent", requiredMode = Schema.RequiredMode.REQUIRED, example = "Mozilla/5.0")
     private String userAgent;
 
-    @Schema(description = "Java 方法名", requiredMode = Schema.RequiredMode.REQUIRED, example = "cn.iocoder.yudao.adminserver.UserController.save(...)")
+    @Schema(description = "Java 方法名", requiredMode = Schema.RequiredMode.REQUIRED, example = "cn.econets.blossom.adminserver.UserController.save(...)")
     private String javaMethod;
 
     @Schema(description = "Java 方法的参数")

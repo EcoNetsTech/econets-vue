@@ -1,8 +1,8 @@
 package cn.econets.blossom.module.system.controller.user.vo.user;
 
-import cn.iocoder.yudao.framework.excel.core.annotations.DictFormat;
-import cn.iocoder.yudao.framework.excel.core.convert.DictConvert;
-import cn.iocoder.yudao.module.system.enums.DictTypeConstants;
+import cn.econets.blossom.framework.excel.core.annotations.DictFormat;
+import cn.econets.blossom.framework.excel.core.convert.DictConvert;
+import cn.econets.blossom.module.system.enums.DictTypeConstants;
 import com.alibaba.excel.annotation.ExcelIgnoreUnannotated;
 import com.alibaba.excel.annotation.ExcelProperty;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -40,7 +40,7 @@ public class UserRespVO{
     @Schema(description = "岗位编号数组", example = "1")
     private Set<Long> postIds;
 
-    @Schema(description = "用户邮箱", example = "yudao@iocoder.cn")
+    @Schema(description = "用户邮箱", example = "ryximu@qq.com")
     @ExcelProperty("用户邮箱")
     private String email;
 

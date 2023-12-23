@@ -41,6 +41,10 @@
         </dependency>
         <dependency>
             <groupId>cn.econets.boot</groupId>
+            <artifactId>blossom-spring-boot-starter-security</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>cn.econets.boot</groupId>
             <artifactId>blossom-spring-boot-starter-biz-data-permission</artifactId>
         </dependency>
 

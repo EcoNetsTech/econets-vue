@@ -1,7 +1,7 @@
 package cn.econets.blossom.module.system.controller.user.vo.user;
 
+import cn.econets.blossom.framework.common.validation.Mobile;
 import cn.hutool.core.util.ObjectUtil;
-import cn.iocoder.yudao.framework.common.validation.Mobile;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
@@ -36,7 +36,7 @@ public class UserSaveReqVO {
     @Schema(description = "岗位编号数组", example = "1")
     private Set<Long> postIds;
 
-    @Schema(description = "用户邮箱", example = "yudao@iocoder.cn")
+    @Schema(description = "用户邮箱", example = "ryximu@qq.com")
     @Email(message = "邮箱格式不正确")
     @Size(max = 50, message = "邮箱长度不能超过 50 个字符")
     private String email;

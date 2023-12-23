@@ -34,7 +34,7 @@ public class SmsTemplateRespVO {
     @ExcelProperty("模板编码")
     private String code;
 
-    @Schema(description = "模板名称", requiredMode = Schema.RequiredMode.REQUIRED, example = "yudao")
+    @Schema(description = "模板名称", requiredMode = Schema.RequiredMode.REQUIRED, example = "blossom")
     @ExcelProperty("模板名称")
     private String name;
 

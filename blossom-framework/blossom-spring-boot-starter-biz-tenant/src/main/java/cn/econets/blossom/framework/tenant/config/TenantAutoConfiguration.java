@@ -39,7 +39,7 @@ import java.util.Objects;
  *
  */
 @AutoConfiguration
-@ConditionalOnProperty(prefix = "application.tenant", value = "enable", matchIfMissing = true) // 允许使用 yudao.tenant.enable=false 禁用多租户
+@ConditionalOnProperty(prefix = "application.tenant", value = "enable", matchIfMissing = true) // 允许使用 application.tenant.enable=false 禁用多租户
 @EnableConfigurationProperties(TenantProperties.class)
 public class TenantAutoConfiguration {
 

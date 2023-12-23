@@ -24,7 +24,7 @@ public class SmsTemplateSaveReqVO {
     @NotNull(message = "模板编码不能为空")
     private String code;
 
-    @Schema(description = "模板名称", requiredMode = Schema.RequiredMode.REQUIRED, example = "yudao")
+    @Schema(description = "模板名称", requiredMode = Schema.RequiredMode.REQUIRED, example = "blossom")
     @NotNull(message = "模板名称不能为空")
     private String name;
 

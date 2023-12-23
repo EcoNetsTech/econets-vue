@@ -12,7 +12,7 @@ public class SocialClientRespVO {
     @Schema(description = "编号", requiredMode = Schema.RequiredMode.REQUIRED, example = "27162")
     private Long id;
 
-    @Schema(description = "应用名", requiredMode = Schema.RequiredMode.REQUIRED, example = "yudao商城")
+    @Schema(description = "应用名", requiredMode = Schema.RequiredMode.REQUIRED, example = "blossom商城")
     private String name;
 
     @Schema(description = "社交平台的类型", requiredMode = Schema.RequiredMode.REQUIRED, example = "31")
