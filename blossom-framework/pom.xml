@@ -41,5 +41,6 @@
         <module>blossom-spring-boot-starter-biz-data-permission</module>
         <module>blossom-spring-boot-starter-biz-operatelog</module>
         <module>blossom-spring-boot-starter-biz-sms</module>
+        <module>blossom-spring-boot-starter-biz-ip</module>
     </modules>
 </project>

@@ -27,7 +27,7 @@ public class BannerApplicationRunner implements ApplicationRunner {
                             "项目启动成功！\n\t" +
                             "接口文档: \t{} \n\t" +
                             "----------------------------------------------------------",
-                    "http://localhost:"+port+"/doc.htm");
+                    "http://localhost:"+port+"/doc.html");
 
             // 数据报表
             if (isNotPresent("cn.econets.blossom.module.report.framework.security.config.SecurityConfiguration")) {
