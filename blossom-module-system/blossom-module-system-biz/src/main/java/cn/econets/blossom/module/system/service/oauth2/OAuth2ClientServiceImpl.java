@@ -1,13 +1,12 @@
 package cn.econets.blossom.module.system.service.oauth2;
 
 import cn.econets.blossom.framework.common.enums.CommonStatusEnum;
-import cn.econets.blossom.framework.common.exception.util.ServiceExceptionUtil;
 import cn.econets.blossom.framework.common.pojo.PageResult;
 import cn.econets.blossom.framework.common.util.object.BeanUtils;
 import cn.econets.blossom.framework.common.util.string.StrUtils;
-import cn.econets.blossom.module.system.controller.oauth2.vo.client.OAuth2ClientPageReqVO;
-import cn.econets.blossom.module.system.controller.oauth2.vo.client.OAuth2ClientSaveReqVO;
-import cn.econets.blossom.module.system.dal.dao.oauth2.OAuth2ClientMapper;
+import cn.econets.blossom.module.system.controller.admin.oauth2.vo.client.OAuth2ClientPageReqVO;
+import cn.econets.blossom.module.system.controller.admin.oauth2.vo.client.OAuth2ClientSaveReqVO;
+import cn.econets.blossom.module.system.dal.mapper.oauth2.OAuth2ClientMapper;
 import cn.econets.blossom.module.system.dal.dataobject.oauth2.OAuth2ClientDO;
 import cn.econets.blossom.module.system.dal.redis.RedisKeyConstants;
 import cn.econets.blossom.module.system.enums.ErrorCodeConstants;

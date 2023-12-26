@@ -1,8 +1,8 @@
 package cn.econets.blossom.module.system.service.sms;
 
 import cn.econets.blossom.framework.common.pojo.PageResult;
-import cn.econets.blossom.module.system.controller.sms.vo.template.SmsTemplatePageReqVO;
-import cn.econets.blossom.module.system.controller.sms.vo.template.SmsTemplateSaveReqVO;
+import cn.econets.blossom.module.system.controller.admin.sms.vo.template.SmsTemplatePageReqVO;
+import cn.econets.blossom.module.system.controller.admin.sms.vo.template.SmsTemplateSaveReqVO;
 import cn.econets.blossom.module.system.dal.dataobject.sms.SmsTemplateDO;
 
 import javax.validation.Valid;

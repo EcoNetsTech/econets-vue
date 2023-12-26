@@ -2,8 +2,8 @@ package cn.econets.blossom.module.system.service.dict;
 
 
 import cn.econets.blossom.framework.common.pojo.PageResult;
-import cn.econets.blossom.module.system.controller.dict.vo.type.DictTypePageReqVO;
-import cn.econets.blossom.module.system.controller.dict.vo.type.DictTypeSaveReqVO;
+import cn.econets.blossom.module.system.controller.admin.dict.vo.type.DictTypePageReqVO;
+import cn.econets.blossom.module.system.controller.admin.dict.vo.type.DictTypeSaveReqVO;
 import cn.econets.blossom.module.system.dal.dataobject.dict.DictTypeDO;
 
 import java.util.List;

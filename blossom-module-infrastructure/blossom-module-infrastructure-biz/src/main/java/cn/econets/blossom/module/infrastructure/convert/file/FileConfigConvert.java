@@ -1,6 +1,6 @@
 package cn.econets.blossom.module.infrastructure.convert.file;
 
-import cn.econets.blossom.module.infrastructure.controller.file.vo.config.FileConfigSaveReqVO;
+import cn.econets.blossom.module.infrastructure.controller.admin.file.vo.config.FileConfigSaveReqVO;
 import cn.econets.blossom.module.infrastructure.dal.dataobject.file.FileConfigDO;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;

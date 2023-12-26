@@ -1,8 +1,8 @@
 package cn.econets.blossom.module.system.service.dept;
 
 import cn.econets.blossom.framework.common.pojo.PageResult;
-import cn.econets.blossom.module.system.controller.dept.vo.post.PostPageReqVO;
-import cn.econets.blossom.module.system.controller.dept.vo.post.PostSaveReqVO;
+import cn.econets.blossom.module.system.controller.admin.dept.vo.post.PostPageReqVO;
+import cn.econets.blossom.module.system.controller.admin.dept.vo.post.PostSaveReqVO;
 import cn.econets.blossom.module.system.dal.dataobject.dept.PostDO;
 import org.springframework.lang.Nullable;
 

@@ -1,8 +1,8 @@
 package cn.econets.blossom.module.system.service.oauth2;
 
 import cn.econets.blossom.framework.common.pojo.PageResult;
-import cn.econets.blossom.module.system.controller.oauth2.vo.client.OAuth2ClientPageReqVO;
-import cn.econets.blossom.module.system.controller.oauth2.vo.client.OAuth2ClientSaveReqVO;
+import cn.econets.blossom.module.system.controller.admin.oauth2.vo.client.OAuth2ClientPageReqVO;
+import cn.econets.blossom.module.system.controller.admin.oauth2.vo.client.OAuth2ClientSaveReqVO;
 import cn.econets.blossom.module.system.dal.dataobject.oauth2.OAuth2ClientDO;
 
 import javax.validation.Valid;

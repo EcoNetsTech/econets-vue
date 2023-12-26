@@ -1,7 +1,7 @@
 package cn.econets.blossom.module.system.service.auth;
 
 
-import cn.econets.blossom.module.system.controller.auth.vo.*;
+import cn.econets.blossom.module.system.controller.admin.auth.vo.*;
 import cn.econets.blossom.module.system.dal.dataobject.user.AdminUserDO;
 
 import javax.validation.Valid;

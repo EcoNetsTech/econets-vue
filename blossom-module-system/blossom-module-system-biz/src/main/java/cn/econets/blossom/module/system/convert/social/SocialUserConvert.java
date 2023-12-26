@@ -1,7 +1,7 @@
 package cn.econets.blossom.module.system.convert.social;
 
 import cn.econets.blossom.module.system.api.social.dto.SocialUserBindReqDTO;
-import cn.econets.blossom.module.system.controller.socail.vo.user.SocialUserBindReqVO;
+import cn.econets.blossom.module.system.controller.admin.socail.vo.user.SocialUserBindReqVO;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;

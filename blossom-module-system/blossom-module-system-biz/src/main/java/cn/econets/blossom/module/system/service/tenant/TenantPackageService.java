@@ -1,8 +1,8 @@
 package cn.econets.blossom.module.system.service.tenant;
 
 import cn.econets.blossom.framework.common.pojo.PageResult;
-import cn.econets.blossom.module.system.controller.tenant.vo.packages.TenantPackagePageReqVO;
-import cn.econets.blossom.module.system.controller.tenant.vo.packages.TenantPackageSaveReqVO;
+import cn.econets.blossom.module.system.controller.admin.tenant.vo.packages.TenantPackagePageReqVO;
+import cn.econets.blossom.module.system.controller.admin.tenant.vo.packages.TenantPackageSaveReqVO;
 import cn.econets.blossom.module.system.dal.dataobject.tenant.TenantPackageDO;
 
 import javax.validation.Valid;

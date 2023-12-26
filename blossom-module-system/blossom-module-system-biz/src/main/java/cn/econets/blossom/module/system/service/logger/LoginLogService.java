@@ -2,7 +2,7 @@ package cn.econets.blossom.module.system.service.logger;
 
 import cn.econets.blossom.framework.common.pojo.PageResult;
 import cn.econets.blossom.module.system.api.logger.dto.LoginLogCreateReqDTO;
-import cn.econets.blossom.module.system.controller.logger.vo.loginlog.LoginLogPageReqVO;
+import cn.econets.blossom.module.system.controller.admin.logger.vo.loginlog.LoginLogPageReqVO;
 import cn.econets.blossom.module.system.dal.dataobject.logger.LoginLogDO;
 
 import javax.validation.Valid;

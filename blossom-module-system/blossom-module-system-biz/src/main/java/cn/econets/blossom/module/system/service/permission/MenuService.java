@@ -1,8 +1,8 @@
 package cn.econets.blossom.module.system.service.permission;
 
 
-import cn.econets.blossom.module.system.controller.permission.vo.menu.MenuListReqVO;
-import cn.econets.blossom.module.system.controller.permission.vo.menu.MenuSaveVO;
+import cn.econets.blossom.module.system.controller.admin.permission.vo.menu.MenuListReqVO;
+import cn.econets.blossom.module.system.controller.admin.permission.vo.menu.MenuSaveVO;
 import cn.econets.blossom.module.system.dal.dataobject.permission.MenuDO;
 
 import java.util.Collection;

@@ -3,8 +3,8 @@ package cn.econets.blossom.module.system.service.tenant;
 
 import cn.econets.blossom.framework.common.pojo.PageResult;
 import cn.econets.blossom.framework.tenant.core.context.TenantContextHolder;
-import cn.econets.blossom.module.system.controller.tenant.vo.tenant.TenantPageReqVO;
-import cn.econets.blossom.module.system.controller.tenant.vo.tenant.TenantSaveReqVO;
+import cn.econets.blossom.module.system.controller.admin.tenant.vo.tenant.TenantPageReqVO;
+import cn.econets.blossom.module.system.controller.admin.tenant.vo.tenant.TenantSaveReqVO;
 import cn.econets.blossom.module.system.dal.dataobject.tenant.TenantDO;
 import cn.econets.blossom.module.system.service.tenant.handler.TenantInfoHandler;
 import cn.econets.blossom.module.system.service.tenant.handler.TenantMenuHandler;

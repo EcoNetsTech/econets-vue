@@ -3,8 +3,8 @@ package cn.econets.blossom.module.infrastructure.service.file;
 
 import cn.econets.blossom.framework.common.pojo.PageResult;
 import cn.econets.blossom.framework.file.core.client.FileClient;
-import cn.econets.blossom.module.infrastructure.controller.file.vo.config.FileConfigPageReqVO;
-import cn.econets.blossom.module.infrastructure.controller.file.vo.config.FileConfigSaveReqVO;
+import cn.econets.blossom.module.infrastructure.controller.admin.file.vo.config.FileConfigPageReqVO;
+import cn.econets.blossom.module.infrastructure.controller.admin.file.vo.config.FileConfigSaveReqVO;
 import cn.econets.blossom.module.infrastructure.dal.dataobject.file.FileConfigDO;
 
 import javax.validation.Valid;

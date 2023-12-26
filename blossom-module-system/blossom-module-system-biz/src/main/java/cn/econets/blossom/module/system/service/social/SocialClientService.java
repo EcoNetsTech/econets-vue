@@ -2,8 +2,8 @@ package cn.econets.blossom.module.system.service.social;
 
 import cn.binarywang.wx.miniapp.bean.WxMaPhoneNumberInfo;
 import cn.econets.blossom.framework.common.pojo.PageResult;
-import cn.econets.blossom.module.system.controller.socail.vo.client.SocialClientPageReqVO;
-import cn.econets.blossom.module.system.controller.socail.vo.client.SocialClientSaveReqVO;
+import cn.econets.blossom.module.system.controller.admin.socail.vo.client.SocialClientPageReqVO;
+import cn.econets.blossom.module.system.controller.admin.socail.vo.client.SocialClientSaveReqVO;
 import cn.econets.blossom.module.system.dal.dataobject.social.SocialClientDO;
 import cn.econets.blossom.module.system.enums.social.SocialTypeEnum;
 import com.xingyuv.jushauth.model.AuthUser;

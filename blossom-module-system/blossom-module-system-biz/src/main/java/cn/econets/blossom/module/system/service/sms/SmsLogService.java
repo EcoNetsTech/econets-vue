@@ -1,7 +1,7 @@
 package cn.econets.blossom.module.system.service.sms;
 
 import cn.econets.blossom.framework.common.pojo.PageResult;
-import cn.econets.blossom.module.system.controller.sms.vo.log.SmsLogPageReqVO;
+import cn.econets.blossom.module.system.controller.admin.sms.vo.log.SmsLogPageReqVO;
 import cn.econets.blossom.module.system.dal.dataobject.sms.SmsLogDO;
 import cn.econets.blossom.module.system.dal.dataobject.sms.SmsTemplateDO;
 

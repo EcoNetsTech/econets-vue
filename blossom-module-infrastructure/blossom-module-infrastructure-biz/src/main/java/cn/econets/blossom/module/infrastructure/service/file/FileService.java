@@ -1,7 +1,7 @@
 package cn.econets.blossom.module.infrastructure.service.file;
 
 import cn.econets.blossom.framework.common.pojo.PageResult;
-import cn.econets.blossom.module.infrastructure.controller.file.vo.file.FilePageReqVO;
+import cn.econets.blossom.module.infrastructure.controller.admin.file.vo.file.FilePageReqVO;
 import cn.econets.blossom.module.infrastructure.dal.dataobject.file.FileDO;
 
 /**

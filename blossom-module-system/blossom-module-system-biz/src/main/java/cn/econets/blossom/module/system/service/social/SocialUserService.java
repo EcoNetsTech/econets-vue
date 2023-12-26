@@ -4,7 +4,7 @@ import cn.econets.blossom.framework.common.exception.ServiceException;
 import cn.econets.blossom.framework.common.pojo.PageResult;
 import cn.econets.blossom.module.system.api.social.dto.SocialUserBindReqDTO;
 import cn.econets.blossom.module.system.api.social.dto.SocialUserRespDTO;
-import cn.econets.blossom.module.system.controller.socail.vo.user.SocialUserPageReqVO;
+import cn.econets.blossom.module.system.controller.admin.socail.vo.user.SocialUserPageReqVO;
 import cn.econets.blossom.module.system.dal.dataobject.social.SocialUserDO;
 import cn.econets.blossom.module.system.enums.social.SocialTypeEnum;
 

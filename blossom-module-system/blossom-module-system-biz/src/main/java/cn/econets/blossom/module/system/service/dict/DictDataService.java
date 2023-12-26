@@ -1,8 +1,8 @@
 package cn.econets.blossom.module.system.service.dict;
 
 import cn.econets.blossom.framework.common.pojo.PageResult;
-import cn.econets.blossom.module.system.controller.dict.vo.data.DictDataPageReqVO;
-import cn.econets.blossom.module.system.controller.dict.vo.data.DictDataSaveReqVO;
+import cn.econets.blossom.module.system.controller.admin.dict.vo.data.DictDataPageReqVO;
+import cn.econets.blossom.module.system.controller.admin.dict.vo.data.DictDataSaveReqVO;
 import cn.econets.blossom.module.system.dal.dataobject.dict.DictDataDO;
 import org.springframework.lang.Nullable;
 

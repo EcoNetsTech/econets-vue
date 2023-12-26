@@ -3,7 +3,7 @@ package cn.econets.blossom.module.system.convert.logger;
 import cn.econets.blossom.framework.common.util.collection.CollectionUtils;
 import cn.econets.blossom.framework.common.util.collection.MapUtils;
 import cn.econets.blossom.framework.common.util.object.BeanUtils;
-import cn.econets.blossom.module.system.controller.logger.vo.operatelog.OperateLogRespVO;
+import cn.econets.blossom.module.system.controller.admin.logger.vo.operatelog.OperateLogRespVO;
 import cn.econets.blossom.module.system.dal.dataobject.logger.OperateLogDO;
 import cn.econets.blossom.module.system.dal.dataobject.user.AdminUserDO;
 import org.mapstruct.Mapper;

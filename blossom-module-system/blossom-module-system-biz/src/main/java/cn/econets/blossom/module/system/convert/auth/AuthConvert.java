@@ -4,7 +4,7 @@ import cn.econets.blossom.framework.common.util.collection.CollectionUtils;
 import cn.econets.blossom.module.system.api.sms.dto.code.SmsCodeSendReqDTO;
 import cn.econets.blossom.module.system.api.sms.dto.code.SmsCodeUseReqDTO;
 import cn.econets.blossom.module.system.api.social.dto.SocialUserBindReqDTO;
-import cn.econets.blossom.module.system.controller.auth.vo.*;
+import cn.econets.blossom.module.system.controller.admin.auth.vo.*;
 import cn.econets.blossom.module.system.dal.dataobject.oauth2.OAuth2AccessTokenDO;
 import cn.econets.blossom.module.system.dal.dataobject.permission.MenuDO;
 import cn.econets.blossom.module.system.dal.dataobject.permission.RoleDO;

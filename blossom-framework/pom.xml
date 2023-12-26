@@ -34,12 +34,12 @@
         <module>blossom-spring-boot-starter-excel</module>
         <module>blossom-spring-boot-starter-mq</module>
         <module>blossom-spring-boot-starter-file</module>
+        <module>blossom-spring-boot-starter-captcha</module>
 
         <module>blossom-spring-boot-starter-biz-dict</module>
         <module>blossom-spring-boot-starter-biz-tenant</module>
         <module>blossom-spring-boot-starter-biz-data-permission</module>
         <module>blossom-spring-boot-starter-biz-operatelog</module>
         <module>blossom-spring-boot-starter-biz-sms</module>
-        <module>blossom-spring-boot-starter-captcha</module>
     </modules>
 </project>

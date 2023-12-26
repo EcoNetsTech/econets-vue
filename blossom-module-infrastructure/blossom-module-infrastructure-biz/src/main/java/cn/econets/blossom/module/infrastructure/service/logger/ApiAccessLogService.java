@@ -3,7 +3,7 @@ package cn.econets.blossom.module.infrastructure.service.logger;
 
 import cn.econets.blossom.framework.common.pojo.PageResult;
 import cn.econets.blossom.module.infrastructure.api.logger.dto.ApiAccessLogCreateReqDTO;
-import cn.econets.blossom.module.infrastructure.controller.logger.vo.apiaccesslog.ApiAccessLogPageReqVO;
+import cn.econets.blossom.module.infrastructure.controller.admin.logger.vo.apiaccesslog.ApiAccessLogPageReqVO;
 import cn.econets.blossom.module.infrastructure.dal.dataobject.logger.ApiAccessLogDO;
 
 /**

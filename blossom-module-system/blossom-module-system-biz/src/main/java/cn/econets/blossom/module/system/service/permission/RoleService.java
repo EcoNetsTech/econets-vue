@@ -1,8 +1,8 @@
 package cn.econets.blossom.module.system.service.permission;
 
 import cn.econets.blossom.framework.common.pojo.PageResult;
-import cn.econets.blossom.module.system.controller.permission.vo.role.RolePageReqVO;
-import cn.econets.blossom.module.system.controller.permission.vo.role.RoleSaveReqVO;
+import cn.econets.blossom.module.system.controller.admin.permission.vo.role.RolePageReqVO;
+import cn.econets.blossom.module.system.controller.admin.permission.vo.role.RoleSaveReqVO;
 import cn.econets.blossom.module.system.dal.dataobject.permission.RoleDO;
 
 import javax.validation.Valid;

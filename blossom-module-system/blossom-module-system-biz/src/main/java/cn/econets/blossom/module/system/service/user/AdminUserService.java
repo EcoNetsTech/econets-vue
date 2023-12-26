@@ -2,12 +2,12 @@ package cn.econets.blossom.module.system.service.user;
 
 import cn.econets.blossom.framework.common.pojo.PageResult;
 import cn.econets.blossom.framework.common.util.collection.CollectionUtils;
-import cn.econets.blossom.module.system.controller.user.vo.profile.UserProfileUpdatePasswordReqVO;
-import cn.econets.blossom.module.system.controller.user.vo.profile.UserProfileUpdateReqVO;
-import cn.econets.blossom.module.system.controller.user.vo.user.UserImportExcelVO;
-import cn.econets.blossom.module.system.controller.user.vo.user.UserImportRespVO;
-import cn.econets.blossom.module.system.controller.user.vo.user.UserPageReqVO;
-import cn.econets.blossom.module.system.controller.user.vo.user.UserSaveReqVO;
+import cn.econets.blossom.module.system.controller.admin.user.vo.profile.UserProfileUpdatePasswordReqVO;
+import cn.econets.blossom.module.system.controller.admin.user.vo.profile.UserProfileUpdateReqVO;
+import cn.econets.blossom.module.system.controller.admin.user.vo.user.UserImportExcelVO;
+import cn.econets.blossom.module.system.controller.admin.user.vo.user.UserImportRespVO;
+import cn.econets.blossom.module.system.controller.admin.user.vo.user.UserPageReqVO;
+import cn.econets.blossom.module.system.controller.admin.user.vo.user.UserSaveReqVO;
 import cn.econets.blossom.module.system.dal.dataobject.user.AdminUserDO;
 import cn.hutool.core.collection.CollUtil;
 

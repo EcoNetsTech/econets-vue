@@ -1,7 +1,7 @@
 package cn.econets.blossom.module.system.convert.tenant;
 
-import cn.econets.blossom.module.system.controller.tenant.vo.tenant.TenantSaveReqVO;
-import cn.econets.blossom.module.system.controller.user.vo.user.UserSaveReqVO;
+import cn.econets.blossom.module.system.controller.admin.tenant.vo.tenant.TenantSaveReqVO;
+import cn.econets.blossom.module.system.controller.admin.user.vo.user.UserSaveReqVO;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

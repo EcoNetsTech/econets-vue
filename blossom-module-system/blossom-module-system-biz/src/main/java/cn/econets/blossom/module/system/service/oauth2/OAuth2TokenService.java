@@ -2,7 +2,7 @@ package cn.econets.blossom.module.system.service.oauth2;
 
 
 import cn.econets.blossom.framework.common.pojo.PageResult;
-import cn.econets.blossom.module.system.controller.oauth2.vo.token.OAuth2AccessTokenPageReqVO;
+import cn.econets.blossom.module.system.controller.admin.oauth2.vo.token.OAuth2AccessTokenPageReqVO;
 import cn.econets.blossom.module.system.dal.dataobject.oauth2.OAuth2AccessTokenDO;
 
 import java.util.List;

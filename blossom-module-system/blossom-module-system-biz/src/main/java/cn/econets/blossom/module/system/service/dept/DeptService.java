@@ -1,8 +1,8 @@
 package cn.econets.blossom.module.system.service.dept;
 
 import cn.econets.blossom.framework.common.util.collection.CollectionUtils;
-import cn.econets.blossom.module.system.controller.dept.vo.dept.DeptListReqVO;
-import cn.econets.blossom.module.system.controller.dept.vo.dept.DeptSaveReqVO;
+import cn.econets.blossom.module.system.controller.admin.dept.vo.dept.DeptListReqVO;
+import cn.econets.blossom.module.system.controller.admin.dept.vo.dept.DeptSaveReqVO;
 import cn.econets.blossom.module.system.dal.dataobject.dept.DeptDO;
 
 import java.util.Collection;
