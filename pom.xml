@@ -3,7 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.ximutech.boot</groupId>
+    <groupId>cn.econets.boot</groupId>
     <artifactId>blossom</artifactId>
     <version>${revision}</version>
     <packaging>pom</packaging>
@@ -14,6 +14,11 @@
     <modules>
         <module>blossom-dependencies</module>
         <module>blossom-framework</module>
+        <!-- Server 主项目 -->
+        <module>blossom-server</module>
+        <!-- module 拓展 -->
+        <module>blossom-module-infrastructure</module>
+        <module>blossom-module-system</module>
     </modules>
 
     <properties>
@@ -35,7 +40,7 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>com.ximutech.boot</groupId>
+                <groupId>cn.econets.boot</groupId>
                 <artifactId>blossom-dependencies</artifactId>
                 <version>${revision}</version>
                 <type>pom</type>

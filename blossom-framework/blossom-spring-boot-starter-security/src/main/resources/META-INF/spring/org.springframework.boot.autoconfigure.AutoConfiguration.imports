@@ -1,0 +1,2 @@
+cn.econets.blossom.framework.security.config.SecurityAutoConfiguration
+cn.econets.blossom.framework.security.config.WebSecurityConfigurerAdapter

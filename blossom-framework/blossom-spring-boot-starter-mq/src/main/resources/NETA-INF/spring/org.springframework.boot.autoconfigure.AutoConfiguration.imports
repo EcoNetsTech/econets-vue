@@ -1,0 +1,2 @@
+cn.econets.blossom.framework.mq.redis.config.RedisMQProducerAutoConfiguration
+cn.econets.blossom.framework.mq.redis.config.RedisMQConsumerAutoConfiguration

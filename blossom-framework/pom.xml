@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.ximutech.boot</groupId>
+        <groupId>cn.econets.boot</groupId>
         <artifactId>blossom</artifactId>
         <version>${revision}</version>
     </parent>
@@ -24,8 +24,23 @@
 
     <modules>
         <module>blossom-common</module>
+        <module>blossom-spring-boot-starter-banner</module>
+        <module>blossom-spring-boot-starter-web</module>
+        <module>blossom-spring-boot-starter-mybatis</module>
+        <module>blossom-spring-boot-starter-redis</module>
+        <module>blossom-spring-boot-starter-security</module>
+
+        <module>blossom-spring-boot-starter-monitor</module>
+        <module>blossom-spring-boot-starter-excel</module>
+        <module>blossom-spring-boot-starter-mq</module>
+        <module>blossom-spring-boot-starter-file</module>
+        <module>blossom-spring-boot-starter-captcha</module>
+
+        <module>blossom-spring-boot-starter-biz-dict</module>
+        <module>blossom-spring-boot-starter-biz-tenant</module>
+        <module>blossom-spring-boot-starter-biz-data-permission</module>
+        <module>blossom-spring-boot-starter-biz-operatelog</module>
+        <module>blossom-spring-boot-starter-biz-sms</module>
+        <module>blossom-spring-boot-starter-biz-ip</module>
     </modules>
-
-
-
 </project>

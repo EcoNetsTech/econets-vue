@@ -1,0 +1,5 @@
+cn.econets.blossom.framework.web.apilog.config.ApiLogAutoConfiguration
+cn.econets.blossom.framework.web.jackson.config.JacksonAutoConfiguration
+cn.econets.blossom.framework.web.swagger.SwaggerAutoConfiguration
+cn.econets.blossom.framework.web.web.config.WebAutoConfiguration
+cn.econets.blossom.framework.web.xss.config.XssAutoConfiguration
