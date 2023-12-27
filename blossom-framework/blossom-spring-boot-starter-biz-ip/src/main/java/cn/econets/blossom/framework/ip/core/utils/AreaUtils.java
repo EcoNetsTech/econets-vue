@@ -1,5 +1,6 @@
 package cn.econets.blossom.framework.ip.core.utils;
 
+import cn.econets.blossom.framework.common.util.collection.CollectionUtils;
 import cn.econets.blossom.framework.common.util.object.ObjectUtils;
 import cn.econets.blossom.framework.ip.core.Area;
 import cn.econets.blossom.framework.ip.core.enums.AreaTypeEnum;
@@ -127,7 +128,7 @@ public class AreaUtils {
      * @return 区域列表
      */
     public static <T> List<T> getByType(AreaTypeEnum type, Function<Area, T> func) {
-        return convertList(areas.values(), func, area -> type.getType().equals(area.getType()));
+        return CollectionUtils.convertList(areas.values(), func, area -> type.getType().equals(area.getType()));
     }
 
     /**

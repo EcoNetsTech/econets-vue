@@ -22,7 +22,7 @@ public class S3FileClientConfig implements FileClientConfig {
 
     /**
      * 节点地址
-     * 1. MinIO：https://www.iocoder.cn/Spring-Boot/MinIO 。例如说，http://127.0.0.1:9000
+     * 1. MinIO：https://www.econets.cn/Spring-Boot/MinIO 。例如说，http://127.0.0.1:9000
      * 2. 阿里云：https://help.aliyun.com/document_detail/31837.html
      * 3. 腾讯云：https://cloud.tencent.com/document/product/436/6224
      * 4. 七牛云：https://developer.qiniu.com/kodo/4088/s3-access-domainname
@@ -48,7 +48,7 @@ public class S3FileClientConfig implements FileClientConfig {
 
     /**
      * 访问 Key
-     * 1. MinIO：https://www.iocoder.cn/Spring-Boot/MinIO
+     * 1. MinIO：https://www.econets.cn/Spring-Boot/MinIO
      * 2. 阿里云：https://ram.console.aliyun.com/manage/ak
      * 3. 腾讯云：https://console.cloud.tencent.com/cam/capi
      * 4. 七牛云：https://portal.qiniu.com/user/key

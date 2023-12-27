@@ -19,7 +19,7 @@ public class SmsChannelPageReqVO extends PageParam {
     @Schema(description = "任务状态", example = "1")
     private Integer status;
 
-    @Schema(description = "短信签名，模糊匹配", example = "芋道源码")
+    @Schema(description = "短信签名，模糊匹配", example = "blossom")
     private String signature;
 
     @DateTimeFormat(pattern = DateUtils.FORMAT_YEAR_MONTH_DAY_HOUR_MINUTE_SECOND)

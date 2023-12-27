@@ -17,7 +17,7 @@ import static cn.econets.blossom.framework.common.util.date.DateUtils.FORMAT_YEA
 @EqualsAndHashCode(callSuper = true)
 public class DictTypePageReqVO extends PageParam {
 
-    @Schema(description = "字典类型名称，模糊匹配", example = "芋道")
+    @Schema(description = "字典类型名称，模糊匹配", example = "blossom")
     private String name;
 
     @Schema(description = "字典类型，模糊匹配", example = "sys_common_sex")

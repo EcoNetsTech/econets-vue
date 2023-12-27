@@ -48,7 +48,7 @@ public class UserSaveReqVO {
     @Schema(description = "用户性别，参见 SexEnum 枚举类", example = "1")
     private Integer sex;
 
-    @Schema(description = "用户头像", example = "https://www.iocoder.cn/xxx.png")
+    @Schema(description = "用户头像", example = "https://www.econets.cn/xxx.png")
     private String avatar;
 
     // ========== 仅【创建】时，需要传递的字段 ==========
