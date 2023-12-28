@@ -1,6 +1,6 @@
 package cn.econets.blossom.module.system.api.dept.dto;
 
-import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
+import cn.econets.blossom.framework.common.enums.CommonStatusEnum;
 import lombok.Data;
 
 /**
