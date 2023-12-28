@@ -55,8 +55,6 @@
 
 * JDK 8 + Spring Boot 2.7.17 版本：<https://github.com/EcoNetsTech/econets-vue> 的 `mini-2.x` 分支
 
-如果你想把【完整版】的功能，迁移到【精简版】，可以参考 [《迁移功能到精简版》](https://doc.iocoder.cn/migrate-module/) 文档。
-
 ## 开源协议
 
 **为什么推荐使用本项目？**
@@ -182,9 +180,9 @@
 
 ### 商城系统
 
-![功能图](/.image/common/mall-feature.png)
+![功能图](/.image/mall/mall-feature.png)
 
-![功能图](/.image/common/mall-preview.png)
+![功能图](/.image/mall/mall-preview.png)
 
 _前端基于 crmeb uniapp 经过授权重构，优化代码实现_
 
@@ -205,17 +203,17 @@ _前端基于 crmeb uniapp 经过授权重构，优化代码实现_
 
 | 项目                                                                       | 说明                 |
 |--------------------------------------------------------------------------|--------------------|
-| `econets-dependencies`                                                     | Maven 依赖版本管理       |
-| `econets-framework`                                                        | Java 框架拓展          |
-| `econets-server`                                                           | 管理后台 + 用户 APP 的服务端 |
-| `econets-module-system`                                                    | 系统功能的 Module 模块    |
-| `econets-module-member`                                                    | 会员中心的 Module 模块    |
+| `blossom-dependencies`                                                     | Maven 依赖版本管理       |
+| `blossom-framework`                                                        | Java 框架拓展          |
+| `blossom-server`                                                           | 管理后台 + 用户 APP 的服务端 |
+| `blossom-module-system`                                                    | 系统功能的 Module 模块    |
+| `blossom-module-member`                                                    | 会员中心的 Module 模块    |
 | `blossom-module-infrastructure`                                            | 基础设施的 Module 模块    |
-| `econets-module-bpm`                                                       | 工作流程的 Module 模块    |
-| `econets-module-pay`                                                       | 支付系统的 Module 模块    |
-| `econets-module-mall`                                                      | 商城系统的 Module 模块    |
-| `econets-module-mp`                                                        | 微信公众号的 Module 模块   |
-| `econets-module-report`                                                    | 大屏报表 Module 模块     |
+| `blossom-module-bpm`                                                       | 工作流程的 Module 模块    |
+| `blossom-module-pay`                                                       | 支付系统的 Module 模块    |
+| `blossom-module-mall`                                                      | 商城系统的 Module 模块    |
+| `blossom-module-mp`                                                        | 微信公众号的 Module 模块   |
+| `blossom-module-report`                                                    | 大屏报表 Module 模块     |
 
 ### 框架
 
