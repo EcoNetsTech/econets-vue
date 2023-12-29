@@ -40,6 +40,26 @@
             <groupId>cn.econets.boot</groupId>
             <artifactId>blossom-spring-boot-starter-security</artifactId>
         </dependency>
+        <dependency>
+            <groupId>cn.econets.boot</groupId>
+            <artifactId>blossom-spring-boot-starter-websocket</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>cn.econets.boot</groupId>
+            <artifactId>blossom-spring-boot-starter-job</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>cn.econets.boot</groupId>
+            <artifactId>blossom-spring-boot-starter-excel</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>cn.econets.boot</groupId>
+            <artifactId>blossom-spring-boot-starter-file</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>cn.econets.boot</groupId>
+            <artifactId>blossom-spring-boot-starter-biz-operatelog</artifactId>
+        </dependency>
 
         <!--DB 相关-->
         <dependency>
@@ -74,16 +94,8 @@
         </dependency>
 
         <dependency>
-            <groupId>cn.econets.boot</groupId>
-            <artifactId>blossom-spring-boot-starter-excel</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>cn.econets.boot</groupId>
-            <artifactId>blossom-spring-boot-starter-file</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>cn.econets.boot</groupId>
-            <artifactId>blossom-spring-boot-starter-biz-operatelog</artifactId>
+            <groupId>de.codecentric</groupId>
+            <artifactId>spring-boot-admin-starter-server</artifactId> <!-- 实现 Spring Boot Admin Server 服务端 -->
         </dependency>
 
     </dependencies>

@@ -66,6 +66,10 @@
 
         <dependency>
             <groupId>cn.econets.boot</groupId>
+            <artifactId>blossom-spring-boot-starter-job</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>cn.econets.boot</groupId>
             <artifactId>blossom-spring-boot-starter-excel</artifactId>
         </dependency>
         <dependency>
