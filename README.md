@@ -30,6 +30,7 @@
 | 项目                                                              | Star                                                                                                                                                                                                                                                                                             | 简介                          |
 |-----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
 | [econets-vue](https://github.com/EcoNetsTech/econets-vue)  | [![GitHub stars](https://img.shields.io/github/stars/EcoNetsTech/econets-vue.svg?style=social&label=Stars)](https://github.com/EcoNetsTech/econets-vue)       | 基于 Spring Boot 多模块架构        |
+| [econets-vue-mini](https://github.com/EcoNetsTech/econets-vue-mini)  | [![GitHub stars](https://img.shields.io/github/stars/EcoNetsTech/econets-vue-mini.svg?style=social&label=Stars)](https://github.com/EcoNetsTech/econets-vue-mini)       | 基于 Spring Boot 多模块架构 mini版        |
 
 ### 前端项目
 
@@ -40,20 +41,22 @@
 
 ## 分支说明
 
-### 完整版
-
-【完整版】包括系统功能、基础设施、会员中心、数据报表、工作流程、商城系统、微信公众号、CRM 等功能
-
-* JDK 8 + Spring Boot 2.7.17 版本：<https://github.com/EcoNetsTech/econets-vue> 的 `master` 分支
-* JDK 21 + Spring Boot 3.2.0 版本：<https://github.com/EcoNetsTech/econets-vue> 的 `master-jdk21` 分支
-
-两个分支的功能是一致的，可以放心使用！
 
 ### 精简版
 
 【精简版】只包括系统功能、基础设施功能，不包括会员中心、数据报表、工作流程、商城系统、微信公众号、CRM 等功能
 
-* JDK 8 + Spring Boot 2.7.17 版本：<https://github.com/EcoNetsTech/econets-vue> 的 `mini-2.x` 分支
+* JDK 8 + Spring Boot 2.7.17 版本：<https://github.com/EcoNetsTech/econets-vue-mini > 的 `master/mini-2.x` 分支
+* JDK 21 + Spring Boot 3.2.0 版本：<https://github.com/EcoNetsTech/econets-vue-mini > 的 `mini-3.x` 分支
+
+### 完整版
+
+【完整版】包括系统功能、基础设施、会员中心、数据报表、工作流程、商城系统、微信公众号、CRM 等功能
+
+* JDK 8 + Spring Boot 2.7.17 版本：<https://github.com/EcoNetsTech/econets-vue> 的 `master/2.x` 分支
+* JDK 21 + Spring Boot 3.2.0 版本：<https://github.com/EcoNetsTech/econets-vue> 的 `3.x` 分支
+
+两个分支的功能是一致的，可以放心使用！
 
 ## 开源协议
 
