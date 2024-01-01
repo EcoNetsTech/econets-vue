@@ -20,6 +20,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;
 import javax.validation.Valid;
 import java.util.List;
+import java.util.Set;
 
 import static cn.econets.blossom.framework.common.pojo.CommonResult.success;
 
@@ -62,7 +63,9 @@ public class TenantPackageController {
     @PreAuthorize("@ss.hasPermission('system:tenant-package:query')")
     public CommonResult<TenantPackageRespVO> getTenantPackage(@RequestParam("id") Long id) {
         TenantPackageDO tenantPackage = tenantPackageService.getTenantPackage(id);
-        return success(BeanUtils.toBean(tenantPackage, TenantPackageRespVO.class));
+        TenantPackageRespVO tenantPackageRespVO = BeanUtils.toBean(tenantPackage, TenantPackageRespVO.class);
+        tenantPackageRespVO.setMenuIds(tenantPackageService.getMenuIdsByTenantPackageId(tenantPackage.getId()));
+        return success(tenantPackageRespVO);
     }
 
     @GetMapping("/page")

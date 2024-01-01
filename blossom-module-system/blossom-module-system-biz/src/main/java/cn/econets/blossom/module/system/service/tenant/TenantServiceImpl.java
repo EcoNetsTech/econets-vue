@@ -138,7 +138,8 @@ public class TenantServiceImpl implements TenantService {
         reqVO.setRemark("系统自动生成");
         Long roleId = roleService.createRole(reqVO, RoleTypeEnum.SYSTEM.getType());
         // 分配权限
-        permissionService.assignRoleMenu(roleId, tenantPackage.getMenuIds());
+        Set<Long> menuIds = tenantPackageService.getMenuIdsByTenantPackageId(tenantPackage.getId());
+        permissionService.assignRoleMenu(roleId, menuIds);
         return roleId;
     }
 
@@ -159,7 +160,8 @@ public class TenantServiceImpl implements TenantService {
         tenantMapper.updateById(updateObj);
         // 如果套餐发生变化，则修改其角色的权限
         if (ObjectUtil.notEqual(tenant.getPackageId(), updateReqVO.getPackageId())) {
-            updateTenantRoleMenu(tenant.getId(), tenantPackage.getMenuIds());
+            Set<Long> menuIds = tenantPackageService.getMenuIdsByTenantPackageId(tenantPackage.getId());
+            updateTenantRoleMenu(tenant.getId(), menuIds);
         }
     }
 
@@ -293,7 +295,8 @@ public class TenantServiceImpl implements TenantService {
         if (isSystemTenant(tenant)) { // 系统租户，菜单是全量的
             menuIds = CollectionUtils.convertSet(menuService.getMenuList(), MenuDO::getId);
         } else {
-            menuIds = tenantPackageService.getTenantPackage(tenant.getPackageId()).getMenuIds();
+//            menuIds = tenantPackageService.getTenantPackage(tenant.getPackageId()).getMenuIds();
+            menuIds = tenantPackageService.getMenuIdsByTenantPackageId(tenant.getPackageId());
         }
         // 执行处理器
         handler.handle(menuIds);

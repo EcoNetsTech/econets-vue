@@ -5,6 +5,7 @@ server:
 spring:
   config:
     import: optional:file:.env/db.properties
+
   # 数据源配置项
   autoconfigure:
     exclude:
