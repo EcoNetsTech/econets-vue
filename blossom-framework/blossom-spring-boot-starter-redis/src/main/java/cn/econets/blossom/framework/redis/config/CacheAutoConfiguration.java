@@ -43,7 +43,7 @@ public class CacheAutoConfiguration {
         });
         // 设置使用 JSON 序列化方式
         config = config.serializeValuesWith(
-                RedisSerializationContext.SerializationPair.fromSerializer(RedisAutoConfiguration.buildRedisSerializer()));
+                RedisSerializationContext.SerializationPair.fromSerializer(BlossomRedisAutoConfiguration.buildRedisSerializer()));
 
         // 设置 CacheProperties.Redis 的属性
         CacheProperties.Redis redisProperties = cacheProperties.getRedis();

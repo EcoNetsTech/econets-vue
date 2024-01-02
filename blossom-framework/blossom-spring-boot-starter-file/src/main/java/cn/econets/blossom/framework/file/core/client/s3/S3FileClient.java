@@ -88,6 +88,12 @@ public class S3FileClient extends AbstractFileClient<S3FileClientConfig> {
 
     @Override
     public String upload(byte[] content, String path, String type) throws Exception {
+
+        // 文件主路径
+        if (StrUtil.isNotEmpty(config.getHostFolder())){
+            path = config.getHostFolder() + "/" + path;
+        }
+
         // 执行上传
         client.putObject(PutObjectArgs.builder()
                 .bucket(config.getBucket()) // bucket 必须传递
