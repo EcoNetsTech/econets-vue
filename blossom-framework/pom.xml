@@ -38,6 +38,7 @@
         <module>blossom-spring-boot-starter-captcha</module>
         <module>blossom-spring-boot-starter-websocket</module>
         <module>blossom-spring-boot-starter-job</module>
+        <module>blossom-spring-boot-starter-desensitize</module>
 
         <module>blossom-spring-boot-starter-biz-dict</module>
         <module>blossom-spring-boot-starter-biz-error-code</module>
