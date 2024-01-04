@@ -28,10 +28,9 @@
         </dependency>
 
         <!-- 业务组件 -->
-        <!-- 需要使用它，进行 Token 的校验 -->
         <dependency>
             <groupId>cn.econets.boot</groupId>
-            <artifactId>blossom-module-system-api</artifactId>
+            <artifactId>blossom-module-system-api</artifactId>  <!-- 需要使用它，进行 Token 的校验 -->
             <version>${revision}</version>
         </dependency>
 

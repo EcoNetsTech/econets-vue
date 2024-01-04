@@ -197,6 +197,11 @@
             </dependency>
             <dependency>
                 <groupId>cn.econets.boot</groupId>
+                <artifactId>blossom-spring-boot-starter-biz-pay</artifactId>
+                <version>${revision}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.econets.boot</groupId>
                 <artifactId>blossom-spring-boot-starter-biz-sms</artifactId>
                 <version>${revision}</version>
             </dependency>

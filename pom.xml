@@ -21,6 +21,7 @@
         <module>blossom-module-system</module>
         <!-- module 拓展 非必要-->
         <module>blossom-module-bpm</module>
+        <module>blossom-module-pay</module>
     </modules>
 
     <properties>
