@@ -1,5 +1,5 @@
-cn.econets.blossom.framework.web.apilog.config.ApiLogAutoConfiguration
-cn.econets.blossom.framework.web.jackson.config.JacksonAutoConfiguration
-cn.econets.blossom.framework.web.swagger.SwaggerAutoConfiguration
-cn.econets.blossom.framework.web.web.config.WebAutoConfiguration
-cn.econets.blossom.framework.web.xss.config.XssAutoConfiguration
+cn.econets.blossom.framework.apilog.config.ApiLogAutoConfiguration
+cn.econets.blossom.framework.jackson.config.JacksonAutoConfiguration
+cn.econets.blossom.framework.swagger.SwaggerAutoConfiguration
+cn.econets.blossom.framework.web.config.WebAutoConfiguration
+cn.econets.blossom.framework.xss.config.XssAutoConfiguration

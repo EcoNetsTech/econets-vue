@@ -1,7 +1,7 @@
 package cn.econets.blossom.framework.security.core.util;
 
 import cn.econets.blossom.framework.security.core.LoginUser;
-import cn.econets.blossom.framework.web.web.core.WebFrameworkUtils;
+import cn.econets.blossom.framework.web.core.WebFrameworkUtils;
 import cn.hutool.core.util.StrUtil;
 import org.springframework.lang.Nullable;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

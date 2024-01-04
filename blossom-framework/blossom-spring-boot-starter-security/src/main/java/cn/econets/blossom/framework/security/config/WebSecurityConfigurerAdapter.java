@@ -1,7 +1,7 @@
 package cn.econets.blossom.framework.security.config;
 
 import cn.econets.blossom.framework.security.core.filter.TokenAuthenticationFilter;
-import cn.econets.blossom.framework.web.web.config.WebProperties;
+import cn.econets.blossom.framework.web.config.WebProperties;
 import cn.hutool.core.collection.CollUtil;
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;

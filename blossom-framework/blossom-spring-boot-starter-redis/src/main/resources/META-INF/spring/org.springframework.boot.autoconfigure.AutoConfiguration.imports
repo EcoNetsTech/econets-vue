@@ -1,2 +1,2 @@
 cn.econets.blossom.framework.redis.config.CacheAutoConfiguration
-cn.econets.blossom.framework.redis.config.RedisAutoConfiguration
+cn.econets.blossom.framework.redis.config.BlossomRedisAutoConfiguration

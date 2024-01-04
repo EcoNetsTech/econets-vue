@@ -16,9 +16,11 @@
         <module>blossom-framework</module>
         <!-- Server 主项目 -->
         <module>blossom-server</module>
-        <!-- module 拓展 -->
+        <!-- module 拓展 必要-->
         <module>blossom-module-infrastructure</module>
         <module>blossom-module-system</module>
+        <!-- module 拓展 非必要-->
+        <module>blossom-module-bpm</module>
     </modules>
 
     <properties>

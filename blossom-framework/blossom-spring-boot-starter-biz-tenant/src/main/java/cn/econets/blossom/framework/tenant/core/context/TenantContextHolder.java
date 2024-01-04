@@ -1,5 +1,6 @@
 package cn.econets.blossom.framework.tenant.core.context;
 
+import cn.hutool.core.util.StrUtil;
 import com.alibaba.ttl.TransmittableThreadLocal;
 
 /**
@@ -25,6 +26,16 @@ public class TenantContextHolder {
      */
     public static Long getTenantId() {
         return TENANT_ID.get();
+    }
+
+    /**
+     * 获得租户编号 String
+     *
+     * @return 租户编号
+     */
+    public static String getTenantIdStr() {
+        Long tenantId = getTenantId();
+        return StrUtil.toStringOrNull(tenantId);
     }
 
     /**

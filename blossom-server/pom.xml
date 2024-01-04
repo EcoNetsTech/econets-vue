@@ -20,13 +20,7 @@
     </description>
 
     <dependencies>
-        <!-- spring boot 配置所需依赖 -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-configuration-processor</artifactId>
-            <optional>true</optional>
-        </dependency>
-
+        <!-- 必要依赖 -->
         <dependency>
             <groupId>cn.econets.boot</groupId>
             <artifactId>blossom-module-infrastructure-biz</artifactId>
@@ -38,13 +32,23 @@
             <version>${revision}</version>
         </dependency>
 
+        <!-- 非必要依赖 -->
         <dependency>
             <groupId>cn.econets.boot</groupId>
-            <artifactId>blossom-spring-boot-starter-banner</artifactId>
+            <artifactId>blossom-module-bpm-biz</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
+
+        <!-- spring boot 配置所需依赖 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>cn.econets.boot</groupId>
-            <artifactId>blossom-spring-boot-starter-monitor</artifactId>
+            <artifactId>blossom-spring-boot-starter-banner</artifactId>
         </dependency>
 
         <!-- Test 测试相关 -->

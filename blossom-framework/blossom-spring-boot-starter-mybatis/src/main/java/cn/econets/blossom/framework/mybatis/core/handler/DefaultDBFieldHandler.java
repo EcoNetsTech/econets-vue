@@ -1,7 +1,7 @@
 package cn.econets.blossom.framework.mybatis.core.handler;
 
 import cn.econets.blossom.framework.mybatis.core.dataobject.BaseDO;
-import cn.econets.blossom.framework.web.web.core.WebFrameworkUtils;
+import cn.econets.blossom.framework.web.core.WebFrameworkUtils;
 import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
 import org.apache.ibatis.reflection.MetaObject;
 
