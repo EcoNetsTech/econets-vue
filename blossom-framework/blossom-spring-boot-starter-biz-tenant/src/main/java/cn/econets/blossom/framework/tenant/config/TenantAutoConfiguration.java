@@ -13,8 +13,8 @@ import cn.econets.blossom.framework.tenant.core.security.TenantSecurityWebFilter
 import cn.econets.blossom.framework.tenant.core.service.TenantFrameworkService;
 import cn.econets.blossom.framework.tenant.core.service.TenantFrameworkServiceImpl;
 import cn.econets.blossom.framework.tenant.core.web.TenantContextWebFilter;
-import cn.econets.blossom.framework.web.web.config.WebProperties;
-import cn.econets.blossom.framework.web.web.core.handler.GlobalExceptionHandler;
+import cn.econets.blossom.framework.web.config.WebProperties;
+import cn.econets.blossom.framework.web.core.handler.GlobalExceptionHandler;
 import cn.econets.blossom.module.system.api.tenant.TenantApi;
 import com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.inner.TenantLineInnerInterceptor;

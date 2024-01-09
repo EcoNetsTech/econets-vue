@@ -4,7 +4,7 @@ import cn.econets.blossom.framework.mq.redis.core.RedisMQTemplate;
 import cn.econets.blossom.framework.mq.redis.core.job.RedisPendingMessageResendJob;
 import cn.econets.blossom.framework.mq.redis.core.pubsub.AbstractRedisChannelMessageListener;
 import cn.econets.blossom.framework.mq.redis.core.stream.AbstractRedisStreamMessageListener;
-import cn.econets.blossom.framework.redis.config.RedisAutoConfiguration;
+import cn.econets.blossom.framework.redis.config.BlossomRedisAutoConfiguration;
 import cn.hutool.core.map.MapUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.system.SystemUtil;
@@ -35,7 +35,7 @@ import java.util.Properties;
  */
 @Slf4j
 @EnableScheduling // 启用定时任务，用于 RedisPendingMessageResendJob 重发消息
-@AutoConfiguration(after = RedisAutoConfiguration.class)
+@AutoConfiguration(after = BlossomRedisAutoConfiguration.class)
 public class RedisMQConsumerAutoConfiguration {
 
     /**

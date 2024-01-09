@@ -7,7 +7,7 @@ import cn.econets.blossom.framework.security.core.handler.AccessDeniedHandlerImp
 import cn.econets.blossom.framework.security.core.handler.AuthenticationEntryPointImpl;
 import cn.econets.blossom.framework.security.core.service.SecurityFrameworkService;
 import cn.econets.blossom.framework.security.core.service.SecurityFrameworkServiceImpl;
-import cn.econets.blossom.framework.web.web.core.handler.GlobalExceptionHandler;
+import cn.econets.blossom.framework.web.core.handler.GlobalExceptionHandler;
 import cn.econets.blossom.module.system.api.oauth2.OAuth2TokenApi;
 import cn.econets.blossom.module.system.api.permission.PermissionApi;
 import org.springframework.beans.factory.config.MethodInvokingFactoryBean;

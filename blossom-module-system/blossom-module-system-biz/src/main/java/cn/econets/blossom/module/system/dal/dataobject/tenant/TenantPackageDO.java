@@ -42,10 +42,5 @@ public class TenantPackageDO extends BaseDO {
      * 备注
      */
     private String remark;
-    /**
-     * 关联的菜单编号
-     */
-    @TableField(typeHandler = JsonLongSetTypeHandler.class)
-    private Set<Long> menuIds;
 
 }

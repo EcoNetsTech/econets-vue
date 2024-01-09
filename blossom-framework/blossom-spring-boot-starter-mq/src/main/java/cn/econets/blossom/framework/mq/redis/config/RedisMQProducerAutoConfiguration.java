@@ -2,7 +2,7 @@ package cn.econets.blossom.framework.mq.redis.config;
 
 import cn.econets.blossom.framework.mq.redis.core.RedisMQTemplate;
 import cn.econets.blossom.framework.mq.redis.core.interceptor.RedisMessageInterceptor;
-import cn.econets.blossom.framework.redis.config.RedisAutoConfiguration;
+import cn.econets.blossom.framework.redis.config.BlossomRedisAutoConfiguration;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.context.annotation.Bean;
@@ -15,7 +15,7 @@ import java.util.List;
  *
  */
 @Slf4j
-@AutoConfiguration(after = RedisAutoConfiguration.class)
+@AutoConfiguration(after = BlossomRedisAutoConfiguration.class)
 public class RedisMQProducerAutoConfiguration {
 
     @Bean

@@ -3,7 +3,7 @@ package cn.econets.blossom.framework.tenant.core.mq.redis;
 import cn.econets.blossom.framework.mq.redis.core.interceptor.RedisMessageInterceptor;
 import cn.econets.blossom.framework.mq.redis.core.message.AbstractRedisMessage;
 import cn.econets.blossom.framework.tenant.core.context.TenantContextHolder;
-import cn.econets.blossom.framework.web.web.core.WebFrameworkUtils;
+import cn.econets.blossom.framework.web.core.WebFrameworkUtils;
 import cn.hutool.core.util.StrUtil;
 
 /**

@@ -5,6 +5,7 @@ server:
 spring:
   config:
     import: optional:file:.env/db.properties
+
   # 数据源配置项
   autoconfigure:
     exclude:
@@ -95,8 +96,23 @@ spring:
     jdbc: # 使用 JDBC 的 JobStore 的时候，JDBC 的配置
       initialize-schema: NEVER # 是否自动使用 SQL 初始化 Quartz 表结构。这里设置成 never ，我们手动创建表结构。
 
---- #################### 服务保障相关配置 ####################
+--- #################### 消息队列相关 ####################
+# rocketmq 配置项，对应 RocketMQProperties 配置类
+rocketmq:
+  name-server: 127.0.0.1:9876 # RocketMQ Namesrv
 
+spring:
+  # RabbitMQ 配置项，对应 RabbitProperties 配置类
+  rabbitmq:
+    host: 127.0.0.1 # RabbitMQ 服务的地址
+    port: 5672 # RabbitMQ 服务的端口
+    username: guest # RabbitMQ 服务的账号
+    password: guest # RabbitMQ 服务的密码
+  # Kafka 配置项，对应 KafkaProperties 配置类
+  kafka:
+    bootstrap-servers: 127.0.0.1:9092 # 指定 Kafka Broker 地址，可以设置多个，以逗号分隔
+
+--- #################### 服务保障相关配置 ####################
 # Lock4j 配置项
 lock4j:
   acquire-timeout: 3000 # 获取分布式锁超时时间，默认为 3000 毫秒
@@ -133,12 +149,12 @@ logging:
   level:
     # 配置自己写的 MyBatis Mapper 打印日志
     cn.econets.blossom.module.bpm.dal.mysql: debug
-    cn.econets.blossom.module.infra.dal.mysql: debug
-    cn.econets.blossom.module.infra.dal.mysql.job.JobLogMapper: INFO # 配置 JobLogMapper 的日志级别为 info
-    cn.econets.blossom.module.infra.dal.mysql.file.FileConfigMapper: INFO # 配置 FileConfigMapper 的日志级别为 info
+    cn.econets.blossom.module.infrastructure.dal.mysql: debug
+    cn.econets.blossom.module.infrastructure.dal.mapper.job.JobLogMapper: INFO # 配置 JobLogMapper 的日志级别为 info
+    cn.econets.blossom.module.infrastructure.dal.mapper.file.FileConfigMapper: INFO # 配置 FileConfigMapper 的日志级别为 info
     cn.econets.blossom.module.system.dal.mysql: debug
-    cn.econets.blossom.module.system.dal.mysql.sensitiveword.SensitiveWordMapper: INFO # 配置 SensitiveWordMapper 的日志级别为 info
-    cn.econets.blossom.module.system.dal.mysql.sms.SmsChannelMapper: INFO # 配置 SmsChannelMapper 的日志级别为 info
+    cn.econets.blossom.module.system.dal.mapper.sensitiveword.SensitiveWordMapper: INFO # 配置 SensitiveWordMapper 的日志级别为 info
+    cn.econets.blossom.module.system.dal.mapper.sms.SmsChannelMapper: INFO # 配置 SmsChannelMapper 的日志级别为 info
     cn.econets.blossom.module.tool.dal.mysql: debug
 
 debug: false
@@ -170,6 +186,19 @@ application:
     enable: true
   security:
     mock-enable: true
+  websocket:
+    enable: true # websocket的开关
+    path: /infra/ws # 路径
+    sender-type: local # 消息发送的类型，可选值为 local、redis、rocketmq、kafka、rabbitmq
+    sender-rocketmq:
+      topic: ${spring.application.name}-websocket # 消息发送的 RocketMQ Topic
+      consumer-group: ${spring.application.name}-websocket-consumer # 消息发送的 RocketMQ Consumer Group
+    sender-rabbitmq:
+      exchange: ${spring.application.name}-websocket-exchange # 消息发送的 RabbitMQ Exchange
+      queue: ${spring.application.name}-websocket-queue # 消息发送的 RabbitMQ Queue
+    sender-kafka:
+      topic: ${spring.application.name}-websocket # 消息发送的 Kafka Topic
+      consumer-group: ${spring.application.name}-websocket-consumer # 消息发送的 Kafka Consumer Group
   xss:
     enable: false
     exclude-urls: # 如下两个 url，仅仅是为了演示，去掉配置也没关系

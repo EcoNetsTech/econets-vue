@@ -1,6 +1,6 @@
 package cn.econets.blossom.module.system.framework.web.config;
 
-import cn.econets.blossom.framework.web.swagger.SwaggerAutoConfiguration;
+import cn.econets.blossom.framework.swagger.SwaggerAutoConfiguration;
 import org.springdoc.core.GroupedOpenApi;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

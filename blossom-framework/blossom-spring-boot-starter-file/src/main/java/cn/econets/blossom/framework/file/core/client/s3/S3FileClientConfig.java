@@ -47,6 +47,12 @@ public class S3FileClientConfig implements FileClientConfig {
     private String bucket;
 
     /**
+     * 文件主路径 hostFolder
+     */
+    @NotNull(message = "hostFolder 不能为空")
+    private String hostFolder;
+
+    /**
      * 访问 Key
      * 1. MinIO：https://www.econets.cn/Spring-Boot/MinIO
      * 2. 阿里云：https://ram.console.aliyun.com/manage/ak

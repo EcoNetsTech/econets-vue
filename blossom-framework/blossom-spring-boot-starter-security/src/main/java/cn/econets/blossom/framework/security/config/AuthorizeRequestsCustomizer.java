@@ -1,6 +1,6 @@
 package cn.econets.blossom.framework.security.config;
 
-import cn.econets.blossom.framework.web.web.config.WebProperties;
+import cn.econets.blossom.framework.web.config.WebProperties;
 import org.springframework.core.Ordered;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;

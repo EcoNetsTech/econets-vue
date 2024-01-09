@@ -29,18 +29,25 @@
         <module>blossom-spring-boot-starter-mybatis</module>
         <module>blossom-spring-boot-starter-redis</module>
         <module>blossom-spring-boot-starter-security</module>
+        <module>blossom-spring-boot-starter-test</module>
 
         <module>blossom-spring-boot-starter-monitor</module>
         <module>blossom-spring-boot-starter-excel</module>
         <module>blossom-spring-boot-starter-mq</module>
         <module>blossom-spring-boot-starter-file</module>
         <module>blossom-spring-boot-starter-captcha</module>
+        <module>blossom-spring-boot-starter-websocket</module>
+        <module>blossom-spring-boot-starter-job</module>
+        <module>blossom-spring-boot-starter-desensitize</module>
+        <module>blossom-spring-boot-starter-flowable</module>
 
         <module>blossom-spring-boot-starter-biz-dict</module>
+        <module>blossom-spring-boot-starter-biz-error-code</module>
         <module>blossom-spring-boot-starter-biz-tenant</module>
         <module>blossom-spring-boot-starter-biz-data-permission</module>
         <module>blossom-spring-boot-starter-biz-operatelog</module>
         <module>blossom-spring-boot-starter-biz-sms</module>
         <module>blossom-spring-boot-starter-biz-ip</module>
+        <module>blossom-spring-boot-starter-biz-pay</module>
     </modules>
 </project>

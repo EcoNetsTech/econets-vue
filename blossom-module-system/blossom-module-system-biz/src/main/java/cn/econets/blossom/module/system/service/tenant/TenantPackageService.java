@@ -7,6 +7,7 @@ import cn.econets.blossom.module.system.dal.dataobject.tenant.TenantPackageDO;
 
 import javax.validation.Valid;
 import java.util.List;
+import java.util.Set;
 
 /**
  * 租户套餐 Service 接口
@@ -68,5 +69,13 @@ public interface TenantPackageService {
      * @return 租户套餐
      */
     List<TenantPackageDO> getTenantPackageListByStatus(Integer status);
+
+    /**
+     * 获得租户菜单ids
+     *
+     * @param id 编号
+     * @return 菜单ids
+     */
+    Set<Long> getMenuIdsByTenantPackageId(Long id);
 
 }

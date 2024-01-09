@@ -22,11 +22,10 @@
         </dependency>
 
         <!-- 业务组件 -->
-        <!-- 如果希望使用 @DictFormat 注解，需要引入该依赖 -->
         <dependency>
             <groupId>cn.econets.boot</groupId>
             <artifactId>blossom-spring-boot-starter-biz-dict</artifactId>
-            <optional>true</optional>
+            <optional>true</optional>   <!-- 如果希望使用 @DictFormat 注解，需要引入该依赖 -->
         </dependency>
 
         <!-- Web 相关 -->

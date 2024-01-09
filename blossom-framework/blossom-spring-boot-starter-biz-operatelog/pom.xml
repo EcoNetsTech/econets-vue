@@ -24,7 +24,7 @@
         <dependency>
             <groupId>cn.econets.boot</groupId>
             <artifactId>blossom-module-system-api</artifactId>
-            <version>1.0.1</version>
+            <version>${revision}</version>
         </dependency>
 
         <!-- Spring 核心 -->
