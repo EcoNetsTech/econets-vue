@@ -5,7 +5,7 @@ import cn.econets.blossom.module.system.controller.admin.mail.vo.log.MailLogPage
 import cn.econets.blossom.module.system.dal.dataobject.mail.MailAccountDO;
 import cn.econets.blossom.module.system.dal.dataobject.mail.MailLogDO;
 import cn.econets.blossom.module.system.dal.dataobject.mail.MailTemplateDO;
-import cn.econets.blossom.module.system.dal.mapper.mail.MailLogMapper;
+import cn.econets.blossom.module.system.dal.mysql.mail.MailLogMapper;
 import cn.econets.blossom.module.system.enums.mail.MailSendStatusEnum;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;

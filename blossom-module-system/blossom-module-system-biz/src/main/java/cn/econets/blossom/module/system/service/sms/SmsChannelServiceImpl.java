@@ -8,7 +8,7 @@ import cn.econets.blossom.framework.sms.core.client.SmsClientFactory;
 import cn.econets.blossom.framework.sms.core.property.SmsChannelProperties;
 import cn.econets.blossom.module.system.controller.admin.sms.vo.channel.SmsChannelPageReqVO;
 import cn.econets.blossom.module.system.controller.admin.sms.vo.channel.SmsChannelSaveReqVO;
-import cn.econets.blossom.module.system.dal.mapper.sms.SmsChannelMapper;
+import cn.econets.blossom.module.system.dal.mysql.sms.SmsChannelMapper;
 import cn.econets.blossom.module.system.dal.dataobject.sms.SmsChannelDO;
 import cn.econets.blossom.module.system.enums.ErrorCodeConstants;
 import cn.hutool.core.util.StrUtil;

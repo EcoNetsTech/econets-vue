@@ -7,7 +7,7 @@ import cn.econets.blossom.framework.common.util.object.BeanUtils;
 import cn.econets.blossom.module.system.controller.admin.notify.vo.template.NotifyTemplatePageReqVO;
 import cn.econets.blossom.module.system.controller.admin.notify.vo.template.NotifyTemplateSaveReqVO;
 import cn.econets.blossom.module.system.dal.dataobject.notify.NotifyTemplateDO;
-import cn.econets.blossom.module.system.dal.mapper.notify.NotifyTemplateMapper;
+import cn.econets.blossom.module.system.dal.mysql.notify.NotifyTemplateMapper;
 import cn.econets.blossom.module.system.dal.redis.RedisKeyConstants;
 import com.google.common.annotations.VisibleForTesting;
 import lombok.extern.slf4j.Slf4j;

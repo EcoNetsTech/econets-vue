@@ -5,7 +5,7 @@ import cn.econets.blossom.framework.common.util.object.BeanUtils;
 import cn.econets.blossom.module.system.controller.admin.notice.vo.NoticePageReqVO;
 import cn.econets.blossom.module.system.controller.admin.notice.vo.NoticeSaveReqVO;
 import cn.econets.blossom.module.system.dal.dataobject.notice.NoticeDO;
-import cn.econets.blossom.module.system.dal.mapper.notice.NoticeMapper;
+import cn.econets.blossom.module.system.dal.mysql.notice.NoticeMapper;
 import com.google.common.annotations.VisibleForTesting;
 import org.springframework.stereotype.Service;
 

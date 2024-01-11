@@ -5,7 +5,7 @@ import cn.econets.blossom.framework.common.util.object.BeanUtils;
 import cn.econets.blossom.module.system.controller.admin.mail.vo.account.MailAccountPageReqVO;
 import cn.econets.blossom.module.system.controller.admin.mail.vo.account.MailAccountSaveReqVO;
 import cn.econets.blossom.module.system.dal.dataobject.mail.MailAccountDO;
-import cn.econets.blossom.module.system.dal.mapper.mail.MailAccountMapper;
+import cn.econets.blossom.module.system.dal.mysql.mail.MailAccountMapper;
 import cn.econets.blossom.module.system.dal.redis.RedisKeyConstants;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cache.annotation.CacheEvict;

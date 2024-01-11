@@ -11,7 +11,7 @@ import cn.econets.blossom.framework.file.core.enums.FileStorageEnum;
 import cn.econets.blossom.module.infrastructure.controller.admin.file.vo.config.FileConfigPageReqVO;
 import cn.econets.blossom.module.infrastructure.controller.admin.file.vo.config.FileConfigSaveReqVO;
 import cn.econets.blossom.module.infrastructure.convert.file.FileConfigConvert;
-import cn.econets.blossom.module.infrastructure.dal.mapper.file.FileConfigMapper;
+import cn.econets.blossom.module.infrastructure.dal.mysql.file.FileConfigMapper;
 import cn.econets.blossom.module.infrastructure.dal.dataobject.file.FileConfigDO;
 import cn.hutool.core.io.resource.ResourceUtil;
 import cn.hutool.core.util.IdUtil;

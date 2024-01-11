@@ -6,7 +6,7 @@ import cn.econets.blossom.framework.common.util.collection.CollectionUtils;
 import cn.econets.blossom.framework.common.util.object.BeanUtils;
 import cn.econets.blossom.module.system.controller.admin.permission.vo.role.RolePageReqVO;
 import cn.econets.blossom.module.system.controller.admin.permission.vo.role.RoleSaveReqVO;
-import cn.econets.blossom.module.system.dal.mapper.permission.RoleMapper;
+import cn.econets.blossom.module.system.dal.mysql.permission.RoleMapper;
 import cn.econets.blossom.module.system.dal.dataobject.permission.RoleDO;
 import cn.econets.blossom.module.system.dal.redis.RedisKeyConstants;
 import cn.econets.blossom.module.system.enums.ErrorCodeConstants;

@@ -6,7 +6,7 @@ import cn.econets.blossom.framework.common.util.object.BeanUtils;
 import cn.econets.blossom.framework.permission.core.annotation.DataPermission;
 import cn.econets.blossom.module.system.controller.admin.dept.vo.dept.DeptListReqVO;
 import cn.econets.blossom.module.system.controller.admin.dept.vo.dept.DeptSaveReqVO;
-import cn.econets.blossom.module.system.dal.mapper.dept.DeptMapper;
+import cn.econets.blossom.module.system.dal.mysql.dept.DeptMapper;
 import cn.econets.blossom.module.system.dal.dataobject.dept.DeptDO;
 import cn.econets.blossom.module.system.dal.redis.RedisKeyConstants;
 import cn.hutool.core.collection.CollUtil;

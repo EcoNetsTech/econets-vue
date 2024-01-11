@@ -4,7 +4,7 @@ import cn.econets.blossom.framework.common.util.date.DateUtils;
 import cn.econets.blossom.module.system.api.sms.dto.code.SmsCodeSendReqDTO;
 import cn.econets.blossom.module.system.api.sms.dto.code.SmsCodeUseReqDTO;
 import cn.econets.blossom.module.system.api.sms.dto.code.SmsCodeValidateReqDTO;
-import cn.econets.blossom.module.system.dal.mapper.sms.SmsCodeMapper;
+import cn.econets.blossom.module.system.dal.mysql.sms.SmsCodeMapper;
 import cn.econets.blossom.module.system.dal.dataobject.sms.SmsCodeDO;
 import cn.econets.blossom.module.system.enums.ErrorCodeConstants;
 import cn.econets.blossom.module.system.enums.sms.SmsSceneEnum;

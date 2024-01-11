@@ -10,8 +10,8 @@ import cn.econets.blossom.module.infrastructure.controller.admin.codegen.vo.tabl
 import cn.econets.blossom.module.infrastructure.controller.admin.codegen.vo.table.DatabaseTableRespVO;
 import cn.econets.blossom.module.infrastructure.dal.dataobject.codegen.CodegenColumnDO;
 import cn.econets.blossom.module.infrastructure.dal.dataobject.codegen.CodegenTableDO;
-import cn.econets.blossom.module.infrastructure.dal.mapper.codegen.CodegenColumnMapper;
-import cn.econets.blossom.module.infrastructure.dal.mapper.codegen.CodegenTableMapper;
+import cn.econets.blossom.module.infrastructure.dal.mysql.codegen.CodegenColumnMapper;
+import cn.econets.blossom.module.infrastructure.dal.mysql.codegen.CodegenTableMapper;
 import cn.econets.blossom.module.infrastructure.enums.codegen.CodegenSceneEnum;
 import cn.econets.blossom.module.infrastructure.enums.codegen.CodegenTemplateTypeEnum;
 import cn.econets.blossom.module.infrastructure.framework.codegen.config.CodegenProperties;

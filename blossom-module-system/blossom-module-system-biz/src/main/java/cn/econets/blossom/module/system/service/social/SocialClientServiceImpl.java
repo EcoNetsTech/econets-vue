@@ -12,7 +12,7 @@ import cn.econets.blossom.framework.common.util.json.JsonUtils;
 import cn.econets.blossom.framework.common.util.object.BeanUtils;
 import cn.econets.blossom.module.system.controller.admin.socail.vo.client.SocialClientPageReqVO;
 import cn.econets.blossom.module.system.controller.admin.socail.vo.client.SocialClientSaveReqVO;
-import cn.econets.blossom.module.system.dal.mapper.social.SocialClientMapper;
+import cn.econets.blossom.module.system.dal.mysql.social.SocialClientMapper;
 import cn.econets.blossom.module.system.dal.dataobject.social.SocialClientDO;
 import cn.econets.blossom.module.system.enums.ErrorCodeConstants;
 import cn.econets.blossom.module.system.enums.social.SocialTypeEnum;

@@ -8,9 +8,9 @@ import cn.econets.blossom.module.infrastructure.controller.admin.demo.demo03.vo.
 import cn.econets.blossom.module.infrastructure.dal.dataobject.demo.demo03.Demo03CourseDO;
 import cn.econets.blossom.module.infrastructure.dal.dataobject.demo.demo03.Demo03GradeDO;
 import cn.econets.blossom.module.infrastructure.dal.dataobject.demo.demo03.Demo03StudentDO;
-import cn.econets.blossom.module.infrastructure.dal.mapper.demo.demo03.Demo03CourseMapper;
-import cn.econets.blossom.module.infrastructure.dal.mapper.demo.demo03.Demo03GradeMapper;
-import cn.econets.blossom.module.infrastructure.dal.mapper.demo.demo03.Demo03StudentMapper;
+import cn.econets.blossom.module.infrastructure.dal.mysql.demo.demo03.Demo03CourseMapper;
+import cn.econets.blossom.module.infrastructure.dal.mysql.demo.demo03.Demo03GradeMapper;
+import cn.econets.blossom.module.infrastructure.dal.mysql.demo.demo03.Demo03StudentMapper;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;

@@ -8,7 +8,7 @@ import cn.econets.blossom.framework.common.util.object.BeanUtils;
 import cn.econets.blossom.module.system.controller.admin.mail.vo.template.MailTemplatePageReqVO;
 import cn.econets.blossom.module.system.controller.admin.mail.vo.template.MailTemplateSaveReqVO;
 import cn.econets.blossom.module.system.dal.dataobject.mail.MailTemplateDO;
-import cn.econets.blossom.module.system.dal.mapper.mail.MailTemplateMapper;
+import cn.econets.blossom.module.system.dal.mysql.mail.MailTemplateMapper;
 import cn.econets.blossom.module.system.dal.redis.RedisKeyConstants;
 import com.google.common.annotations.VisibleForTesting;
 import lombok.extern.slf4j.Slf4j;

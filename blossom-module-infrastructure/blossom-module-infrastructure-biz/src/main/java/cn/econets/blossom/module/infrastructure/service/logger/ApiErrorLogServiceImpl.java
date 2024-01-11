@@ -5,7 +5,7 @@ import cn.econets.blossom.framework.common.pojo.PageResult;
 import cn.econets.blossom.framework.common.util.object.BeanUtils;
 import cn.econets.blossom.module.infrastructure.api.logger.dto.ApiErrorLogCreateReqDTO;
 import cn.econets.blossom.module.infrastructure.controller.admin.logger.vo.apierrorlog.ApiErrorLogPageReqVO;
-import cn.econets.blossom.module.infrastructure.dal.mapper.logger.ApiErrorLogMapper;
+import cn.econets.blossom.module.infrastructure.dal.mysql.logger.ApiErrorLogMapper;
 import cn.econets.blossom.module.infrastructure.dal.dataobject.logger.ApiErrorLogDO;
 import cn.econets.blossom.module.infrastructure.enums.ErrorCodeConstants;
 import cn.econets.blossom.module.infrastructure.enums.logger.ApiErrorLogProcessStatusEnum;

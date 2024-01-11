@@ -8,7 +8,7 @@ import cn.econets.blossom.module.system.api.errorcode.dto.ErrorCodeRespDTO;
 import cn.econets.blossom.module.system.controller.admin.errorcode.vo.ErrorCodePageReqVO;
 import cn.econets.blossom.module.system.controller.admin.errorcode.vo.ErrorCodeSaveReqVO;
 import cn.econets.blossom.module.system.dal.dataobject.errorcode.ErrorCodeDO;
-import cn.econets.blossom.module.system.dal.mapper.errorcode.ErrorCodeMapper;
+import cn.econets.blossom.module.system.dal.mysql.errorcode.ErrorCodeMapper;
 import cn.econets.blossom.module.system.enums.ErrorCodeConstants;
 import cn.econets.blossom.module.system.enums.errorcode.ErrorCodeTypeEnum;
 import cn.hutool.core.collection.CollUtil;

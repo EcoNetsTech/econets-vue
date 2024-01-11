@@ -13,8 +13,8 @@ import cn.econets.blossom.module.system.controller.admin.user.vo.user.UserImport
 import cn.econets.blossom.module.system.controller.admin.user.vo.user.UserImportRespVO;
 import cn.econets.blossom.module.system.controller.admin.user.vo.user.UserPageReqVO;
 import cn.econets.blossom.module.system.controller.admin.user.vo.user.UserSaveReqVO;
-import cn.econets.blossom.module.system.dal.mapper.dept.UserPostMapper;
-import cn.econets.blossom.module.system.dal.mapper.user.AdminUserMapper;
+import cn.econets.blossom.module.system.dal.mysql.dept.UserPostMapper;
+import cn.econets.blossom.module.system.dal.mysql.user.AdminUserMapper;
 import cn.econets.blossom.module.system.dal.dataobject.dept.DeptDO;
 import cn.econets.blossom.module.system.dal.dataobject.dept.UserPostDO;
 import cn.econets.blossom.module.system.dal.dataobject.user.AdminUserDO;

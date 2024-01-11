@@ -4,7 +4,7 @@ import cn.econets.blossom.framework.common.pojo.PageResult;
 import cn.econets.blossom.framework.common.util.object.BeanUtils;
 import cn.econets.blossom.module.infrastructure.api.logger.dto.ApiAccessLogCreateReqDTO;
 import cn.econets.blossom.module.infrastructure.controller.admin.logger.vo.apiaccesslog.ApiAccessLogPageReqVO;
-import cn.econets.blossom.module.infrastructure.dal.mapper.logger.ApiAccessLogMapper;
+import cn.econets.blossom.module.infrastructure.dal.mysql.logger.ApiAccessLogMapper;
 import cn.econets.blossom.module.infrastructure.dal.dataobject.logger.ApiAccessLogDO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

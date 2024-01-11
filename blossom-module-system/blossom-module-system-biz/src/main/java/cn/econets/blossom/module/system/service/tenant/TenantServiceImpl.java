@@ -13,7 +13,7 @@ import cn.econets.blossom.module.system.controller.admin.permission.vo.role.Role
 import cn.econets.blossom.module.system.controller.admin.tenant.vo.tenant.TenantPageReqVO;
 import cn.econets.blossom.module.system.controller.admin.tenant.vo.tenant.TenantSaveReqVO;
 import cn.econets.blossom.module.system.convert.tenant.TenantConvert;
-import cn.econets.blossom.module.system.dal.mapper.tenant.TenantMapper;
+import cn.econets.blossom.module.system.dal.mysql.tenant.TenantMapper;
 import cn.econets.blossom.module.system.dal.dataobject.permission.MenuDO;
 import cn.econets.blossom.module.system.dal.dataobject.permission.RoleDO;
 import cn.econets.blossom.module.system.dal.dataobject.tenant.TenantDO;
