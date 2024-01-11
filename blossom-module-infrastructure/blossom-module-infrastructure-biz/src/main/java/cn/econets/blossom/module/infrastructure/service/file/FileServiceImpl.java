@@ -5,7 +5,7 @@ import cn.econets.blossom.framework.common.util.io.FileUtils;
 import cn.econets.blossom.framework.file.core.client.FileClient;
 import cn.econets.blossom.framework.file.core.utils.FileTypeUtils;
 import cn.econets.blossom.module.infrastructure.controller.admin.file.vo.file.FilePageReqVO;
-import cn.econets.blossom.module.infrastructure.dal.mapper.file.FileMapper;
+import cn.econets.blossom.module.infrastructure.dal.mysql.file.FileMapper;
 import cn.econets.blossom.module.infrastructure.dal.dataobject.file.FileDO;
 import cn.hutool.core.lang.Assert;
 import cn.hutool.core.util.StrUtil;

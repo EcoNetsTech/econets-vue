@@ -5,7 +5,7 @@ import cn.econets.blossom.framework.common.util.date.LocalDateTimeUtils;
 import cn.econets.blossom.framework.common.util.object.BeanUtils;
 import cn.econets.blossom.module.system.controller.admin.dict.vo.type.DictTypePageReqVO;
 import cn.econets.blossom.module.system.controller.admin.dict.vo.type.DictTypeSaveReqVO;
-import cn.econets.blossom.module.system.dal.mapper.dict.DictTypeMapper;
+import cn.econets.blossom.module.system.dal.mysql.dict.DictTypeMapper;
 import cn.econets.blossom.module.system.dal.dataobject.dict.DictTypeDO;
 import cn.hutool.core.util.StrUtil;
 import com.google.common.annotations.VisibleForTesting;

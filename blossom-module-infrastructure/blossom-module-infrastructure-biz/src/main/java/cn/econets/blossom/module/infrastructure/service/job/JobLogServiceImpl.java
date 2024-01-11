@@ -3,7 +3,7 @@ package cn.econets.blossom.module.infrastructure.service.job;
 import cn.econets.blossom.framework.common.pojo.PageResult;
 import cn.econets.blossom.module.infrastructure.controller.admin.job.vo.log.JobLogPageReqVO;
 import cn.econets.blossom.module.infrastructure.dal.dataobject.job.JobLogDO;
-import cn.econets.blossom.module.infrastructure.dal.mapper.job.JobLogMapper;
+import cn.econets.blossom.module.infrastructure.dal.mysql.job.JobLogMapper;
 import cn.econets.blossom.module.infrastructure.enums.job.JobLogStatusEnum;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Async;

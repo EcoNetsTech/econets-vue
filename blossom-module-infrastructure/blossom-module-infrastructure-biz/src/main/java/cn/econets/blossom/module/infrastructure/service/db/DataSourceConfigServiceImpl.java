@@ -4,7 +4,7 @@ import cn.econets.blossom.framework.common.util.object.BeanUtils;
 import cn.econets.blossom.framework.mybatis.core.util.JdbcUtils;
 import cn.econets.blossom.module.infrastructure.controller.admin.db.vo.DataSourceConfigSaveReqVO;
 import cn.econets.blossom.module.infrastructure.dal.dataobject.db.DataSourceConfigDO;
-import cn.econets.blossom.module.infrastructure.dal.mapper.db.DataSourceConfigMapper;
+import cn.econets.blossom.module.infrastructure.dal.mysql.db.DataSourceConfigMapper;
 import com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DataSourceProperty;
 import com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties;
 import org.springframework.stereotype.Service;

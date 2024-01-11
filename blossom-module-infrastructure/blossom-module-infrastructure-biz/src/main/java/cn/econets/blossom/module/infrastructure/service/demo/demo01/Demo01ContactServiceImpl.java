@@ -5,14 +5,13 @@ import cn.econets.blossom.framework.common.util.object.BeanUtils;
 import cn.econets.blossom.module.infrastructure.controller.admin.demo.demo01.vo.Demo01ContactPageReqVO;
 import cn.econets.blossom.module.infrastructure.controller.admin.demo.demo01.vo.Demo01ContactSaveReqVO;
 import cn.econets.blossom.module.infrastructure.dal.dataobject.demo.demo01.Demo01ContactDO;
-import cn.econets.blossom.module.infrastructure.dal.mapper.demo.demo01.Demo01ContactMapper;
+import cn.econets.blossom.module.infrastructure.dal.mysql.demo.demo01.Demo01ContactMapper;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
 import javax.annotation.Resource;
 
 import static cn.econets.blossom.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static cn.econets.blossom.module.infrastructure.enums.ErrorCodeConstants.*;
 import static cn.econets.blossom.module.infrastructure.enums.ErrorCodeConstants.DEMO01_CONTACT_NOT_EXISTS;
 
 /**

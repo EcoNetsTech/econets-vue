@@ -4,7 +4,7 @@ import cn.econets.blossom.framework.common.util.object.BeanUtils;
 import cn.econets.blossom.module.infrastructure.controller.admin.demo.demo02.vo.Demo02CategoryListReqVO;
 import cn.econets.blossom.module.infrastructure.controller.admin.demo.demo02.vo.Demo02CategorySaveReqVO;
 import cn.econets.blossom.module.infrastructure.dal.dataobject.demo.demo02.Demo02CategoryDO;
-import cn.econets.blossom.module.infrastructure.dal.mapper.demo.demo02.Demo02CategoryMapper;
+import cn.econets.blossom.module.infrastructure.dal.mysql.demo.demo02.Demo02CategoryMapper;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 

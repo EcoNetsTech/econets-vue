@@ -6,7 +6,7 @@ import cn.econets.blossom.framework.common.util.collection.CollectionUtils;
 import cn.econets.blossom.framework.common.util.object.BeanUtils;
 import cn.econets.blossom.module.system.controller.admin.dict.vo.data.DictDataPageReqVO;
 import cn.econets.blossom.module.system.controller.admin.dict.vo.data.DictDataSaveReqVO;
-import cn.econets.blossom.module.system.dal.mapper.dict.DictDataMapper;
+import cn.econets.blossom.module.system.dal.mysql.dict.DictDataMapper;
 import cn.econets.blossom.module.system.dal.dataobject.dict.DictDataDO;
 import cn.econets.blossom.module.system.dal.dataobject.dict.DictTypeDO;
 import cn.hutool.core.collection.CollUtil;

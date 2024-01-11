@@ -4,7 +4,7 @@ import cn.econets.blossom.framework.common.util.collection.CollectionUtils;
 import cn.econets.blossom.framework.common.util.object.BeanUtils;
 import cn.econets.blossom.module.system.controller.admin.permission.vo.menu.MenuListReqVO;
 import cn.econets.blossom.module.system.controller.admin.permission.vo.menu.MenuSaveVO;
-import cn.econets.blossom.module.system.dal.mapper.permission.MenuMapper;
+import cn.econets.blossom.module.system.dal.mysql.permission.MenuMapper;
 import cn.econets.blossom.module.system.dal.dataobject.permission.MenuDO;
 import cn.econets.blossom.module.system.dal.redis.RedisKeyConstants;
 import cn.econets.blossom.module.system.enums.ErrorCodeConstants;

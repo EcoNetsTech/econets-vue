@@ -6,7 +6,7 @@ import cn.econets.blossom.framework.common.util.object.BeanUtils;
 import cn.econets.blossom.framework.common.util.string.StrUtils;
 import cn.econets.blossom.module.system.api.logger.dto.OperateLogCreateReqDTO;
 import cn.econets.blossom.module.system.controller.admin.logger.vo.operatelog.OperateLogPageReqVO;
-import cn.econets.blossom.module.system.dal.mapper.logger.OperateLogMapper;
+import cn.econets.blossom.module.system.dal.mysql.logger.OperateLogMapper;
 import cn.econets.blossom.module.system.dal.dataobject.logger.OperateLogDO;
 import cn.econets.blossom.module.system.dal.dataobject.user.AdminUserDO;
 import cn.econets.blossom.module.system.service.user.AdminUserService;

@@ -7,7 +7,7 @@ import cn.econets.blossom.framework.quartz.core.util.CronUtils;
 import cn.econets.blossom.module.infrastructure.controller.admin.job.vo.job.JobPageReqVO;
 import cn.econets.blossom.module.infrastructure.controller.admin.job.vo.job.JobSaveReqVO;
 import cn.econets.blossom.module.infrastructure.dal.dataobject.job.JobDO;
-import cn.econets.blossom.module.infrastructure.dal.mapper.job.JobMapper;
+import cn.econets.blossom.module.infrastructure.dal.mysql.job.JobMapper;
 import cn.econets.blossom.module.infrastructure.enums.job.JobStatusEnum;
 import org.quartz.SchedulerException;
 import org.springframework.stereotype.Service;

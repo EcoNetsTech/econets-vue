@@ -6,7 +6,7 @@ import cn.econets.blossom.framework.common.util.collection.CollectionUtils;
 import cn.econets.blossom.framework.common.util.object.BeanUtils;
 import cn.econets.blossom.module.system.controller.admin.dept.vo.post.PostPageReqVO;
 import cn.econets.blossom.module.system.controller.admin.dept.vo.post.PostSaveReqVO;
-import cn.econets.blossom.module.system.dal.mapper.dept.PostMapper;
+import cn.econets.blossom.module.system.dal.mysql.dept.PostMapper;
 import cn.econets.blossom.module.system.dal.dataobject.dept.PostDO;
 import cn.hutool.core.collection.CollUtil;
 import org.springframework.stereotype.Service;

@@ -5,7 +5,7 @@ import cn.econets.blossom.module.infrastructure.controller.admin.config.vo.Confi
 import cn.econets.blossom.module.infrastructure.controller.admin.config.vo.ConfigSaveReqVO;
 import cn.econets.blossom.module.infrastructure.convert.config.ConfigConvert;
 import cn.econets.blossom.module.infrastructure.dal.dataobject.config.ConfigDO;
-import cn.econets.blossom.module.infrastructure.dal.mapper.config.ConfigMapper;
+import cn.econets.blossom.module.infrastructure.dal.mysql.config.ConfigMapper;
 import cn.econets.blossom.module.infrastructure.enums.config.ConfigTypeEnum;
 import com.google.common.annotations.VisibleForTesting;
 import lombok.extern.slf4j.Slf4j;

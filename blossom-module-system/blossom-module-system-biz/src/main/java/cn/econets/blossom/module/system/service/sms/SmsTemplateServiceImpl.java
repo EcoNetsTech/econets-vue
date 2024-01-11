@@ -8,7 +8,7 @@ import cn.econets.blossom.framework.sms.core.client.dto.SmsTemplateRespDTO;
 import cn.econets.blossom.framework.sms.core.enums.SmsTemplateAuditStatusEnum;
 import cn.econets.blossom.module.system.controller.admin.sms.vo.template.SmsTemplatePageReqVO;
 import cn.econets.blossom.module.system.controller.admin.sms.vo.template.SmsTemplateSaveReqVO;
-import cn.econets.blossom.module.system.dal.mapper.sms.SmsTemplateMapper;
+import cn.econets.blossom.module.system.dal.mysql.sms.SmsTemplateMapper;
 import cn.econets.blossom.module.system.dal.dataobject.sms.SmsChannelDO;
 import cn.econets.blossom.module.system.dal.dataobject.sms.SmsTemplateDO;
 import cn.econets.blossom.module.system.dal.redis.RedisKeyConstants;

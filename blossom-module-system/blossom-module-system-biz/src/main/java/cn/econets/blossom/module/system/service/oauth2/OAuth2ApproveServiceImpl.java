@@ -2,7 +2,7 @@ package cn.econets.blossom.module.system.service.oauth2;
 
 import cn.econets.blossom.framework.common.util.collection.CollectionUtils;
 import cn.econets.blossom.framework.common.util.date.DateUtils;
-import cn.econets.blossom.module.system.dal.mapper.oauth2.OAuth2ApproveMapper;
+import cn.econets.blossom.module.system.dal.mysql.oauth2.OAuth2ApproveMapper;
 import cn.econets.blossom.module.system.dal.dataobject.oauth2.OAuth2ApproveDO;
 import cn.econets.blossom.module.system.dal.dataobject.oauth2.OAuth2ClientDO;
 import cn.hutool.core.collection.CollUtil;

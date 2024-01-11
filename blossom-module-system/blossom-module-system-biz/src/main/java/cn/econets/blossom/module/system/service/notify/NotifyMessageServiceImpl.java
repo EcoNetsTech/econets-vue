@@ -5,7 +5,7 @@ import cn.econets.blossom.module.system.controller.admin.notify.vo.message.Notif
 import cn.econets.blossom.module.system.controller.admin.notify.vo.message.NotifyMessagePageReqVO;
 import cn.econets.blossom.module.system.dal.dataobject.notify.NotifyMessageDO;
 import cn.econets.blossom.module.system.dal.dataobject.notify.NotifyTemplateDO;
-import cn.econets.blossom.module.system.dal.mapper.notify.NotifyMessageMapper;
+import cn.econets.blossom.module.system.dal.mysql.notify.NotifyMessageMapper;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 

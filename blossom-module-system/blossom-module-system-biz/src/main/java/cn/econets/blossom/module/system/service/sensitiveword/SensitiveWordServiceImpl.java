@@ -7,7 +7,7 @@ import cn.econets.blossom.framework.common.util.object.BeanUtils;
 import cn.econets.blossom.module.system.controller.admin.sensitiveword.vo.SensitiveWordPageReqVO;
 import cn.econets.blossom.module.system.controller.admin.sensitiveword.vo.SensitiveWordSaveVO;
 import cn.econets.blossom.module.system.dal.dataobject.sensitiveword.SensitiveWordDO;
-import cn.econets.blossom.module.system.dal.mapper.sensitiveword.SensitiveWordMapper;
+import cn.econets.blossom.module.system.dal.mysql.sensitiveword.SensitiveWordMapper;
 import cn.econets.blossom.module.system.enums.ErrorCodeConstants;
 import cn.econets.blossom.module.system.util.collection.SimpleTrie;
 import cn.hutool.core.collection.CollUtil;
