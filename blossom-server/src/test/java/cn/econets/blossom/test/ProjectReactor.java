@@ -41,7 +41,7 @@ public class ProjectReactor {
         log.info("[main][原项目路劲改地址 ({})]", projectBaseDir);
 
         // ========== 配置，需要你手动修改 ==========
-        String groupIdNew = "cn.star.gg";
+        String groupIdNew = "cn.star.boot";
         String artifactIdNew = "star";
         String packageNameNew = "cn.start.pp";
         String titleNew = "管理系统";

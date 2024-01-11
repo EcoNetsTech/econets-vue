@@ -150,11 +150,11 @@ logging:
     # 配置自己写的 MyBatis Mapper 打印日志
     cn.econets.blossom.module.bpm.dal.mysql: debug
     cn.econets.blossom.module.infrastructure.dal.mysql: debug
-    cn.econets.blossom.module.infrastructure.dal.mapper.job.JobLogMapper: INFO # 配置 JobLogMapper 的日志级别为 info
-    cn.econets.blossom.module.infrastructure.dal.mapper.file.FileConfigMapper: INFO # 配置 FileConfigMapper 的日志级别为 info
+    cn.econets.blossom.module.infrastructure.dal.mysql.job.JobLogMapper: INFO # 配置 JobLogMapper 的日志级别为 info
+    cn.econets.blossom.module.infrastructure.dal.mysql.file.FileConfigMapper: INFO # 配置 FileConfigMapper 的日志级别为 info
     cn.econets.blossom.module.system.dal.mysql: debug
-    cn.econets.blossom.module.system.dal.mapper.sensitiveword.SensitiveWordMapper: INFO # 配置 SensitiveWordMapper 的日志级别为 info
-    cn.econets.blossom.module.system.dal.mapper.sms.SmsChannelMapper: INFO # 配置 SmsChannelMapper 的日志级别为 info
+    cn.econets.blossom.module.system.dal.mysql.sensitiveword.SensitiveWordMapper: INFO # 配置 SensitiveWordMapper 的日志级别为 info
+    cn.econets.blossom.module.system.dal.mysql.sms.SmsChannelMapper: INFO # 配置 SmsChannelMapper 的日志级别为 info
     cn.econets.blossom.module.tool.dal.mysql: debug
 
 debug: false
