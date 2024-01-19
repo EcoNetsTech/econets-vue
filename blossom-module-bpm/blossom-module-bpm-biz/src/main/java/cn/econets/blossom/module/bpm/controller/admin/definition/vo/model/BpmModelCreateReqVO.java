@@ -9,7 +9,7 @@ import javax.validation.constraints.NotEmpty;
 @Data
 public class BpmModelCreateReqVO {
 
-    @Schema(description = "流程标识", requiredMode = Schema.RequiredMode.REQUIRED, example = "process_yudao")
+    @Schema(description = "流程标识", requiredMode = Schema.RequiredMode.REQUIRED, example = "process_blossom")
     @NotEmpty(message = "流程标识不能为空")
     private String key;
 

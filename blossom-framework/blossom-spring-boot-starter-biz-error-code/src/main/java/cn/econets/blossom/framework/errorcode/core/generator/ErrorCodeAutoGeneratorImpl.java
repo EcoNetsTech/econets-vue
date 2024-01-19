@@ -64,7 +64,7 @@ public class ErrorCodeAutoGeneratorImpl implements ErrorCodeAutoGenerator {
     private List<ErrorCodeAutoGenerateReqDTO> parseErrorCode() {
         // 校验 errorCodeConstantsClass 参数
         if (CollUtil.isEmpty(constantsClassList)) {
-            log.info("[execute][未配置 yudao.error-code.constants-class-list 配置项，不进行自动写入到 system 服务中]");
+            log.info("[execute][未配置 application.error-code.constants-class-list 配置项，不进行自动写入到 system 服务中]");
             return new ArrayList<>();
         }
 

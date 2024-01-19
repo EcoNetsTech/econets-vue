@@ -202,6 +202,14 @@ application:
       - tmp_report_data_income
     ignore-cache:
       - permission_menu_ids
+  error-code: #错误相关配置
+    constants-class-list:
+      - cn.econets.blossom.module.bpm.enums.ErrorCodeConstants
+      - cn.econets.blossom.module.infrastructure.enums.ErrorCodeConstants
+      - cn.econets.blossom.module.member.enums.ErrorCodeConstants
+      - cn.econets.blossom.module.pay.enums.ErrorCodeConstants
+      - cn.econets.blossom.module.system.enums.ErrorCodeConstants
+      - cn.econets.blossom.module.mp.enums.ErrorCodeConstants
   # 短信验证码相关的配置项
   sms-code:
     expire-times: 10m
