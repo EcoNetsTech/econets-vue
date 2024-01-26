@@ -1,0 +1,2 @@
+cn.econets.blossom.framework.idempotent.config.BlossomIdempotentConfiguration
+cn.econets.blossom.framework.lock4j.config.Lock4jConfiguration

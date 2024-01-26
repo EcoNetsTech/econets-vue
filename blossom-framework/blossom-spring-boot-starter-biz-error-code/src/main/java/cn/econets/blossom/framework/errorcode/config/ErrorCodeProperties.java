@@ -11,7 +11,7 @@ import java.util.List;
  * 错误码的配置属性类
  *
  */
-@ConfigurationProperties("application.error-code")
+@ConfigurationProperties(prefix = "application.error-code")
 @Data
 @Validated
 public class ErrorCodeProperties {

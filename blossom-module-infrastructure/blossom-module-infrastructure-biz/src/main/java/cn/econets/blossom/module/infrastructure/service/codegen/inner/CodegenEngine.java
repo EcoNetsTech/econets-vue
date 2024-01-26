@@ -31,10 +31,12 @@ import cn.econets.blossom.module.infrastructure.enums.codegen.CodegenFrontTypeEn
 import cn.econets.blossom.module.infrastructure.enums.codegen.CodegenSceneEnum;
 import cn.econets.blossom.module.infrastructure.enums.codegen.CodegenTemplateTypeEnum;
 import cn.econets.blossom.module.infrastructure.framework.codegen.config.CodegenProperties;
+import cn.hutool.system.SystemUtil;
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.collect.ImmutableTable;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Table;
+import lombok.Setter;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
@@ -157,6 +159,15 @@ public class CodegenEngine {
     private CodegenProperties codegenProperties;
 
     /**
+     * 是否使用 jakarta 包，用于解决 Spring Boot 2.X 和 3.X 的兼容性问题
+     *
+     * true  - 使用 jakarta.validation.constraints.*
+     * false - 使用 javax.validation.constraints.*
+     */
+    @Setter // 允许设置的原因，是因为单测需要手动改变
+    private Boolean jakartaEnable;
+
+    /**
      * 模板引擎，由 hutool 实现
      */
     private final TemplateEngine templateEngine;
@@ -170,6 +181,8 @@ public class CodegenEngine {
         TemplateConfig config = new TemplateConfig();
         config.setResourceMode(TemplateConfig.ResourceMode.CLASSPATH);
         this.templateEngine = new VelocityEngine(config);
+        // 设置 javaxEnable，按照是否使用 JDK17 来判断
+        this.jakartaEnable = SystemUtil.getJavaInfo().isJavaVersionAtLeast(1700); // 17.00 * 100
     }
 
     @PostConstruct
@@ -179,6 +192,7 @@ public class CodegenEngine {
         globalBindingMap.put("basePackage", codegenProperties.getBasePackage());
         globalBindingMap.put("baseFrameworkPackage", codegenProperties.getBasePackage()
                 + '.' + "framework"); // 用于后续获取测试类的 package 地址
+        globalBindingMap.put("jakartaPackage", jakartaEnable ? "jakarta" : "javax");
         // 全局 Java Bean
         globalBindingMap.put("CommonResultClassName", CommonResult.class.getName());
         globalBindingMap.put("PageResultClassName", PageResult.class.getName());
@@ -502,3 +516,4 @@ public class CodegenEngine {
     }
 
 }
+

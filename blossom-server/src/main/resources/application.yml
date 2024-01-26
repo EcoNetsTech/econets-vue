@@ -143,6 +143,15 @@ application:
     base-package: ${application.info.base-package}
     db-schemas: ${spring.datasource.dynamic.datasource.master.name}
     front-type: 10 # 前端模版的类型，参见 CodegenFrontTypeEnum 枚举类
+  # 错误码相关配置项
+  error-code:
+    constants-class-list:
+      - cn.econets.blossom.module.bpm.enums.ErrorCodeConstants
+      - cn.econets.blossom.module.infrastructure.enums.ErrorCodeConstants
+      - cn.econets.blossom.module.member.enums.ErrorCodeConstants
+      - cn.econets.blossom.module.pay.enums.ErrorCodeConstants
+      - cn.econets.blossom.module.system.enums.ErrorCodeConstants
+      - cn.econets.blossom.module.mp.enums.ErrorCodeConstants
   # 多租户相关配置项
   tenant:
     enable: true
@@ -202,14 +211,6 @@ application:
       - tmp_report_data_income
     ignore-cache:
       - permission_menu_ids
-  error-code: #错误相关配置
-    constants-class-list:
-      - cn.econets.blossom.module.bpm.enums.ErrorCodeConstants
-      - cn.econets.blossom.module.infrastructure.enums.ErrorCodeConstants
-      - cn.econets.blossom.module.member.enums.ErrorCodeConstants
-      - cn.econets.blossom.module.pay.enums.ErrorCodeConstants
-      - cn.econets.blossom.module.system.enums.ErrorCodeConstants
-      - cn.econets.blossom.module.mp.enums.ErrorCodeConstants
   # 短信验证码相关的配置项
   sms-code:
     expire-times: 10m
