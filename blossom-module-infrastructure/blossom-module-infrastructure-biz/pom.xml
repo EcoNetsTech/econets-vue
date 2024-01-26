@@ -58,6 +58,10 @@
         </dependency>
         <dependency>
             <groupId>cn.econets.boot</groupId>
+            <artifactId>blossom-spring-boot-starter-test</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>cn.econets.boot</groupId>
             <artifactId>blossom-spring-boot-starter-biz-operatelog</artifactId>
         </dependency>
 

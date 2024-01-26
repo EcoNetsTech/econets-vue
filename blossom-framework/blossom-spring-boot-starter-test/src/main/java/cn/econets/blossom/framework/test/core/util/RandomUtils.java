@@ -103,7 +103,7 @@ public class RandomUtils {
     }
 
     public static String randomURL() {
-        return "https://www.iocoder.cn/" + randomString();
+        return "https://www.econets.cn/" + randomString();
     }
 
     @SafeVarargs

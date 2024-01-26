@@ -21,7 +21,7 @@ public class CodegenTableSaveReqVO {
     @NotNull(message = "导入类型不能为空")
     private Integer scene;
 
-    @Schema(description = "表名称", requiredMode = Schema.RequiredMode.REQUIRED, example = "yudao")
+    @Schema(description = "表名称", requiredMode = Schema.RequiredMode.REQUIRED, example = "blossom")
     @NotNull(message = "表名称不能为空")
     private String tableName;
 

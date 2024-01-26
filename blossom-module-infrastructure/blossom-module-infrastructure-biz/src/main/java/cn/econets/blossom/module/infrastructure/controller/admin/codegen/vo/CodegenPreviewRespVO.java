@@ -7,7 +7,7 @@ import lombok.Data;
 @Data
 public class CodegenPreviewRespVO {
 
-    @Schema(description = "文件路径", requiredMode = Schema.RequiredMode.REQUIRED, example = "java/cn/iocoder/yudao/adminserver/modules/system/controller/test/SysTestDemoController.java")
+    @Schema(description = "文件路径", requiredMode = Schema.RequiredMode.REQUIRED, example = "java/cn/econets/blossom/adminserver/modules/system/controller/test/SysTestDemoController.java")
     private String filePath;
 
     @Schema(description = "代码", requiredMode = Schema.RequiredMode.REQUIRED, example = "Hello World")

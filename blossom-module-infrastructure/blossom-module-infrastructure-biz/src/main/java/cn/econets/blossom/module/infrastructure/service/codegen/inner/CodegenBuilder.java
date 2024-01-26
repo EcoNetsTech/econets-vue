@@ -203,7 +203,7 @@ public class CodegenBuilder {
         }
         // url
         if (StrUtil.endWithIgnoreCase(column.getColumnName(), "url")) {
-            column.setExample("https://www.iocoder.cn");
+            column.setExample("https://www.econets.cn");
             return;
         }
         // reason

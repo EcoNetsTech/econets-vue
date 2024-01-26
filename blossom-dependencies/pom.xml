@@ -128,9 +128,10 @@
                 <artifactId>blossom-spring-boot-starter-job</artifactId>
                 <version>${revision}</version>
             </dependency>
+            <!-- 监控相关 -->
             <dependency>
                 <groupId>cn.econets.boot</groupId>
-                <artifactId>blossom-spring-boot-starter-monitor</artifactId>    <!-- 监控相关 -->
+                <artifactId>blossom-spring-boot-starter-monitor</artifactId>
                 <version>${revision}</version>
             </dependency>
             <dependency>
@@ -143,11 +144,12 @@
                 <artifactId>blossom-spring-boot-starter-mybatis</artifactId>
                 <version>${revision}</version>
             </dependency>
-<!--            <dependency>-->
-<!--                <groupId>cn.econets.boot</groupId>-->
-<!--                <artifactId>blossom-spring-boot-starter-protection</artifactId>     &lt;!&ndash; 服务保障相关 &ndash;&gt;-->
-<!--                <version>${revision}</version>-->
-<!--            </dependency>-->
+            <!-- 服务保障相关 -->
+            <dependency>
+                <groupId>cn.econets.boot</groupId>
+                <artifactId>blossom-spring-boot-starter-protection</artifactId>
+                <version>${revision}</version>
+            </dependency>
             <dependency>
                 <groupId>cn.econets.boot</groupId>
                 <artifactId>blossom-spring-boot-starter-redis</artifactId>

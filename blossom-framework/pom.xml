@@ -49,5 +49,6 @@
         <module>blossom-spring-boot-starter-biz-sms</module>
         <module>blossom-spring-boot-starter-biz-ip</module>
         <module>blossom-spring-boot-starter-biz-pay</module>
+        <module>blossom-spring-boot-starter-protection</module>
     </modules>
 </project>

@@ -17,13 +17,13 @@ import static cn.econets.blossom.framework.common.util.date.DateUtils.FORMAT_YEA
 @ToString(callSuper = true)
 public class CodegenTablePageReqVO extends PageParam {
 
-    @Schema(description = "表名称，模糊匹配", example = "yudao")
+    @Schema(description = "表名称，模糊匹配", example = "blossom")
     private String tableName;
 
     @Schema(description = "表描述，模糊匹配", example = "表描述")
     private String tableComment;
 
-    @Schema(description = "实体，模糊匹配", example = "Yudao")
+    @Schema(description = "实体，模糊匹配", example = "blossom")
     private String className;
 
     @Schema(description = "创建时间", example = "[2022-07-01 00:00:00,2022-07-01 23:59:59]")
