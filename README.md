@@ -1,7 +1,7 @@
 <p align="center">
  <img src="https://img.shields.io/badge/Spring%20Boot-2.7.17-blue.svg" alt="Downloads">
  <img src="https://img.shields.io/badge/Vue-3.2-blue.svg" alt="Downloads">
- <img src="https://img.shields.io/github/license/YunaiV/ruoyi-vue-pro"/>
+ <img src="https://img.shields.io/github/license/YunaiV/econets-vue"/>
 </p>
 
 ## 新手必读
@@ -86,7 +86,7 @@
 * 商城系统
 * 微信公众号
 
-> 友情提示：本项目基于 RuoYi-Vue 修改，**重构优化**后端的代码，**美化**前端的界面。
+> 友情提示：本项目基于 econets-vue 修改，**重构优化**后端的代码，**美化**前端的界面。
 >
 > * 额外新增的功能，我们使用 🚀 标记。
 > * 重新实现的功能，我们使用 ⭐️ 标记。
