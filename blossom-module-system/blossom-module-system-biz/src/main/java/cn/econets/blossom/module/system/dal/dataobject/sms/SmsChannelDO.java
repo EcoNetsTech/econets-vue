@@ -2,7 +2,7 @@ package cn.econets.blossom.module.system.dal.dataobject.sms;
 
 import cn.econets.blossom.framework.common.enums.CommonStatusEnum;
 import cn.econets.blossom.framework.mybatis.core.dataobject.BaseDO;
-import cn.econets.blossom.framework.sms.core.enums.SmsChannelEnum;
+import cn.econets.blossom.module.system.framework.sms.core.enums.SmsChannelEnum;
 import com.baomidou.mybatisplus.annotation.KeySequence;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;

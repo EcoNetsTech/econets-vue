@@ -1,7 +1,7 @@
 package cn.econets.blossom.module.system.service.sms;
 
 import cn.econets.blossom.framework.common.pojo.PageResult;
-import cn.econets.blossom.framework.sms.core.client.SmsClient;
+import cn.econets.blossom.module.system.framework.sms.core.client.SmsClient;
 import cn.econets.blossom.module.system.controller.admin.sms.vo.channel.SmsChannelPageReqVO;
 import cn.econets.blossom.module.system.controller.admin.sms.vo.channel.SmsChannelSaveReqVO;
 import cn.econets.blossom.module.system.dal.dataobject.sms.SmsChannelDO;

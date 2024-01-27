@@ -8,7 +8,7 @@ import cn.econets.blossom.module.system.dal.mysql.sms.SmsCodeMapper;
 import cn.econets.blossom.module.system.dal.dataobject.sms.SmsCodeDO;
 import cn.econets.blossom.module.system.enums.ErrorCodeConstants;
 import cn.econets.blossom.module.system.enums.sms.SmsSceneEnum;
-import cn.econets.blossom.module.system.framework.sms.SmsCodeProperties;
+import cn.econets.blossom.module.system.framework.sms.config.SmsCodeProperties;
 import cn.hutool.core.date.LocalDateTimeUtil;
 import cn.hutool.core.lang.Assert;
 import cn.hutool.core.map.MapUtil;

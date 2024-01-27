@@ -3,7 +3,7 @@ package cn.econets.blossom.module.system.controller.admin.sms;
 import cn.econets.blossom.framework.common.pojo.CommonResult;
 import cn.econets.blossom.framework.common.util.servlet.ServletUtils;
 import cn.econets.blossom.framework.operatelog.core.annotations.OperateLog;
-import cn.econets.blossom.framework.sms.core.enums.SmsChannelEnum;
+import cn.econets.blossom.module.system.framework.sms.core.enums.SmsChannelEnum;
 import cn.econets.blossom.module.system.service.sms.SmsSendService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
