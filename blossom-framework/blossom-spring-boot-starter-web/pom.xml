@@ -26,6 +26,11 @@
             <artifactId>blossom-module-infrastructure-api</artifactId>
             <version>${revision}</version>
         </dependency>
+        <dependency>
+            <groupId>cn.econets.boot</groupId>
+            <artifactId>blossom-module-system-api</artifactId>
+            <version>${revision}</version>
+        </dependency>
 
         <!-- Web 相关 -->
         <dependency>

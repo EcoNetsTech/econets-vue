@@ -95,17 +95,7 @@
             <!-- 框架组件 -->
             <dependency>
                 <groupId>cn.econets.boot</groupId>
-                <artifactId>blossom-spring-boot-starter-banner</artifactId>
-                <version>${revision}</version>
-            </dependency>
-            <dependency>
-                <groupId>cn.econets.boot</groupId>
                 <artifactId>blossom-spring-boot-starter-captcha</artifactId>
-                <version>${revision}</version>
-            </dependency>
-            <dependency>
-                <groupId>cn.econets.boot</groupId>
-                <artifactId>blossom-spring-boot-starter-desensitize</artifactId>
                 <version>${revision}</version>
             </dependency>
             <dependency>
@@ -210,11 +200,6 @@
             <dependency>
                 <groupId>cn.econets.boot</groupId>
                 <artifactId>blossom-spring-boot-starter-biz-tenant</artifactId>
-                <version>${revision}</version>
-            </dependency>
-            <dependency>
-                <groupId>cn.econets.boot</groupId>
-                <artifactId>blossom-spring-boot-starter-biz-error-code</artifactId>
                 <version>${revision}</version>
             </dependency>
 
