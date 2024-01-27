@@ -100,10 +100,6 @@
         </dependency>
         <dependency>
             <groupId>cn.econets.boot</groupId>
-            <artifactId>blossom-spring-boot-starter-biz-sms</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>cn.econets.boot</groupId>
             <artifactId>blossom-spring-boot-starter-captcha</artifactId>
         </dependency>
         <dependency>

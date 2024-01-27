@@ -3,3 +3,5 @@ cn.econets.blossom.framework.jackson.config.JacksonAutoConfiguration
 cn.econets.blossom.framework.swagger.SwaggerAutoConfiguration
 cn.econets.blossom.framework.web.config.WebAutoConfiguration
 cn.econets.blossom.framework.xss.config.XssAutoConfiguration
+cn.econets.blossom.framework.banner.config.BlossomBannerAutoConfiguration
+cn.econets.blossom.framework.errorcode.config.ErrorCodeAutoConfiguration
