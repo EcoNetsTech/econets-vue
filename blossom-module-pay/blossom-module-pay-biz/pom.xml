@@ -37,6 +37,7 @@
             <groupId>cn.econets.boot</groupId>
             <artifactId>blossom-spring-boot-starter-biz-tenant</artifactId>
         </dependency>
+        <!-- Web 相关 -->
         <dependency>
             <groupId>cn.econets.boot</groupId>
             <artifactId>blossom-spring-boot-starter-security</artifactId>
@@ -49,6 +50,7 @@
             <groupId>cn.econets.boot</groupId>
             <artifactId>blossom-spring-boot-starter-redis</artifactId>
         </dependency>
+        <!-- Job 定时任务相关 -->
         <dependency>
             <groupId>cn.econets.boot</groupId>
             <artifactId>blossom-spring-boot-starter-job</artifactId>

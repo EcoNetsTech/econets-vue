@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Bean;
 /**
  * Tracer 配置类
  *
- * @author mashu
+ *
  */
 @AutoConfiguration
 @ConditionalOnClass({BizTraceAspect.class})
