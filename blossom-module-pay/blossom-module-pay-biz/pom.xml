@@ -24,6 +24,11 @@
             <artifactId>blossom-module-pay-api</artifactId>
             <version>${revision}</version>
         </dependency>
+        <dependency>
+            <groupId>cn.econets.boot</groupId>
+            <artifactId>blossom-module-member-api</artifactId>
+            <version>${revision}</version>
+        </dependency>
 
         <dependency>
             <groupId>cn.econets.boot</groupId>
@@ -36,6 +41,10 @@
         <dependency>
             <groupId>cn.econets.boot</groupId>
             <artifactId>blossom-spring-boot-starter-biz-tenant</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>cn.econets.boot</groupId>
+            <artifactId>blossom-spring-boot-starter-biz-dict</artifactId>
         </dependency>
         <!-- Web 相关 -->
         <dependency>

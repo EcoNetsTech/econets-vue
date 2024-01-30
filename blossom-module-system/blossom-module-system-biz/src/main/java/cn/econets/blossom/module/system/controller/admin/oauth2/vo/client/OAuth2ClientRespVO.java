@@ -55,7 +55,7 @@ public class OAuth2ClientRespVO {
     @Schema(description = "资源", example = "1024")
     private List<String> resourceIds;
 
-    @Schema(description = "附加信息", example = "{yunai: true}")
+    @Schema(description = "附加信息", example = "{ximu: true}")
     private String additionalInformation;
 
     @Schema(description = "创建时间", requiredMode = Schema.RequiredMode.REQUIRED)

@@ -8,7 +8,7 @@ import cn.econets.blossom.framework.common.util.servlet.ServletUtils;
 import cn.econets.blossom.framework.apilog.core.service.ApiAccessLog;
 import cn.econets.blossom.framework.apilog.core.service.ApiAccessLogFrameworkService;
 import cn.econets.blossom.framework.web.config.WebProperties;
-import cn.econets.blossom.framework.web.core.WebFrameworkUtils;
+import cn.econets.blossom.framework.web.core.util.WebFrameworkUtils;
 import cn.econets.blossom.framework.web.core.filter.ApiRequestFilter;
 import cn.hutool.core.date.LocalDateTimeUtil;
 import cn.hutool.core.exceptions.ExceptionUtil;

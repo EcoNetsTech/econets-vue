@@ -7,7 +7,7 @@ import cn.econets.blossom.framework.common.util.object.BeanUtils;
 import cn.econets.blossom.framework.excel.core.util.ExcelUtils;
 import cn.econets.blossom.framework.operatelog.core.annotations.OperateLog;
 import cn.econets.blossom.framework.operatelog.core.enums.OperateTypeEnum;
-import cn.econets.blossom.framework.web.core.WebFrameworkUtils;
+import cn.econets.blossom.framework.web.core.util.WebFrameworkUtils;
 import cn.econets.blossom.module.infrastructure.controller.admin.logger.vo.apierrorlog.ApiErrorLogPageReqVO;
 import cn.econets.blossom.module.infrastructure.controller.admin.logger.vo.apierrorlog.ApiErrorLogRespVO;
 import cn.econets.blossom.module.infrastructure.dal.dataobject.logger.ApiErrorLogDO;

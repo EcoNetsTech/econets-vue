@@ -1,7 +1,7 @@
 package cn.econets.blossom.framework.tenant.core.mq.rocketmq;
 
 import cn.econets.blossom.framework.tenant.core.context.TenantContextHolder;
-import cn.econets.blossom.framework.web.core.WebFrameworkUtils;
+import cn.econets.blossom.framework.web.core.util.WebFrameworkUtils;
 import cn.hutool.core.lang.Assert;
 import cn.hutool.core.util.StrUtil;
 import org.apache.rocketmq.client.hook.ConsumeMessageContext;

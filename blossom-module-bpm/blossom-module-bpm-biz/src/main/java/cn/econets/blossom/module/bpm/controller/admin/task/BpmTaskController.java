@@ -16,7 +16,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 import static cn.econets.blossom.framework.common.pojo.CommonResult.success;
-import static cn.econets.blossom.framework.web.core.WebFrameworkUtils.getLoginUserId;
+import static cn.econets.blossom.framework.web.core.util.WebFrameworkUtils.getLoginUserId;
 
 @Tag(name = "管理后台 - 流程任务实例")
 @RestController

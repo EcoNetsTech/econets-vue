@@ -16,7 +16,7 @@ import lombok.Data;
 import java.time.LocalDateTime;
 import java.util.Map;
 
-// TODO 芋艿：需要详细 review
+// TODO 需要详细 review
 /**
  * 转账单 DO
  *

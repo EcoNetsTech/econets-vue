@@ -45,7 +45,7 @@ import static cn.econets.blossom.module.pay.enums.refund.PayRefundStatusEnum.*;
 public class PayWalletRechargeServiceImpl implements PayWalletRechargeService {
 
     /**
-     * TODO 芋艿：放到 payconfig
+     * TODO 放到 payconfig
      */
     private static final Long WALLET_PAY_APP_ID = 8L;
 
@@ -87,7 +87,7 @@ public class PayWalletRechargeServiceImpl implements PayWalletRechargeService {
                 .setMerchantOrderId(recharge.getId().toString()) // 业务的订单编号
                 .setSubject(WALLET_RECHARGE_ORDER_SUBJECT).setBody("")
                 .setPrice(recharge.getPayPrice())
-                .setExpireTime(addTime(Duration.ofHours(2L)))); // TODO @芋艿：支付超时时间
+                .setExpireTime(addTime(Duration.ofHours(2L)))); // TODO @支付超时时间
         // 2.2 更新钱包充值记录中支付订单
         walletRechargeMapper.updateById(new PayWalletRechargeDO().setId(recharge.getId()).setPayOrderId(payOrderId));
         recharge.setPayOrderId(payOrderId);
@@ -236,7 +236,7 @@ public class PayWalletRechargeServiceImpl implements PayWalletRechargeService {
         if (wallet.getBalance() < walletRecharge.getTotalPrice()) {
             throw exception(WALLET_RECHARGE_REFUND_BALANCE_NOT_ENOUGH);
         }
-        // TODO @芋艿：需要考虑下，赠送的金额，会不会导致提现超过；
+        // TODO @需要考虑下，赠送的金额，会不会导致提现超过；
         return wallet;
     }
 

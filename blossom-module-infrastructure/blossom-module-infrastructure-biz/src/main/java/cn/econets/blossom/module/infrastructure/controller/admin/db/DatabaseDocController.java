@@ -113,7 +113,7 @@ public class DatabaseDocController {
     /**
      * 创建数据源
      */
-    // TODO 芋艿：screw 暂时不支持 druid，尴尬
+    // TODO screw 暂时不支持 druid，尴尬
     private HikariDataSource buildDataSource() {
         // 获得 DataSource 数据源，目前只支持首个
         String primary = dynamicDataSourceProperties.getPrimary();

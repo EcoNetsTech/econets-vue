@@ -93,18 +93,30 @@ public class SocialUserServiceImpl implements SocialUserService {
     }
 
     @Override
-    public SocialUserRespDTO getSocialUser(Integer userType, Integer socialType, String code, String state) {
+    public SocialUserRespDTO getSocialUserByUserId(Integer userType, Long userId, Integer socialType) {
+        // 获得绑定用户
+        SocialUserBindDO socialUserBind = socialUserBindMapper.selectByUserIdAndUserTypeAndSocialType(userId, userType, socialType);
+        if (socialUserBind == null) {
+            return null;
+        }
+        // 获得社交用户
+        SocialUserDO socialUser = socialUserMapper.selectById(socialUserBind.getSocialUserId());
+        Assert.notNull(socialUser, "社交用户不能为空");
+        return new SocialUserRespDTO(socialUser.getOpenid(), socialUser.getNickname(), socialUser.getAvatar(),
+                socialUserBind.getUserId());
+    }
+
+    @Override
+    public SocialUserRespDTO getSocialUserByCode(Integer userType, Integer socialType, String code, String state) {
         // 获得社交用户
         SocialUserDO socialUser = authSocialUser(socialType, userType, code, state);
         Assert.notNull(socialUser, "社交用户不能为空");
 
-        // 如果未绑定的社交用户，则无法自动登录，进行报错
+        // 获得绑定用户
         SocialUserBindDO socialUserBind = socialUserBindMapper.selectByUserTypeAndSocialUserId(userType,
                 socialUser.getId());
-        if (socialUserBind == null) {
-            throw exception(AUTH_THIRD_LOGIN_NOT_BIND);
-        }
-        return new SocialUserRespDTO(socialUser.getOpenid(), socialUserBind.getUserId());
+        return new SocialUserRespDTO(socialUser.getOpenid(), socialUser.getNickname(), socialUser.getAvatar(),
+                socialUserBind != null ? socialUserBind.getUserId() : null);
     }
 
     /**
@@ -135,15 +147,9 @@ public class SocialUserServiceImpl implements SocialUserService {
         if (socialUser == null) {
             socialUser = new SocialUserDO();
         }
-        socialUser.setType(socialType);
-        socialUser.setCode(code);
-        socialUser.setState(state); // 需要保存 code + state 字段，保证后续可查询
-        socialUser.setOpenid(authUser.getUuid());
-        socialUser.setToken(authUser.getToken().getAccessToken());
-        socialUser.setRawTokenInfo((JsonUtils.toJsonString(authUser.getToken())));
-        socialUser.setNickname(authUser.getNickname());
-        socialUser.setAvatar(authUser.getAvatar());
-        socialUser.setRawUserInfo(JsonUtils.toJsonString(authUser.getRawUserInfo()));
+        socialUser.setType(socialType).setCode(code).setState(state) // 需要保存 code + state 字段，保证后续可查询
+                .setOpenid(authUser.getUuid()).setToken(authUser.getToken().getAccessToken()).setRawTokenInfo((JsonUtils.toJsonString(authUser.getToken())))
+                .setNickname(authUser.getNickname()).setAvatar(authUser.getAvatar()).setRawUserInfo(JsonUtils.toJsonString(authUser.getRawUserInfo()));
         if (socialUser.getId() == null) {
             socialUserMapper.insert(socialUser);
         } else {

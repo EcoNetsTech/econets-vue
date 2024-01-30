@@ -8,7 +8,7 @@ import cn.econets.blossom.framework.common.util.json.JsonUtils;
 import cn.econets.blossom.framework.common.util.monitor.TracerUtils;
 import cn.econets.blossom.framework.common.util.servlet.ServletUtils;
 import cn.econets.blossom.framework.apilog.core.service.ApiErrorLog;
-import cn.econets.blossom.framework.web.core.WebFrameworkUtils;
+import cn.econets.blossom.framework.web.core.util.WebFrameworkUtils;
 import cn.hutool.core.exceptions.ExceptionUtil;
 import cn.hutool.core.map.MapUtil;
 import cn.hutool.core.util.StrUtil;

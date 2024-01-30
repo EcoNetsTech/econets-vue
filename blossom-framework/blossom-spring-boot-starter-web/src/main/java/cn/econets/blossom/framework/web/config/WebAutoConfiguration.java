@@ -2,7 +2,7 @@ package cn.econets.blossom.framework.web.config;
 
 import cn.econets.blossom.framework.common.enums.WebFilterOrderEnum;
 import cn.econets.blossom.framework.apilog.core.service.ApiErrorLogFrameworkService;
-import cn.econets.blossom.framework.web.core.WebFrameworkUtils;
+import cn.econets.blossom.framework.web.core.util.WebFrameworkUtils;
 import cn.econets.blossom.framework.web.core.filter.CacheRequestBodyFilter;
 import cn.econets.blossom.framework.web.core.handler.GlobalExceptionHandler;
 import cn.econets.blossom.framework.web.core.handler.GlobalResponseBodyHandler;

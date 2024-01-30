@@ -2795,7 +2795,7 @@ ON TABLE "system_dept" IS '部门表';
 BEGIN;
 INSERT INTO "system_dept" ("id", "name", "parent_id", "sort", "leader_user_id", "phone", "email", "status", "creator",
                            "create_time", "updater", "update_time", "deleted", "tenant_id")
-VALUES (100, '芋道源码', 0, 0, 1, '15888888888', 'ry@qq.com', 0, 'admin', '2021-01-05 17:03:47', '103',
+VALUES (100, '源码', 0, 0, 1, '15888888888', 'ry@qq.com', 0, 'admin', '2021-01-05 17:03:47', '103',
         '2022-01-14 01:04:05', 0, 1);
 INSERT INTO "system_dept" ("id", "name", "parent_id", "sort", "leader_user_id", "phone", "email", "status", "creator",
                            "create_time", "updater", "update_time", "deleted", "tenant_id")
@@ -5252,7 +5252,7 @@ INSERT INTO "system_oauth2_client" ("id", "client_id", "secret", "name", "logo",
                                     "authorized_grant_types", "scopes", "authorities", "resource_ids",
                                     "additional_information", "creator", "create_time", "updater", "update_time",
                                     "deleted", "auto_approve_scopes")
-VALUES (1, 'default', 'admin123', '芋道源码', 'http://test.blossom.econets.cn/a5e2e244368878a366b516805a4aabf1.png',
+VALUES (1, 'default', 'admin123', '源码', 'http://test.blossom.econets.cn/a5e2e244368878a366b516805a4aabf1.png',
         '我是描述', 0, 180, 8640, '["https://www.econets.cn","https://doc.econets.cn"]',
         '["password","authorization_code","implicit","refresh_token"]', '["user.read","user.write"]',
         '["system:user:query"]', '[]', '{}', '1', '2022-05-11 21:47:12', '1', '2022-05-12 01:00:20', 0, NULL);
@@ -6830,7 +6830,7 @@ BEGIN;
 INSERT INTO "system_tenant" ("id", "name", "contact_user_id", "contact_name", "contact_mobile", "status", "website",
                              "package_id", "expire_time", "account_count", "creator", "create_time", "updater",
                              "update_time", "deleted")
-VALUES (1, '芋道源码', NULL, '芋艿', '17321315478', 0, 'https://www.econets.cn', 0, '2099-02-19 17:14:16', 9999, '1',
+VALUES (1, '源码', NULL, '芋艿', '17321315478', 0, 'https://www.econets.cn', 0, '2099-02-19 17:14:16', 9999, '1',
         '2021-01-05 17:03:47', '1', '2022-02-23 12:15:11', 0);
 INSERT INTO "system_tenant" ("id", "name", "contact_user_id", "contact_name", "contact_mobile", "status", "website",
                              "package_id", "expire_time", "account_count", "creator", "create_time", "updater",
@@ -7182,7 +7182,7 @@ VALUES (115, 'aotemane', '$2a$10$/WCwGHu1eq0wOVDd/u8HweJ0gJCHyLS6T7ndCqI8UXZAQom
 INSERT INTO "system_users" ("id", "username", "password", "nickname", "remark", "dept_id", "post_ids", "email",
                             "mobile", "sex", "avatar", "status", "login_ip", "login_date", "creator", "create_time",
                             "updater", "update_time", "deleted", "tenant_id")
-VALUES (1, 'admin', '$2a$10$0acJOIk2D25/oC87nyclE..0lzeu9DtQ/n3geP4fkun/zIVRhHJIO', '芋道源码', '管理员', 103, '[1]',
+VALUES (1, 'admin', '$2a$10$0acJOIk2D25/oC87nyclE..0lzeu9DtQ/n3geP4fkun/zIVRhHJIO', '源码', '管理员', 103, '[1]',
         'aoteman@126.com', '15612345678', 1, 'http://test.blossom.econets.cn/48934f2f-92d4-4250-b917-d10d2b262c6a', 0,
         '127.0.0.1', '2022-05-25 23:44:33.003', 'admin', '2021-01-05 17:03:47', NULL, '2022-05-25 23:44:33.003', 0, 1);
 COMMIT;

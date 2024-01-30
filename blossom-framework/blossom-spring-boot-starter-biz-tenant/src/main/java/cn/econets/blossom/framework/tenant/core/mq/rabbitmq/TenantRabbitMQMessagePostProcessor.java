@@ -1,7 +1,7 @@
 package cn.econets.blossom.framework.tenant.core.mq.rabbitmq;
 
 import cn.econets.blossom.framework.tenant.core.context.TenantContextHolder;
-import cn.econets.blossom.framework.web.core.WebFrameworkUtils;
+import cn.econets.blossom.framework.web.core.util.WebFrameworkUtils;
 import org.apache.kafka.clients.producer.ProducerInterceptor;
 import org.springframework.amqp.AmqpException;
 import org.springframework.amqp.core.Message;

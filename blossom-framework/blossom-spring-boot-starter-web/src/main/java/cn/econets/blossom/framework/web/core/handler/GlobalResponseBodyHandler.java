@@ -2,7 +2,7 @@ package cn.econets.blossom.framework.web.core.handler;
 
 import cn.econets.blossom.framework.common.pojo.CommonResult;
 import cn.econets.blossom.framework.apilog.core.filter.ApiAccessLogFilter;
-import cn.econets.blossom.framework.web.core.WebFrameworkUtils;
+import cn.econets.blossom.framework.web.core.util.WebFrameworkUtils;
 import org.springframework.core.MethodParameter;
 import org.springframework.http.MediaType;
 import org.springframework.http.server.ServerHttpRequest;

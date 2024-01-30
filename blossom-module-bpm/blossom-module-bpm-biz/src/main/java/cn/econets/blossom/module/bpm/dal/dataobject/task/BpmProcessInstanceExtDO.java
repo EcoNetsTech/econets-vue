@@ -91,7 +91,7 @@ public class BpmProcessInstanceExtDO extends BaseDO {
     /**
      * 提前设定好的审批人
      */
-    @TableField(typeHandler = JacksonTypeHandler.class, exist = false) // TODO 芋艿：临时 exist = false，避免 db 报错；
+    @TableField(typeHandler = JacksonTypeHandler.class, exist = false) // TODO 临时 exist = false，避免 db 报错；
     private Map<String, List<Long>> assignee;
 
 }
