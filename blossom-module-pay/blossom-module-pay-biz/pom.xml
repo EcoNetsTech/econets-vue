@@ -24,6 +24,11 @@
             <artifactId>blossom-module-pay-api</artifactId>
             <version>${revision}</version>
         </dependency>
+        <dependency>
+            <groupId>cn.econets.boot</groupId>
+            <artifactId>blossom-module-member-api</artifactId>
+            <version>${revision}</version>
+        </dependency>
 
         <dependency>
             <groupId>cn.econets.boot</groupId>
@@ -39,6 +44,11 @@
         </dependency>
         <dependency>
             <groupId>cn.econets.boot</groupId>
+            <artifactId>blossom-spring-boot-starter-biz-dict</artifactId>
+        </dependency>
+        <!-- Web 相关 -->
+        <dependency>
+            <groupId>cn.econets.boot</groupId>
             <artifactId>blossom-spring-boot-starter-security</artifactId>
         </dependency>
         <dependency>
@@ -49,6 +59,7 @@
             <groupId>cn.econets.boot</groupId>
             <artifactId>blossom-spring-boot-starter-redis</artifactId>
         </dependency>
+        <!-- Job 定时任务相关 -->
         <dependency>
             <groupId>cn.econets.boot</groupId>
             <artifactId>blossom-spring-boot-starter-job</artifactId>

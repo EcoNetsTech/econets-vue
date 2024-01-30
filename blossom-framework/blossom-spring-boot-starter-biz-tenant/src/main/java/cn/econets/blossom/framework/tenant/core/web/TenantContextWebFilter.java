@@ -1,7 +1,7 @@
 package cn.econets.blossom.framework.tenant.core.web;
 
 import cn.econets.blossom.framework.tenant.core.context.TenantContextHolder;
-import cn.econets.blossom.framework.web.core.WebFrameworkUtils;
+import cn.econets.blossom.framework.web.core.util.WebFrameworkUtils;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import javax.servlet.FilterChain;

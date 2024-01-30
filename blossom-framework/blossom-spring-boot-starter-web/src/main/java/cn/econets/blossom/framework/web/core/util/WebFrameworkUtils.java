@@ -1,5 +1,6 @@
-package cn.econets.blossom.framework.web.core;
+package cn.econets.blossom.framework.web.core.util;
 
+import cn.econets.blossom.framework.common.enums.TerminalEnum;
 import cn.econets.blossom.framework.common.enums.UserTypeEnum;
 import cn.econets.blossom.framework.common.pojo.CommonResult;
 import cn.econets.blossom.framework.web.config.WebProperties;
@@ -22,6 +23,13 @@ public class WebFrameworkUtils {
     private static final String REQUEST_ATTRIBUTE_COMMON_RESULT = "common_result";
 
     public static final String HEADER_TENANT_ID = "tenant-id";
+
+    /**
+     * 终端的 Header
+     *
+     * @see TerminalEnum
+     */
+    public static final String HEADER_TERMINAL = "terminal";
 
     private static WebProperties webProperties;
 
@@ -55,6 +63,15 @@ public class WebFrameworkUtils {
      */
     public static void setLoginUserType(ServletRequest request, Integer userType) {
         request.setAttribute(REQUEST_ATTRIBUTE_LOGIN_USER_TYPE, userType);
+    }
+
+    public static Integer getTerminal() {
+        HttpServletRequest request = getRequest();
+        if (request == null) {
+            return TerminalEnum.UNKNOWN.getTerminal();
+        }
+        String terminalValue = request.getHeader(HEADER_TERMINAL);
+        return NumberUtil.parseInt(terminalValue, TerminalEnum.UNKNOWN.getTerminal());
     }
 
     /**

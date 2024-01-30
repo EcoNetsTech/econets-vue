@@ -38,6 +38,16 @@
             <artifactId>blossom-module-bpm-biz</artifactId>
             <version>${revision}</version>
         </dependency>
+        <dependency>
+            <groupId>cn.econets.boot</groupId>
+            <artifactId>blossom-module-member-biz</artifactId>
+            <version>${revision}</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.econets.boot</groupId>
+            <artifactId>blossom-module-pay-biz</artifactId>
+            <version>${revision}</version>
+        </dependency>
 
 
         <!-- spring boot 配置所需依赖 -->

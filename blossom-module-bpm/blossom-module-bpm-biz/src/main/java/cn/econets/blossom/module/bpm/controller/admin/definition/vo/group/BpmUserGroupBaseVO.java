@@ -17,7 +17,7 @@ public class BpmUserGroupBaseVO {
     @NotNull(message = "组名不能为空")
     private String name;
 
-    @Schema(description = "描述", requiredMode = Schema.RequiredMode.REQUIRED, example = "芋道源码")
+    @Schema(description = "描述", requiredMode = Schema.RequiredMode.REQUIRED, example = "源码")
     @NotNull(message = "描述不能为空")
     private String description;
 

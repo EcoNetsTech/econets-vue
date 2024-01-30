@@ -3,7 +3,9 @@ package cn.econets.blossom.module.system.api.social.dto;
 import cn.econets.blossom.framework.common.enums.UserTypeEnum;
 import cn.econets.blossom.framework.common.validation.InEnum;
 import cn.econets.blossom.module.system.enums.social.SocialTypeEnum;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
@@ -13,6 +15,8 @@ import javax.validation.constraints.NotNull;
  *
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class SocialUserUnbindReqDTO {
 
     /**

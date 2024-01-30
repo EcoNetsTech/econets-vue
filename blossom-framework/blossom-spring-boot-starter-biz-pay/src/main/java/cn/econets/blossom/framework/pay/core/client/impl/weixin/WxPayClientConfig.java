@@ -100,9 +100,9 @@ public class WxPayClientConfig implements PayClientConfig {
     }
 
     public static void main(String[] args) throws FileNotFoundException {
-        String path = "/Users/yunai/Downloads/wx_pay/apiclient_cert.p12";
-        /// String path = "/Users/yunai/Downloads/wx_pay/apiclient_key.pem";
-        /// String path = "/Users/yunai/Downloads/wx_pay/apiclient_cert.pem";
+        String path = "/Users/ximu/Downloads/wx_pay/apiclient_cert.p12";
+        /// String path = "/Users/ximu/Downloads/wx_pay/apiclient_key.pem";
+        /// String path = "/Users/ximu/Downloads/wx_pay/apiclient_cert.pem";
         System.out.println(IoUtil.readUtf8(new FileInputStream(path)));
     }
 

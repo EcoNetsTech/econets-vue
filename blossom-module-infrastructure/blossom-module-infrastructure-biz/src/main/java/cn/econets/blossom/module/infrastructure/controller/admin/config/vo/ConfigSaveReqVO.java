@@ -25,7 +25,7 @@ public class ConfigSaveReqVO {
     @Size(max = 100, message = "参数名称不能超过 100 个字符")
     private String name;
 
-    @Schema(description = "参数键名", requiredMode = Schema.RequiredMode.REQUIRED, example = "yunai.db.username")
+    @Schema(description = "参数键名", requiredMode = Schema.RequiredMode.REQUIRED, example = "ximu.db.username")
     @NotBlank(message = "参数键名长度不能为空")
     @Size(max = 100, message = "参数键名长度不能超过 100 个字符")
     private String key;
