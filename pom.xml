@@ -23,6 +23,7 @@
         <module>blossom-module-bpm</module>
         <module>blossom-module-pay</module>
         <module>blossom-module-member</module>
+        <module>blossom-module-mp</module>
     </modules>
 
     <properties>
@@ -92,6 +93,7 @@
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>flatten-maven-plugin</artifactId>
+                    <version>${flatten-maven-plugin.version}</version>
                 </plugin>
             </plugins>
         </pluginManagement>

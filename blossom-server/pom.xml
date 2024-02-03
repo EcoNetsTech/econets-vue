@@ -48,7 +48,11 @@
             <artifactId>blossom-module-pay-biz</artifactId>
             <version>${revision}</version>
         </dependency>
-
+        <dependency>
+            <groupId>cn.econets.boot</groupId>
+            <artifactId>blossom-module-mp-biz</artifactId>
+            <version>${revision}</version>
+        </dependency>
 
         <!-- spring boot 配置所需依赖 -->
         <dependency>

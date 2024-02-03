@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>blossom</artifactId>
+        <groupId>cn.econets.boot</groupId>
+        <version>${revision}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>blossom-module-mp</artifactId>
+    <packaging>pom</packaging>
+
+    <name>${project.artifactId}</name>
+    <description>
+        wechat 模块，主要实现微信平台的相关业务。
+        例如：微信公众号、企业微信 SCRM 等
+    </description>
+    <modules>
+        <module>blossom-module-mp-api</module>
+        <module>blossom-module-mp-biz</module>
+    </modules>
+
+</project>
