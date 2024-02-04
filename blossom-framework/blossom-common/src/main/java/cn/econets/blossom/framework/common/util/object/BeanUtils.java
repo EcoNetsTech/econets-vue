@@ -5,6 +5,7 @@ import cn.econets.blossom.framework.common.util.collection.CollectionUtils;
 import cn.hutool.core.bean.BeanUtil;
 
 import java.util.List;
+import java.util.function.Consumer;
 
 /**
  * Bean 工具类
@@ -19,6 +20,14 @@ public class BeanUtils {
         return BeanUtil.toBean(source, targetClass);
     }
 
+    public static <T> T toBean(Object source, Class<T> targetClass, Consumer<T> peek) {
+        T target = toBean(source, targetClass);
+        if (target != null) {
+            peek.accept(target);
+        }
+        return target;
+    }
+
     public static <S, T> List<T> toBean(List<S> source, Class<T> targetType) {
         if (source == null) {
             return null;
@@ -26,11 +35,27 @@ public class BeanUtils {
         return CollectionUtils.convertList(source, s -> toBean(s, targetType));
     }
 
-    public static  <S, T> PageResult<T> toBean(PageResult<S> source, Class<T> targetType) {
+    public static <S, T> List<T> toBean(List<S> source, Class<T> targetType, Consumer<T> peek) {
+        List<T> list = toBean(source, targetType);
+        if (list != null) {
+            list.forEach(peek);
+        }
+        return list;
+    }
+
+    public static <S, T> PageResult<T> toBean(PageResult<S> source, Class<T> targetType) {
+        return toBean(source, targetType, null);
+    }
+
+    public static <S, T> PageResult<T> toBean(PageResult<S> source, Class<T> targetType, Consumer<T> peek) {
         if (source == null) {
             return null;
         }
-        return new PageResult<>(toBean(source.getList(), targetType), source.getTotal());
+        List<T> list = toBean(source.getList(), targetType);
+        if (peek != null) {
+            list.forEach(peek);
+        }
+        return new PageResult<>(list, source.getTotal());
     }
 
 }

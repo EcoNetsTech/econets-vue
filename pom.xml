@@ -24,6 +24,7 @@
         <module>blossom-module-pay</module>
         <module>blossom-module-member</module>
         <module>blossom-module-mp</module>
+        <module>blossom-module-mall</module>
     </modules>
 
     <properties>

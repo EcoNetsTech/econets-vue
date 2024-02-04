@@ -62,6 +62,6 @@ Content-Type: application/json
 tenant-id: {{appTenentId}}
 
 ### 请求 /auth/create-weixin-jsapi-signature 接口 => 成功
-POST {{appApi}}/member/auth/create-weixin-jsapi-signature?url=http://www.iocoder.cn
+POST {{appApi}}/member/auth/create-weixin-jsapi-signature?url=http://www.econets.cn
 Authorization: Bearer {{appToken}}
 tenant-id: {{appTenentId}}

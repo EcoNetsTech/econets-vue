@@ -26,11 +26,11 @@ public class MpMaterialRespVO {
     @Schema(description = "是否永久 true - 永久；false - 临时", requiredMode = Schema.RequiredMode.REQUIRED, example = "true")
     private Boolean permanent;
 
-    @Schema(description = "素材的 URL", requiredMode = Schema.RequiredMode.REQUIRED, example = "https://www.iocoder.cn/1.png")
+    @Schema(description = "素材的 URL", requiredMode = Schema.RequiredMode.REQUIRED, example = "https://www.econets.cn/1.png")
     private String url;
 
 
-    @Schema(description = "名字", example = "yunai.png")
+    @Schema(description = "名字", example = "name")
     private String name;
 
     @Schema(description = "公众号文件 URL 只有【永久素材】使用", example = "https://mmbiz.qpic.cn/xxx.mp3")

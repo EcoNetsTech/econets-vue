@@ -26,7 +26,7 @@ public class MpUserRespVO  {
 
     @Schema(description = "昵称", example = "芋道")
     private String nickname;
-    @Schema(description = "头像地址", example = "https://www.iocoder.cn/1.png")
+    @Schema(description = "头像地址", example = "https://www.econets.cn/1.png")
     private String headImageUrl;
     @Schema(description = "语言", example = "zh_CN")
     private String language;

@@ -17,7 +17,7 @@ tenant-id: {{adminTenentId}}
       "author": "我是作者",
       "digest": "我是摘要",
       "content": "我是内容",
-      "contentSourceUrl": "https://www.iocoder.cn",
+      "contentSourceUrl": "https://www.econets.cn",
       "thumbMediaId": "r6ryvl6LrxBU0miaST4Y-pIcmK-zAAId-9TGgy-DrSLhjVuWbuT3ZBjk9K1yQ0Dn"
     },
     {
@@ -25,7 +25,7 @@ tenant-id: {{adminTenentId}}
       "author": "我是作者 2",
       "digest": "我是摘要 2",
       "content": "我是内容 2",
-      "contentSourceUrl": "https://www.iocoder.cn",
+      "contentSourceUrl": "https://www.econets.cn",
       "thumbMediaId": "r6ryvl6LrxBU0miaST4Y-pIcmK-zAAId-9TGgy-DrSLhjVuWbuT3ZBjk9K1yQ0Dn"
     }
   ]
@@ -42,13 +42,13 @@ tenant-id: {{adminTenentId}}
     "author": "我是作者",
     "digest": "我是摘要",
     "content": "我是内容",
-    "contentSourceUrl": "https://www.iocoder.cn",
+    "contentSourceUrl": "https://www.econets.cn",
     "thumbMediaId": "r6ryvl6LrxBU0miaST4Y-pIcmK-zAAId-9TGgy-DrSLhjVuWbuT3ZBjk9K1yQ0Dn"
 }, {
   "title": "我是标题（XXX）",
   "author": "我是作者",
   "digest": "我是摘要",
   "content": "我是内容",
-  "contentSourceUrl": "https://www.iocoder.cn",
+  "contentSourceUrl": "https://www.econets.cn",
   "thumbMediaId": "r6ryvl6LrxBU0miaST4Y-pIcmK-zAAId-9TGgy-DrSLhjVuWbuT3ZBjk9K1yQ0Dn"
 }]
