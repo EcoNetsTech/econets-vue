@@ -23,6 +23,10 @@
     <modules>
         <module>blossom-module-product-api</module>
         <module>blossom-module-product-biz</module>
+        <module>blossom-module-trade-api</module>
+        <module>blossom-module-trade-biz</module>
+        <module>blossom-module-promotion-api</module>
+        <module>blossom-module-promotion-biz</module>
     </modules>
 
 </project>

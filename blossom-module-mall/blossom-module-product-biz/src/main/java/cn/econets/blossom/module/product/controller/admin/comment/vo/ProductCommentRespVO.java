@@ -40,7 +40,7 @@ public class ProductCommentRespVO {
     @Schema(description = "商品 SPU 名称", requiredMode = Schema.RequiredMode.REQUIRED, example = "赵六")
     private String spuName;
 
-    @Schema(description = "商品 SKU 图片地址", example = "https://www.econets.cn/yudao.jpg")
+    @Schema(description = "商品 SKU 图片地址", example = "https://www.econets.cn/blossom.jpg")
     private String skuPicUrl;
 
     @Schema(description = "商品 SKU 规格值数组")

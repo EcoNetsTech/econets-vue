@@ -48,7 +48,7 @@ public class AppMemberUserInfoRespVO {
         @Schema(description = "等级", requiredMode = Schema.RequiredMode.REQUIRED, example = "1")
         private Integer level;
 
-        @Schema(description = "等级图标", example = "https://www.econets.cn/yudao.jpg")
+        @Schema(description = "等级图标", example = "https://www.econets.cn/blossom.jpg")
         private String icon;
 
     }

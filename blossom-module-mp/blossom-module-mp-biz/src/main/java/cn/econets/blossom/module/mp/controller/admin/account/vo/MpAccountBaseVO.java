@@ -18,7 +18,7 @@ public class MpAccountBaseVO {
     @NotEmpty(message = "公众号名称不能为空")
     private String name;
 
-    @Schema(description = "公众号微信号", requiredMode = Schema.RequiredMode.REQUIRED, example = "yudaoyuanma")
+    @Schema(description = "公众号微信号", requiredMode = Schema.RequiredMode.REQUIRED, example = "blossomyuanma")
     @NotEmpty(message = "公众号微信号不能为空")
     private String account;
 
