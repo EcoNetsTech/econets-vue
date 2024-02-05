@@ -130,7 +130,7 @@ public class ProductSkuDO extends BaseDO {
 
     }
 
-    // TODO @芋艿：可以找一些新的思路
+    // TODO ：可以找一些新的思路
     public static class PropertyTypeHandler extends AbstractJsonTypeHandler<Object> {
 
         @Override
@@ -145,11 +145,11 @@ public class ProductSkuDO extends BaseDO {
 
     }
 
-    // TODO 芋艿：integral from y
-    // TODO 芋艿：pinkPrice from y
-    // TODO 芋艿：seckillPrice from y
-    // TODO 芋艿：pinkStock from y
-    // TODO 芋艿：seckillStock from y
+    // TODO integral from y
+    // TODO pinkPrice from y
+    // TODO seckillPrice from y
+    // TODO pinkStock from y
+    // TODO seckillStock from y
 
 }
 

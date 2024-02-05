@@ -114,7 +114,7 @@ public class RewardActivityDO extends BaseDO {
 
     }
 
-    // TODO @芋艿：可以找一些新的思路
+    // TODO ：可以找一些新的思路
     public static class RuleTypeHandler extends AbstractJsonTypeHandler<List<Rule>> {
 
         @Override

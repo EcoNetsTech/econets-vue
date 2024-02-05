@@ -238,7 +238,7 @@ public class MpMessageDO extends BaseDO {
 
     }
 
-    // TODO @芋艿：可以找一些新的思路
+    // TODO ：可以找一些新的思路
     public static class ArticleTypeHandler extends AbstractJsonTypeHandler<List<Article>> {
 
         @Override

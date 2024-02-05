@@ -41,7 +41,7 @@ import static cn.econets.blossom.framework.common.util.date.LocalDateTimeUtils.a
 import static cn.econets.blossom.framework.common.util.date.LocalDateTimeUtils.beforeNow;
 import static cn.econets.blossom.module.promotion.enums.ErrorCodeConstants.*;
 
-// TODO 芋艿：等拼团记录做完，完整 review 下
+// TODO 等拼团记录做完，完整 review 下
 
 /**
  * 拼团记录 Service 实现类
@@ -68,7 +68,7 @@ public class CombinationRecordServiceImpl implements CombinationRecordService {
     @Lazy
     private TradeOrderApi tradeOrderApi;
 
-    // TODO @芋艿：在详细预览下；
+    // TODO ：在详细预览下；
     @Override
     public KeyValue<CombinationActivityDO, CombinationProductDO> validateCombinationRecord(
             Long userId, Long activityId, Long headId, Long skuId, Integer count) {

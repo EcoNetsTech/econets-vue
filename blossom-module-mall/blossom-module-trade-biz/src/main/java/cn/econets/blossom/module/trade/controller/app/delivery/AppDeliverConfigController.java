@@ -17,7 +17,7 @@ import static cn.econets.blossom.framework.common.pojo.CommonResult.success;
 @Validated
 public class AppDeliverConfigController {
 
-    // TODO @芋艿：这里后面干掉，合并到 AppTradeConfigController 中
+    // TODO ：这里后面干掉，合并到 AppTradeConfigController 中
     @GetMapping("/get")
     @Operation(summary = "获得配送配置")
     public CommonResult<AppDeliveryConfigRespVO> getDeliveryConfig() {

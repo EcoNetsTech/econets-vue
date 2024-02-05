@@ -209,7 +209,7 @@ public class TradeOrderItemDO extends BaseDO {
 
     }
 
-    // TODO @芋艿：可以找一些新的思路
+    // TODO ：可以找一些新的思路
     public static class PropertyTypeHandler extends AbstractJsonTypeHandler<List<Property>> {
 
         @Override

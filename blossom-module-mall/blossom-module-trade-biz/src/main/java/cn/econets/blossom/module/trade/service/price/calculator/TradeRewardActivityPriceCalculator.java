@@ -134,7 +134,7 @@ public class TradeRewardActivityPriceCalculator implements TradePriceCalculator 
      * @return 提示
      */
     private String getRewardActivityNotMeetTip(RewardActivityMatchRespDTO rewardActivity) {
-        // TODO 芋艿：后面再想想；应该找第一个规则，算下还差多少即可。
+        // TODO 后面再想想；应该找第一个规则，算下还差多少即可。
         return "TODO";
     }
 
