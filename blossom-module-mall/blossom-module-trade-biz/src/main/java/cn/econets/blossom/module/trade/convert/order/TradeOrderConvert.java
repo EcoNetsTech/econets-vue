@@ -5,7 +5,7 @@ import cn.hutool.core.util.StrUtil;
 import cn.econets.blossom.framework.common.pojo.PageResult;
 import cn.econets.blossom.framework.common.util.collection.CollectionUtils;
 import cn.econets.blossom.framework.common.util.string.StrUtils;
-import cn.econets.blossom.framework.dict.core.util.DictFrameworkUtils;
+import cn.econets.blossom.framework.dict.core.DictFrameworkUtils;
 import cn.econets.blossom.framework.ip.core.utils.AreaUtils;
 import cn.econets.blossom.module.member.api.address.dto.MemberAddressRespDTO;
 import cn.econets.blossom.module.member.api.user.dto.MemberUserRespDTO;

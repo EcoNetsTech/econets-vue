@@ -20,9 +20,9 @@
         <module>blossom-module-infrastructure</module>
         <module>blossom-module-system</module>
         <!-- module 拓展 非必要-->
-        <module>blossom-module-bpm</module>
-        <module>blossom-module-pay</module>
         <module>blossom-module-member</module>
+        <module>blossom-module-pay</module>
+        <module>blossom-module-bpm</module>
         <module>blossom-module-mp</module>
         <module>blossom-module-mall</module>
     </modules>

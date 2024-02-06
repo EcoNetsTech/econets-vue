@@ -16,7 +16,7 @@ import javax.annotation.Resource;
 import static cn.econets.blossom.framework.common.exception.util.ServiceExceptionUtil.exception;
 import static cn.econets.blossom.module.trade.enums.ErrorCodeConstants.PRICE_CALCULATE_SECKILL_TOTAL_LIMIT_COUNT;
 
-// TODO huihui：单测需要补充
+// TODO 单测需要补充
 /**
  * 秒杀活动的 {@link TradePriceCalculator} 实现类
  *

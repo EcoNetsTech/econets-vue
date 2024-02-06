@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
 
-// TODO huihui：单测需要补充
+// TODO 单测需要补充
 /**
  * 砍价活动的 {@link TradePriceCalculator} 实现类
  *

@@ -29,9 +29,25 @@ public class BannerApplicationRunner implements ApplicationRunner {
                             "----------------------------------------------------------",
                     "http://localhost:"+port+"/doc.html");
 
+            // 会员中心
+            if (isNotPresent("cn.econets.blossom.module.member.framework.web.config.MemberWebConfiguration")) {
+                System.out.println("[会员中心模块 blossom-module-member - 已禁用]");
+            }
             // 工作流
             if (isNotPresent("cn.econets.blossom.framework.flowable.config.FlowableConfiguration")) {
                 System.out.println("[工作流模块 blossom-module-bpm - 已禁用]");
+            }
+            // 微信公众号
+            if (isNotPresent("cn.econets.blossom.module.mp.framework.mp.config.MpConfiguration")) {
+                System.out.println("[微信公众号 blossom-module-mp - 已禁用]");
+            }
+            // 商城系统
+            if (isNotPresent("cn.econets.blossom.module.trade.framework.web.config.TradeWebConfiguration")) {
+                System.out.println("[商城系统 blossom-module-mall - 已禁用]");
+            }
+            // 支付平台
+            if (isNotPresent("cn.econets.blossom.module.pay.framework.pay.config.PayConfiguration")) {
+                System.out.println("[支付系统 blossom-module-pay - 已禁用]");
             }
         });
     }

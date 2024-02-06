@@ -87,7 +87,7 @@ public class TradePointUsePriceCalculator implements TradePriceCalculator {
         if (config.getPointTradeDeductMaxPrice() != null && config.getPointTradeDeductMaxPrice() > 0) {
             usePoint = Math.min(usePoint, config.getPointTradeDeductMaxPrice());
         }
-        // TODO @疯狂：这里应该是，抵扣到只剩下 0.01；
+        // TODO 这里应该是，抵扣到只剩下 0.01；
         // 积分优惠金额（分）
         int pointPrice = usePoint * config.getPointTradeDeductUnitPrice();
         if (result.getPrice().getPayPrice() <= pointPrice) {

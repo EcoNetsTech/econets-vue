@@ -42,7 +42,7 @@ public class BpmTaskTodoPageItemRespVO {
         @Schema(description = "发起人的用户编号", requiredMode = Schema.RequiredMode.REQUIRED, example = "1024")
         private Long startUserId;
 
-        @Schema(description = "发起人的用户昵称", requiredMode = Schema.RequiredMode.REQUIRED, example = "芋艿")
+        @Schema(description = "发起人的用户昵称", requiredMode = Schema.RequiredMode.REQUIRED, example = "econets")
         private String startUserNickname;
 
         @Schema(description = "流程定义的编号", requiredMode = Schema.RequiredMode.REQUIRED, example = "2048")

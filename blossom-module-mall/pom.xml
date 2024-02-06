@@ -27,6 +27,8 @@
         <module>blossom-module-trade-biz</module>
         <module>blossom-module-promotion-api</module>
         <module>blossom-module-promotion-biz</module>
+        <module>blossom-module-statistics-api</module>
+        <module>blossom-module-statistics-biz</module>
     </modules>
 
 </project>

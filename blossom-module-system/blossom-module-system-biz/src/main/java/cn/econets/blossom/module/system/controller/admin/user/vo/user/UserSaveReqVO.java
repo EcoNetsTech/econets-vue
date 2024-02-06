@@ -23,7 +23,7 @@ public class UserSaveReqVO {
     @Size(min = 4, max = 30, message = "用户账号长度为 4-30 个字符")
     private String username;
 
-    @Schema(description = "用户昵称", requiredMode = Schema.RequiredMode.REQUIRED, example = "芋艿")
+    @Schema(description = "用户昵称", requiredMode = Schema.RequiredMode.REQUIRED, example = "econets")
     @Size(max = 30, message = "用户昵称长度不能超过30个字符")
     private String nickname;
 

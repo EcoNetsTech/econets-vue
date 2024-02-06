@@ -26,7 +26,7 @@ public class DiscountActivityRespVO extends DiscountActivityBaseVO {
     private LocalDateTime createTime;
 
 
-    @Schema(description = "商品 SPU 编号", requiredMode = Schema.RequiredMode.REQUIRED, example = "2048") // TODO @zhangshuai：属性和属性之间，最多空一行噢；
+    @Schema(description = "商品 SPU 编号", requiredMode = Schema.RequiredMode.REQUIRED, example = "2048") // TODO 属性和属性之间，最多空一行噢；
     private Long spuId;
 
     @Schema(description = "限时折扣商品", requiredMode = Schema.RequiredMode.REQUIRED)
@@ -34,7 +34,7 @@ public class DiscountActivityRespVO extends DiscountActivityBaseVO {
 
     // ========== 商品字段 ==========
 
-    // TODO @zhangshuai：一个优惠活动，会关联多个商品，所以它不用返回 spuName 哈；
+    // TODO 一个优惠活动，会关联多个商品，所以它不用返回 spuName 哈；
     // TODO 最终界面展示字段就：编号、活动名称、参与商品数、活动状态、开始时间、结束时间、操作
     @Schema(description = "商品名称", requiredMode = Schema.RequiredMode.REQUIRED, // 从 SPU 的 name 读取
             example = "618大促")

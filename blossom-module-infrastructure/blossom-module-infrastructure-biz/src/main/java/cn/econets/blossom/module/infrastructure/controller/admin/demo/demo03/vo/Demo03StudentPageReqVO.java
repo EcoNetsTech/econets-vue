@@ -17,7 +17,7 @@ import static cn.econets.blossom.framework.common.util.date.DateUtils.FORMAT_YEA
 @ToString(callSuper = true)
 public class Demo03StudentPageReqVO extends PageParam {
 
-    @Schema(description = "名字", example = "芋艿")
+    @Schema(description = "名字", example = "econets")
     private String name;
 
     @Schema(description = "性别")

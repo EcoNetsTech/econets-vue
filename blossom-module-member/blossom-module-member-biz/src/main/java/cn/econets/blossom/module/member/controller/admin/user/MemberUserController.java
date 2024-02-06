@@ -80,7 +80,7 @@ public class MemberUserController {
     @Operation(summary = "更新会员用户余额")
     @PreAuthorize("@ss.hasPermission('member:user:update-balance')")
     public CommonResult<Boolean> updateUserBalance(@Valid @RequestBody Long id) {
-        // todo @jason：增加一个【修改余额】
+        // todo ：增加一个【修改余额】
         return success(true);
     }
 

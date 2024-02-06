@@ -23,7 +23,7 @@ public interface AdminUserApi {
      */
     AdminUserRespDTO getUser(Long id);
 
-    // TODO @puhui999：这里返回 List<AdminUserRespDTO> 方法名可以改成 getUserListBySubordinate
+    // TODO 这里返回 List<AdminUserRespDTO> 方法名可以改成 getUserListBySubordinate
     /**
      * 通过用户 ID 查询用户下属
      *

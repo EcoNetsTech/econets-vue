@@ -44,7 +44,7 @@ public interface TradeOrderMapper extends BaseMapperX<TradeOrderDO> {
                 .orderByDesc(TradeOrderDO::getId));
     }
 
-    // TODO @疯狂：如果用 map 返回，要不这里直接用 TradeOrderSummaryRespVO 返回？也算合理，就当  sql 查询出这么个玩意~~
+    // TODO 如果用 map 返回，要不这里直接用 TradeOrderSummaryRespVO 返回？也算合理，就当  sql 查询出这么个玩意~~
     default List<Map<String, Object>> selectOrderSummaryGroupByRefundStatus(TradeOrderPageReqVO reqVO, Set<Long> userIds) {
         return selectMaps(new MPJLambdaWrapperX<TradeOrderDO>()
                 .selectAs(TradeOrderDO::getRefundStatus, TradeOrderDO::getRefundStatus)  // 售后状态

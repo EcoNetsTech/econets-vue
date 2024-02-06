@@ -47,7 +47,7 @@ public class DiscountActivityServiceImpl implements DiscountActivityService {
 
     @Override
     public List<DiscountProductDO> getMatchDiscountProductList(Collection<Long> skuIds) {
-        // TODO @zhangshuai：这里是不是可以直接 return discountProductMapper.getMatchDiscountProductList(skuIds)； 一般来说，如果 idea 报“黄色”的警告，尽量都处理下哈；原则是，一切警告，皆为异常（错误），这样可以写出更好的代码。
+        // TODO 这里是不是可以直接 return discountProductMapper.getMatchDiscountProductList(skuIds)； 一般来说，如果 idea 报“黄色”的警告，尽量都处理下哈；原则是，一切警告，皆为异常（错误），这样可以写出更好的代码。
         List<DiscountProductDO> matchDiscountProductList = discountProductMapper.getMatchDiscountProductList(skuIds);
         return matchDiscountProductList;
     }
@@ -59,11 +59,11 @@ public class DiscountActivityServiceImpl implements DiscountActivityService {
 
         // 插入活动
         DiscountActivityDO discountActivity = DiscountActivityConvert.INSTANCE.convert(createReqVO)
-                // TODO @zhangshuai：这里的调用去掉哈，强制就是开启的；
+                // TODO 这里的调用去掉哈，强制就是开启的；
                 .setStatus(PromotionUtils.calculateActivityStatus(createReqVO.getEndTime()));
         discountActivityMapper.insert(discountActivity);
         // 插入商品
-        // TODO @zhangshuai：activityStatus 最好代码里，也做下设置噢。
+        // TODO activityStatus 最好代码里，也做下设置噢。
         List<DiscountProductDO> discountProducts = convertList(createReqVO.getProducts(),
                 product -> DiscountActivityConvert.INSTANCE.convert(product).setActivityId(discountActivity.getId()));
         discountProductMapper.insertBatch(discountProducts);
@@ -90,7 +90,7 @@ public class DiscountActivityServiceImpl implements DiscountActivityService {
     }
 
     private void updateDiscountProduct(DiscountActivityUpdateReqVO updateReqVO) {
-        // TODO @zhangshuai：这里的逻辑，可以优化下哈；参考 CombinationActivityServiceImpl 的 updateCombinationProduct，主要是 CollectionUtils.diffList 的使用哈；
+        // TODO 这里的逻辑，可以优化下哈；参考 CombinationActivityServiceImpl 的 updateCombinationProduct，主要是 CollectionUtils.diffList 的使用哈；
         //  然后原先是使用 DiscountActivityConvert.INSTANCE.isEquals 对比，现在看看是不是简化就基于 skuId 对比就完事了；之前写的太精细，意义不大；
         List<DiscountProductDO> dbDiscountProducts = discountProductMapper.selectListByActivityId(updateReqVO.getId());
         // 计算要删除的记录
@@ -121,9 +121,9 @@ public class DiscountActivityServiceImpl implements DiscountActivityService {
             return;
         }
         // 查询商品参加的活动
-        // TODO @zhangshuai：下面 121 这个查询，是不是不用做呀；直接 convert 出 skuId 集合就 ok 啦；
+        // TODO 下面 121 这个查询，是不是不用做呀；直接 convert 出 skuId 集合就 ok 啦；
         List<DiscountProductDO> list = discountProductMapper.selectListByActivityId(id);
-        // TODO @zhangshuai：一般简单的 stream 方法，建议是使用 CollectionUtils，例如说这里是 convertList 对把。
+        // TODO 一般简单的 stream 方法，建议是使用 CollectionUtils，例如说这里是 convertList 对把。
         List<Long> skuIds = list.stream().map(item -> item.getSkuId()).collect(Collectors.toList());
         List<DiscountProductDO> matchDiscountProductList = getMatchDiscountProductList(skuIds);
         if (id != null) { // 排除自己这个活动

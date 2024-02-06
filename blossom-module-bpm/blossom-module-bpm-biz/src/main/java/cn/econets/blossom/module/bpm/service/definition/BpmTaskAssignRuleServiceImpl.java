@@ -243,7 +243,7 @@ public class BpmTaskAssignRuleServiceImpl implements BpmTaskAssignRuleService {
         List<Long> assignee = processInstanceService.getAssigneeByProcessInstanceIdAndTaskDefinitionKey(
                 execution.getProcessInstanceId(), execution.getCurrentActivityId());
         if (CollUtil.isNotEmpty(assignee)) {
-            // TODO @hai：new HashSet 即可
+            // TODO new HashSet 即可
             return convertSet(assignee, Function.identity());
         }
         // 2. 通过分配规则，计算审批人

@@ -44,8 +44,8 @@ public class AdminUserApiImpl implements AdminUserApi {
 
         Set<Long> subordinateIds = null; // 下属用户编号
         DeptDO dept = deptService.getDept(user.getDeptId());
-        // TODO @puhui999：需要递归查询到子部门；并且要排除到自己噢。
-        // TODO @puhui999：保持 if return 原则，这里其实要判断不等于，则返回 null；最好返回 空集合，上面也是
+        // TODO 需要递归查询到子部门；并且要排除到自己噢。
+        // TODO 保持 if return 原则，这里其实要判断不等于，则返回 null；最好返回 空集合，上面也是
         if (ObjUtil.equal(dept.getLeaderUserId(), id)) { // 校验是否是该部门的负责人
             List<AdminUserDO> users = userService.getUserListByDeptIds(Collections.singletonList(dept.getId()));
             subordinateIds = CollectionUtils.convertSet(users, AdminUserDO::getId);

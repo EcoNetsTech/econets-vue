@@ -33,7 +33,7 @@ import java.util.Objects;
 
 import static cn.econets.blossom.framework.common.pojo.CommonResult.success;
 import static cn.econets.blossom.framework.common.util.collection.CollectionUtils.convertList;
-import static cn.econets.blossom.framework.security.core.util.SecurityFrameworkUtils.getLoginUserId;
+import static cn.econets.blossom.framework.web.core.util.WebFrameworkUtils.getLoginUserId;
 
 @Tag(name = "用户 APP - 拼团活动")
 @RestController

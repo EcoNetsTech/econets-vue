@@ -145,7 +145,7 @@ public interface BpmProcessInstanceService {
      */
     void updateProcessInstanceExtReject(String id, String reason);
 
-    // TODO @hai：改成 getProcessInstanceAssigneesByTaskDefinitionKey(String id, String taskDefinitionKey)
+    // TODO 改成 getProcessInstanceAssigneesByTaskDefinitionKey(String id, String taskDefinitionKey)
     /**
      * 获取流程实例中，取出指定流程任务提前指定的审批人
      *

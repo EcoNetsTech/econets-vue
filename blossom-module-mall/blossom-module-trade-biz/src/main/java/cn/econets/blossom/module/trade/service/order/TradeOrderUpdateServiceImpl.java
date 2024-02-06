@@ -235,7 +235,7 @@ public class TradeOrderUpdateServiceImpl implements TradeOrderUpdateService {
         // 4. 插入订单日志
         TradeOrderLogUtils.setOrderInfo(order.getId(), null, order.getStatus());
 
-        // TODO @LeeYan9: 是可以思考下, 订单的营销优惠记录, 应该记录在哪里, 微信讨论起来!
+        // TODO LeeYan9: 是可以思考下, 订单的营销优惠记录, 应该记录在哪里, 微信讨论起来!
     }
 
     private void createPayOrder(TradeOrderDO order, List<TradeOrderItemDO> orderItems) {

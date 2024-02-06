@@ -43,7 +43,7 @@ public interface DiscountActivityConvert {
                                                            List<ProductSpuRespDTO> spuList) {
         PageResult<DiscountActivityRespVO> pageResult = convertPage(page);
 
-        // 拼接商品 TODO @zhangshuai：类似空行的问题，也可以看看
+        // 拼接商品 TODO 类似空行的问题，也可以看看
         Map<Long, DiscountProductDO> discountActivityMap = CollectionUtils.convertMap(discountProductDOList, DiscountProductDO::getActivityId);
         Map<Long, ProductSpuRespDTO> spuMap = CollectionUtils.convertMap(spuList, ProductSpuRespDTO::getId);
         pageResult.getList().forEach(item -> {

@@ -144,7 +144,7 @@ public class ProductSpuDO extends BaseDO {
      */
     private Integer giveIntegral;
 
-    // TODO @puhui999：字段估计要改成 brokerageType
+    // TODO 字段估计要改成 brokerageType
     /**
      * 分销类型
      *

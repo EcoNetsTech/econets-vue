@@ -37,7 +37,7 @@ import static cn.econets.blossom.module.pay.convert.transfer.PayTransferConvert.
 import static cn.econets.blossom.module.pay.enums.ErrorCodeConstants.*;
 import static cn.econets.blossom.module.pay.enums.transfer.PayTransferStatusEnum.*;
 
-// TODO @jason：等彻底实现完，单测写写；
+// TODO ：等彻底实现完，单测写写；
 
 /**
  * 转账 Service 实现类

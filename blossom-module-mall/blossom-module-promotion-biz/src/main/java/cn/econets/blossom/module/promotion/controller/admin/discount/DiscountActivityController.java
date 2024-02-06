@@ -89,7 +89,7 @@ public class DiscountActivityController {
     public CommonResult<PageResult<DiscountActivityRespVO>> getDiscountActivityPage(@Valid DiscountActivityPageReqVO pageVO) {
         PageResult<DiscountActivityDO> pageResult = discountActivityService.getDiscountActivityPage(pageVO);
 
-        if (CollUtil.isEmpty(pageResult.getList())) { // TODO @zhangshuai：方法里的空行，目的是让代码分块，可以更清晰；所以上面这个空格可以不要，而下面判断之后的，空格，其实加下比较好；类似的还有 spuList、以及后面的 convert
+        if (CollUtil.isEmpty(pageResult.getList())) { // TODO 方法里的空行，目的是让代码分块，可以更清晰；所以上面这个空格可以不要，而下面判断之后的，空格，其实加下比较好；类似的还有 spuList、以及后面的 convert
             return success(PageResult.empty(pageResult.getTotal()));
         }
         // 拼接数据

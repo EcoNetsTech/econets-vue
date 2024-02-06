@@ -26,17 +26,17 @@
         </dependency>
         <dependency>
             <groupId>cn.econets.boot</groupId>
-            <artifactId>blossom-module-promotion-api</artifactId>
-            <version>${revision}</version>
-        </dependency>
-        <dependency>
-            <groupId>cn.econets.boot</groupId>
             <artifactId>blossom-module-product-api</artifactId>
             <version>${revision}</version>
         </dependency>
         <dependency>
             <groupId>cn.econets.boot</groupId>
             <artifactId>blossom-module-pay-api</artifactId>
+            <version>${revision}</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.econets.boot</groupId>
+            <artifactId>blossom-module-promotion-api</artifactId>
             <version>${revision}</version>
         </dependency>
         <dependency>

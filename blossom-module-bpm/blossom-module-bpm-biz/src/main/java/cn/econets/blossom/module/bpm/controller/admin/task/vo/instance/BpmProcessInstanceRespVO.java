@@ -54,7 +54,7 @@ public class BpmProcessInstanceRespVO {
 
         @Schema(description = "用户编号", requiredMode = Schema.RequiredMode.REQUIRED, example = "1")
         private Long id;
-        @Schema(description = "用户昵称", requiredMode = Schema.RequiredMode.REQUIRED, example = "芋艿")
+        @Schema(description = "用户昵称", requiredMode = Schema.RequiredMode.REQUIRED, example = "econets")
         private String nickname;
 
         @Schema(description = "部门编号", requiredMode = Schema.RequiredMode.REQUIRED, example = "1")
