@@ -25,6 +25,7 @@
         <module>blossom-module-bpm</module>
         <module>blossom-module-mp</module>
         <module>blossom-module-mall</module>
+        <module>blossom-module-crm</module>
     </modules>
 
     <properties>

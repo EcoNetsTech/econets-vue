@@ -1,1 +1,1 @@
-package cn.econets.blossom.module.infra.service;
+package cn.econets.blossom.module.infrastructure.service;

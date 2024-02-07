@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>blossom-module-crm</artifactId>
+        <groupId>cn.econets.boot</groupId>
+        <version>${revision}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>blossom-module-crm-biz</artifactId>
+    <packaging>jar</packaging>
+
+    <name>${project.artifactId}</name>
+    <description>
+        crm 包下，客户关系管理（Customer Relationship Management）。
+        例如说：客户、联系人、商机、合同、回款等等
+    </description>
+
+    <dependencies>
+        <dependency>
+            <groupId>cn.econets.boot</groupId>
+            <artifactId>blossom-module-crm-api</artifactId>
+            <version>${revision}</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.econets.boot</groupId>
+            <artifactId>blossom-module-system-api</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
+        <!--业务组件-->
+        <dependency>
+            <groupId>cn.econets.boot</groupId>
+            <artifactId>blossom-spring-boot-starter-biz-operatelog</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>cn.econets.boot</groupId>
+            <artifactId>blossom-spring-boot-starter-biz-ip</artifactId>
+        </dependency>
+
+        <!--Web相关-->
+        <dependency>
+            <groupId>cn.econets.boot</groupId>
+            <artifactId>blossom-spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>cn.econets.boot</groupId>
+            <artifactId>blossom-spring-boot-starter-security</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.econets.boot</groupId>
+            <artifactId>blossom-spring-boot-starter-mybatis</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.econets.boot</groupId>
+            <artifactId>blossom-spring-boot-starter-excel</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>cn.econets.boot</groupId>
+            <artifactId>blossom-spring-boot-starter-biz-dict</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.econets.boot</groupId>
+            <artifactId>blossom-spring-boot-starter-test</artifactId>
+        </dependency>
+
+    </dependencies>
+
+</project>

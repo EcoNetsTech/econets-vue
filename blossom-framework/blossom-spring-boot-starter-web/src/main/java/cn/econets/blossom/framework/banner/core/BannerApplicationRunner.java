@@ -49,6 +49,10 @@ public class BannerApplicationRunner implements ApplicationRunner {
             if (isNotPresent("cn.econets.blossom.module.pay.framework.pay.config.PayConfiguration")) {
                 System.out.println("[支付系统 blossom-module-pay - 已禁用]");
             }
+            // 客户关系系统
+            if (isNotPresent("cn.econets.blossom.module.pay.framework.pay.config.PayConfiguration")) {
+                System.out.println("[客户关系系统 blossom-module-crm - 已禁用]");
+            }
         });
     }
 

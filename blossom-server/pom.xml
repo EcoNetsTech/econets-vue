@@ -40,11 +40,11 @@
             <version>${revision}</version>
         </dependency>
         <!-- 工作流。默认注释，保证编译速度 -->
-<!--        <dependency>-->
-<!--            <groupId>cn.econets.boot</groupId>-->
-<!--            <artifactId>blossom-module-bpm-biz</artifactId>-->
-<!--            <version>${revision}</version>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>cn.econets.boot</groupId>
+            <artifactId>blossom-module-bpm-biz</artifactId>
+            <version>${revision}</version>
+        </dependency>
         <!-- 支付服务。默认注释，保证编译速度 -->
         <dependency>
             <groupId>cn.econets.boot</groupId>
@@ -52,11 +52,11 @@
             <version>${revision}</version>
         </dependency>
         <!-- 微信公众号模块。默认注释，保证编译速度 -->
-<!--        <dependency>-->
-<!--            <groupId>cn.econets.boot</groupId>-->
-<!--            <artifactId>blossom-module-mp-biz</artifactId>-->
-<!--            <version>${revision}</version>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>cn.econets.boot</groupId>
+            <artifactId>blossom-module-mp-biz</artifactId>
+            <version>${revision}</version>
+        </dependency>
         <!-- 商城相关模块。默认注释，保证编译速度-->
         <dependency>
             <groupId>cn.econets.boot</groupId>
@@ -76,6 +76,11 @@
         <dependency>
             <groupId>cn.econets.boot</groupId>
             <artifactId>blossom-module-statistics-biz</artifactId>
+            <version>${revision}</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.econets.boot</groupId>
+            <artifactId>blossom-module-crm-biz</artifactId>
             <version>${revision}</version>
         </dependency>
 
