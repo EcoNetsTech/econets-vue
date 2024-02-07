@@ -31,7 +31,7 @@ public class BpmProcessInstanceCreateReqDTO {
     @NotEmpty(message = "业务的唯一标识")
     private String businessKey;
 
-    // TODO @hai：assignees 复数
+    // TODO assignees 复数
     /**
      * 提前指派的审批人
      *

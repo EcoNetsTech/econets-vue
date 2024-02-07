@@ -39,7 +39,7 @@ public class PayWalletRechargeController {
         return success(true);
     }
 
-    // TODO @jason：发起退款，要 post 操作哈；
+    // TODO ：发起退款，要 post 操作哈；
     @GetMapping("/refund")
     @Operation(summary = "发起钱包充值退款")
     @Parameter(name = "id", description = "编号", required = true, example = "1024")

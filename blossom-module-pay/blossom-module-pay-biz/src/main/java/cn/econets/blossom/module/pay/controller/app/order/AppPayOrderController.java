@@ -37,7 +37,7 @@ public class AppPayOrderController {
     @Resource
     private PayOrderService payOrderService;
 
-    // TODO 芋艿：临时 demo，技术打样。
+    // TODO 临时 demo，技术打样。
     @GetMapping("/get")
     @Operation(summary = "获得支付订单")
     @Parameter(name = "id", description = "编号", required = true, example = "1024")

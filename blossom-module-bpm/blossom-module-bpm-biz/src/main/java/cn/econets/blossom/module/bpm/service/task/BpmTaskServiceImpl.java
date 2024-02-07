@@ -314,7 +314,7 @@ public class BpmTaskServiceImpl implements BpmTaskService {
      *
      * @param parentTask 当前审批任务的父任务
      */
-    // TODO @海：这个逻辑，怎么感觉可以是 parentTask 的 parent，再去调用 handleParentTask 方法；可以微信聊下；
+    // TODO ：这个逻辑，怎么感觉可以是 parentTask 的 parent，再去调用 handleParentTask 方法；可以微信聊下；
     private void handleParentTaskForAfterSign(Task parentTask) {
         String parentTaskId = parentTask.getId();
         // 1. 更新 parentTask 的任务拓展表为通过，并调用 complete 完成自己
@@ -900,14 +900,14 @@ public class BpmTaskServiceImpl implements BpmTaskService {
         stack.push(parentTaskId);
         //控制遍历的次数不超过 Byte.MAX_VALUE，避免脏数据造成死循环
         int count = 0;
-        // TODO @海：< 的前后空格，要注意哈；
+        // TODO ：< 的前后空格，要注意哈；
         while (!stack.isEmpty() && count<Byte.MAX_VALUE) {
             // 1.2 弹出栈顶任务ID
             String taskId = stack.pop();
             // 1.3 将任务ID添加到结果集合中
             allChildTaskIds.add(taskId);
             // 1.4 获取该任务的子任务列表
-            // TODO @海：有个更高效的写法；一次性去 in 一层；不然每个节点，都去查询一次 db， 太浪费了；每次 in，最终就是 O(h) 查询，而不是 O(n) 查询；
+            // TODO ：有个更高效的写法；一次性去 in 一层；不然每个节点，都去查询一次 db， 太浪费了；每次 in，最终就是 O(h) 查询，而不是 O(n) 查询；
             List<String> childrenTaskIdList = getChildrenTaskIdList(taskId);
             if (CollUtil.isNotEmpty(childrenTaskIdList)) {
                 for (String childTaskId : childrenTaskIdList) {

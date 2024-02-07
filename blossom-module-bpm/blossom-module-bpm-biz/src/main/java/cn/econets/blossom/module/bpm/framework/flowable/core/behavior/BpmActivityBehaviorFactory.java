@@ -38,6 +38,6 @@ public class BpmActivityBehaviorFactory extends DefaultActivityBehaviorFactory {
                 .setBpmTaskRuleService(bpmTaskRuleService);
     }
 
-    // TODO @ke：SequentialMultiInstanceBehavior 这个抽空也可以看看
+    // TODO ke：SequentialMultiInstanceBehavior 这个抽空也可以看看
 
 }

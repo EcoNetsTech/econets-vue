@@ -12,10 +12,10 @@ public class MemberLevelSimpleRespVO {
     @Schema(description = "编号", example = "6103")
     private Long id;
 
-    @Schema(description = "等级名称", example = "芋艿")
+    @Schema(description = "等级名称", example = "econets")
     private String name;
 
-    @Schema(description = "等级图标", example = "https://www.iocoder.cn/yudao.jpg")
+    @Schema(description = "等级图标", example = "https://www.econets.cn/blossom.jpg")
     private String icon;
 
 }

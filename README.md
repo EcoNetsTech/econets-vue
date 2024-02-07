@@ -13,7 +13,7 @@
 
 快速开发平台，全部开源，个人与企业可 100% 免费使用。
 
-* Java 后端：`master` 分支为 JDK 8 + Spring Boot 2.7.17，`master-jdk21` 分支为 JDK21 + Spring Boot 3.2.0
+* Java 后端：`master` 分支为 JDK 8 + Spring Boot 2.7.17，`2.x` 分支为 JDK21 + Spring Boot 3.2.0
 * 管理后台的电脑端：Vue3 提供 `econets-ui-admin-vue3`版本
 * 后端采用 Spring Boot 多模块架构、MySQL + MyBatis Plus、Redis + Redisson
 * 数据库可使用 MySQL、Oracle、PostgreSQL、SQL Server、MariaDB、国产达梦 DM、TiDB 等

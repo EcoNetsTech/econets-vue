@@ -188,6 +188,7 @@ application:
     enable: true
   security:
     mock-enable: true
+  tencent-lbs-key: TVDBZ-TDILD-4ON4B-PFDZA-RNLKH-VVF6E # QQ 地图的密钥 https://lbs.qq.com/service/staticV2/staticGuide/staticDoc
   websocket:
     enable: true # websocket的开关
     path: /infra/ws # 路径

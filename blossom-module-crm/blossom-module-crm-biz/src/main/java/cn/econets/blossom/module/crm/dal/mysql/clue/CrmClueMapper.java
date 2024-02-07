@@ -1,0 +1,50 @@
+package cn.econets.blossom.module.crm.dal.mysql.clue;
+
+import cn.econets.blossom.framework.common.pojo.PageResult;
+import cn.econets.blossom.framework.mybatis.core.mapper.BaseMapperX;
+import cn.econets.blossom.framework.mybatis.core.query.MPJLambdaWrapperX;
+import cn.econets.blossom.module.crm.controller.admin.clue.vo.CrmCluePageReqVO;
+import cn.econets.blossom.module.crm.dal.dataobject.clue.CrmClueDO;
+import cn.econets.blossom.module.crm.enums.common.CrmBizTypeEnum;
+import cn.econets.blossom.module.crm.util.CrmQueryWrapperUtils;
+import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
+import org.apache.ibatis.annotations.Mapper;
+
+import java.util.Collection;
+import java.util.List;
+
+/**
+ * 线索 Mapper
+ *
+ */
+@Mapper
+public interface CrmClueMapper extends BaseMapperX<CrmClueDO> {
+
+    default int updateOwnerUserIdById(Long id, Long ownerUserId) {
+        return update(new LambdaUpdateWrapper<CrmClueDO>()
+                .eq(CrmClueDO::getId, id)
+                .set(CrmClueDO::getOwnerUserId, ownerUserId));
+    }
+
+    default PageResult<CrmClueDO> selectPage(CrmCluePageReqVO pageReqVO, Long userId) {
+        MPJLambdaWrapperX<CrmClueDO> query = new MPJLambdaWrapperX<>();
+        // 拼接数据权限的查询条件
+        CrmQueryWrapperUtils.appendPermissionCondition(query, CrmBizTypeEnum.CRM_LEADS.getType(),
+                CrmClueDO::getId, userId, pageReqVO.getSceneType(), pageReqVO.getPool());
+        // 拼接自身的查询条件
+        query.selectAll(CrmClueDO.class)
+                .likeIfPresent(CrmClueDO::getName, pageReqVO.getName())
+                .likeIfPresent(CrmClueDO::getTelephone, pageReqVO.getTelephone())
+                .likeIfPresent(CrmClueDO::getMobile, pageReqVO.getMobile())
+                .orderByDesc(CrmClueDO::getId);
+        return selectJoinPage(pageReqVO, CrmClueDO.class, query);
+    }
+
+    default List<CrmClueDO> selectBatchIds(Collection<Long> ids, Long userId) {
+        MPJLambdaWrapperX<CrmClueDO> query = new MPJLambdaWrapperX<>();
+        // 拼接数据权限的查询条件
+        CrmQueryWrapperUtils.appendPermissionCondition(query, CrmBizTypeEnum.CRM_LEADS.getType(), ids, userId);
+        return selectJoinList(CrmClueDO.class, query);
+    }
+
+}

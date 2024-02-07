@@ -65,6 +65,11 @@
             <optional>true</optional>
         </dependency>
 
+        <dependency>
+            <groupId>cn.econets.boot</groupId>
+            <artifactId>blossom-spring-boot-starter-job</artifactId>
+        </dependency>
+
     </dependencies>
 
 </project>

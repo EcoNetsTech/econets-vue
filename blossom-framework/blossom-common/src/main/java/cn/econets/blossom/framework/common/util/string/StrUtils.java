@@ -24,7 +24,6 @@ public class StrUtils {
      *
      * @param str      给定字符串
      * @param prefixes 需要检测的开始字符串
-     * @since 3.0.6
      */
     public static boolean startWithAny(String str, Collection<String> prefixes) {
         if (StrUtil.isEmpty(str) || ArrayUtil.isEmpty(prefixes)) {

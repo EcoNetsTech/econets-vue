@@ -6830,7 +6830,7 @@ BEGIN;
 INSERT INTO "system_tenant" ("id", "name", "contact_user_id", "contact_name", "contact_mobile", "status", "website",
                              "package_id", "expire_time", "account_count", "creator", "create_time", "updater",
                              "update_time", "deleted")
-VALUES (1, '源码', NULL, '芋艿', '17321315478', 0, 'https://www.econets.cn', 0, '2099-02-19 17:14:16', 9999, '1',
+VALUES (1, '源码', NULL, 'econets', '17321315478', 0, 'https://www.econets.cn', 0, '2099-02-19 17:14:16', 9999, '1',
         '2021-01-05 17:03:47', '1', '2022-02-23 12:15:11', 0);
 INSERT INTO "system_tenant" ("id", "name", "contact_user_id", "contact_name", "contact_mobile", "status", "website",
                              "package_id", "expire_time", "account_count", "creator", "create_time", "updater",
@@ -7134,17 +7134,17 @@ VALUES (104, 'test', '$2a$10$e5RpuDCC0GYSt0Hvd2.CjujIXwgGct4SnXi6dVGxdgFsnqgEryk
 INSERT INTO "system_users" ("id", "username", "password", "nickname", "remark", "dept_id", "post_ids", "email",
                             "mobile", "sex", "avatar", "status", "login_ip", "login_date", "creator", "create_time",
                             "updater", "update_time", "deleted", "tenant_id")
-VALUES (107, 'admin107', '$2a$10$dYOOBKMO93v/.ReCqzyFg.o67Tqk.bbc2bhrpyBGkIw9aypCtr2pm', '芋艿', NULL, NULL, NULL, '',
+VALUES (107, 'admin107', '$2a$10$dYOOBKMO93v/.ReCqzyFg.o67Tqk.bbc2bhrpyBGkIw9aypCtr2pm', 'econets', NULL, NULL, NULL, '',
         '15601691300', 0, '', 0, '', NULL, '1', '2022-02-20 22:59:33', '1', '2022-02-27 08:26:51', 0, 118);
 INSERT INTO "system_users" ("id", "username", "password", "nickname", "remark", "dept_id", "post_ids", "email",
                             "mobile", "sex", "avatar", "status", "login_ip", "login_date", "creator", "create_time",
                             "updater", "update_time", "deleted", "tenant_id")
-VALUES (108, 'admin108', '$2a$10$y6mfvKoNYL1GXWak8nYwVOH.kCWqjactkzdoIDgiKl93WN3Ejg.Lu', '芋艿', NULL, NULL, NULL, '',
+VALUES (108, 'admin108', '$2a$10$y6mfvKoNYL1GXWak8nYwVOH.kCWqjactkzdoIDgiKl93WN3Ejg.Lu', 'econets', NULL, NULL, NULL, '',
         '15601691300', 0, '', 0, '', NULL, '1', '2022-02-20 23:00:50', '1', '2022-02-27 08:26:53', 0, 119);
 INSERT INTO "system_users" ("id", "username", "password", "nickname", "remark", "dept_id", "post_ids", "email",
                             "mobile", "sex", "avatar", "status", "login_ip", "login_date", "creator", "create_time",
                             "updater", "update_time", "deleted", "tenant_id")
-VALUES (109, 'admin109', '$2a$10$JAqvH0tEc0I7dfDVBI7zyuB4E3j.uH6daIjV53.vUS6PknFkDJkuK', '芋艿', NULL, NULL, NULL, '',
+VALUES (109, 'admin109', '$2a$10$JAqvH0tEc0I7dfDVBI7zyuB4E3j.uH6daIjV53.vUS6PknFkDJkuK', 'econets', NULL, NULL, NULL, '',
         '15601691300', 0, '', 0, '', NULL, '1', '2022-02-20 23:11:50', '1', '2022-02-27 08:26:56', 0, 120);
 INSERT INTO "system_users" ("id", "username", "password", "nickname", "remark", "dept_id", "post_ids", "email",
                             "mobile", "sex", "avatar", "status", "login_ip", "login_date", "creator", "create_time",

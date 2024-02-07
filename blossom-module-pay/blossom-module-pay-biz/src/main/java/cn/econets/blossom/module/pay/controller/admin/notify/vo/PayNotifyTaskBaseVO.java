@@ -39,7 +39,7 @@ public class PayNotifyTaskBaseVO {
     @Schema(description = "最大可通知次数", requiredMode = Schema.RequiredMode.REQUIRED)
     private Byte maxNotifyTimes;
 
-    @Schema(description = "异步通知地址", requiredMode = Schema.RequiredMode.REQUIRED, example = "https://www.iocoder.cn")
+    @Schema(description = "异步通知地址", requiredMode = Schema.RequiredMode.REQUIRED, example = "https://www.econets.cn")
     private String notifyUrl;
 
 }

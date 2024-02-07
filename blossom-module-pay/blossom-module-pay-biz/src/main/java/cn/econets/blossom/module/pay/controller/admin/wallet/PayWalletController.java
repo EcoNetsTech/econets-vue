@@ -62,7 +62,7 @@ public class PayWalletController {
             List<MemberUserRespDTO> users = memberUserApi.getUserListByNickname(pageVO.getNickname());
             pageVO.setUserIds(convertSet(users, MemberUserRespDTO::getId));
         }
-        // TODO @jason：管理员也可以先查询下。。
+        // TODO ：管理员也可以先查询下。。
         // 暂时支持查询 userType 会员类型。管理员类型还不知道使用场景
         PageResult<PayWalletDO> pageResult = payWalletService.getWalletPage(MEMBER.getValue(),pageVO);
         if (CollectionUtil.isEmpty(pageResult.getList())) {

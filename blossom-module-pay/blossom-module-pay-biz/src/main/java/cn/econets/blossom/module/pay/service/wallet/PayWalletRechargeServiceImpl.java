@@ -87,7 +87,7 @@ public class PayWalletRechargeServiceImpl implements PayWalletRechargeService {
                 .setMerchantOrderId(recharge.getId().toString()) // 业务的订单编号
                 .setSubject(WALLET_RECHARGE_ORDER_SUBJECT).setBody("")
                 .setPrice(recharge.getPayPrice())
-                .setExpireTime(addTime(Duration.ofHours(2L)))); // TODO @支付超时时间
+                .setExpireTime(addTime(Duration.ofHours(2L)))); // TODO 支付超时时间
         // 2.2 更新钱包充值记录中支付订单
         walletRechargeMapper.updateById(new PayWalletRechargeDO().setId(recharge.getId()).setPayOrderId(payOrderId));
         recharge.setPayOrderId(payOrderId);
@@ -122,7 +122,7 @@ public class PayWalletRechargeServiceImpl implements PayWalletRechargeService {
         }
 
         // 3. 更新钱包余额
-        // TODO @jason：这样的话，未来提现会不会把充值的，也提现走哈。类似先充 100，送 110；然后提现 110；
+        // TODO ：这样的话，未来提现会不会把充值的，也提现走哈。类似先充 100，送 110；然后提现 110；
         // TODO 需要钱包中加个可提现余额
         payWalletService.addWalletBalance(walletRecharge.getWalletId(), String.valueOf(id),
                 PayWalletBizTypeEnum.RECHARGE, walletRecharge.getTotalPrice());
@@ -153,7 +153,7 @@ public class PayWalletRechargeServiceImpl implements PayWalletRechargeService {
                 .setReason("想退钱").setPrice(walletRecharge.getPayPrice()));
 
         // 4. 更新充值记录退款单号
-        // TODO @jaosn：一般新建这种 update 对象，建议是，第一个 set id 属性，容易知道以它为更新
+        // TODO 一般新建这种 update 对象，建议是，第一个 set id 属性，容易知道以它为更新
         walletRechargeMapper.updateById(new PayWalletRechargeDO().setPayRefundId(payRefundId)
                 .setRefundStatus(WAITING.getStatus()).setId(walletRecharge.getId()));
     }
@@ -236,7 +236,7 @@ public class PayWalletRechargeServiceImpl implements PayWalletRechargeService {
         if (wallet.getBalance() < walletRecharge.getTotalPrice()) {
             throw exception(WALLET_RECHARGE_REFUND_BALANCE_NOT_ENOUGH);
         }
-        // TODO @需要考虑下，赠送的金额，会不会导致提现超过；
+        // TODO 需要考虑下，赠送的金额，会不会导致提现超过；
         return wallet;
     }
 

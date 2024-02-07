@@ -5,10 +5,14 @@ import cn.econets.blossom.framework.common.util.collection.CollectionUtils;
 import cn.econets.blossom.framework.common.util.object.BeanUtils;
 import cn.econets.blossom.framework.common.util.string.StrUtils;
 import cn.econets.blossom.module.system.api.logger.dto.OperateLogCreateReqDTO;
+import cn.econets.blossom.module.system.api.logger.dto.OperateLogV2CreateReqDTO;
+import cn.econets.blossom.module.system.api.logger.dto.OperateLogV2PageReqDTO;
 import cn.econets.blossom.module.system.controller.admin.logger.vo.operatelog.OperateLogPageReqVO;
+import cn.econets.blossom.module.system.dal.dataobject.logger.OperateLogV2DO;
 import cn.econets.blossom.module.system.dal.mysql.logger.OperateLogMapper;
 import cn.econets.blossom.module.system.dal.dataobject.logger.OperateLogDO;
 import cn.econets.blossom.module.system.dal.dataobject.user.AdminUserDO;
+import cn.econets.blossom.module.system.dal.mysql.logger.OperateLogV2Mapper;
 import cn.econets.blossom.module.system.service.user.AdminUserService;
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.StrUtil;
@@ -34,6 +38,8 @@ public class OperateLogServiceImpl implements OperateLogService {
 
     @Resource
     private OperateLogMapper operateLogMapper;
+    @Resource
+    private OperateLogV2Mapper operateLogV2Mapper;
 
     @Resource
     private AdminUserService userService;
@@ -60,4 +66,16 @@ public class OperateLogServiceImpl implements OperateLogService {
         return operateLogMapper.selectPage(pageReqVO, userIds);
     }
 
+    // ======================= LOG V2 =======================
+
+    @Override
+    public void createOperateLogV2(OperateLogV2CreateReqDTO createReqDTO) {
+        OperateLogV2DO log = BeanUtils.toBean(createReqDTO, OperateLogV2DO.class);
+        operateLogV2Mapper.insert(log);
+    }
+
+    @Override
+    public PageResult<OperateLogV2DO> getOperateLogPage(OperateLogV2PageReqDTO pageReqDTO) {
+        return operateLogV2Mapper.selectPage(pageReqDTO);
+    }
 }
