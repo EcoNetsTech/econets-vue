@@ -21,7 +21,7 @@ public interface DiyPageMapper extends BaseMapperX<DiyPageDO> {
                 .likeIfPresent(DiyPageDO::getName, reqVO.getName())
                 .betweenIfPresent(DiyPageDO::getCreateTime, reqVO.getCreateTime())
                 // 模板下面的页面，在模板中管理
-                .isNull(DiyPageDO::getTemplateId)
+//                .isNull(DiyPageDO::getTemplateId)
                 .orderByDesc(DiyPageDO::getId));
     }
 
