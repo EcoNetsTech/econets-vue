@@ -21,7 +21,6 @@ import static cn.econets.blossom.framework.common.util.collection.MapUtils.findA
 /**
  * 回款 Convert
  *
- *
  */
 @Mapper
 public interface CrmReceivableConvert {

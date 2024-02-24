@@ -25,6 +25,7 @@ import cn.econets.blossom.module.system.api.user.dto.AdminUserRespDTO;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -55,6 +56,7 @@ public class CrmReceivablePlanController {
     @Resource
     private CrmReceivableService receivableService;
     @Resource
+    @Lazy
     private CrmContractService contractService;
     @Resource
     private CrmCustomerService customerService;

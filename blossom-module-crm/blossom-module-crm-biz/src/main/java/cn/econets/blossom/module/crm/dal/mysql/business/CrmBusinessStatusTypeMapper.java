@@ -28,7 +28,7 @@ public interface CrmBusinessStatusTypeMapper extends BaseMapperX<CrmBusinessStat
                 .inIfPresent(CrmBusinessStatusTypeDO::getId, queryVO.getIdList()));
     }
 
-    // TODO 这个可以改成 selectByName。业务上基于在判断 id 匹配；这样更通用一些；mapper 尽量通用，不关注或者特别关联业务；
+    // TODO @lzxhqs：这个可以改成 selectByName。业务上基于在判断 id 匹配；这样更通用一些；mapper 尽量通用，不关注或者特别关联业务；
     /**
      * 根据ID和name查询
      *

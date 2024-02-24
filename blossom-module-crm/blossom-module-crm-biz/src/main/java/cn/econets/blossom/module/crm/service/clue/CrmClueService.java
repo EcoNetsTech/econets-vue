@@ -4,9 +4,9 @@ import cn.econets.blossom.framework.common.pojo.PageResult;
 import cn.econets.blossom.module.crm.controller.admin.clue.vo.CrmCluePageReqVO;
 import cn.econets.blossom.module.crm.controller.admin.clue.vo.CrmClueSaveReqVO;
 import cn.econets.blossom.module.crm.controller.admin.clue.vo.CrmClueTransferReqVO;
-import cn.econets.blossom.module.crm.controller.admin.clue.vo.CrmClueTransformReqVO;
+import cn.econets.blossom.module.crm.controller.admin.clue.vo.CrmClueTranslateReqVO;
 import cn.econets.blossom.module.crm.dal.dataobject.clue.CrmClueDO;
-import cn.econets.blossom.module.crm.service.clue.bo.CrmClueUpdateFollowUpReqBO;
+import cn.econets.blossom.module.crm.service.followup.bo.CrmUpdateFollowUpReqBO;
 
 import javax.validation.Valid;
 import java.util.Collection;
@@ -22,9 +22,10 @@ public interface CrmClueService {
      * 创建线索
      *
      * @param createReqVO 创建信息
+     * @param userId      用户编号
      * @return 编号
      */
-    Long createClue(@Valid CrmClueSaveReqVO createReqVO);
+    Long createClue(@Valid CrmClueSaveReqVO createReqVO, Long userId);
 
     /**
      * 更新线索
@@ -38,7 +39,7 @@ public interface CrmClueService {
      *
      * @param clueUpdateFollowUpReqBO 信息
      */
-    void updateClueFollowUp(CrmClueUpdateFollowUpReqBO clueUpdateFollowUpReqBO);
+    void updateClueFollowUp(CrmUpdateFollowUpReqBO clueUpdateFollowUpReqBO);
 
     /**
      * 删除线索
@@ -86,6 +87,6 @@ public interface CrmClueService {
      * @param reqVO  线索编号
      * @param userId 用户编号
      */
-    void translateCustomer(CrmClueTransformReqVO reqVO, Long userId);
+    void translateCustomer(CrmClueTranslateReqVO reqVO, Long userId);
 
 }

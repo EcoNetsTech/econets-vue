@@ -17,7 +17,6 @@ import java.util.List;
 /**
  * 回款 Mapper
  *
- *
  */
 @Mapper
 public interface CrmReceivableMapper extends BaseMapperX<CrmReceivableDO> {
@@ -45,6 +44,7 @@ public interface CrmReceivableMapper extends BaseMapperX<CrmReceivableDO> {
         query.selectAll(CrmReceivableDO.class)
                 .eqIfPresent(CrmReceivableDO::getNo, pageReqVO.getNo())
                 .eqIfPresent(CrmReceivableDO::getPlanId, pageReqVO.getPlanId())
+                .eqIfPresent(CrmReceivableDO::getAuditStatus, pageReqVO.getAuditStatus())
                 .orderByDesc(CrmReceivableDO::getId);
         return selectJoinPage(pageReqVO, CrmReceivableDO.class, query);
     }
@@ -53,6 +53,8 @@ public interface CrmReceivableMapper extends BaseMapperX<CrmReceivableDO> {
         MPJLambdaWrapperX<CrmReceivableDO> query = new MPJLambdaWrapperX<>();
         // 拼接数据权限的查询条件
         CrmQueryWrapperUtils.appendPermissionCondition(query, CrmBizTypeEnum.CRM_RECEIVABLE.getType(), ids, userId);
+        // 拼接自身的查询条件
+        query.selectAll(CrmReceivableDO.class).in(CrmReceivableDO::getId, ids).orderByDesc(CrmReceivableDO::getId);
         return selectJoinList(CrmReceivableDO.class, query);
     }
 

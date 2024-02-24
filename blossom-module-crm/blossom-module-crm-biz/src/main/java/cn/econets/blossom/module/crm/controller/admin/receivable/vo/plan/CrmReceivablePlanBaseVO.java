@@ -41,7 +41,7 @@ public class CrmReceivablePlanBaseVO {
     @Schema(description = "合同编号", example = "3473")
     private Long contractId;
 
-    // TODO 负责人编号
+    // TODO @liuhongfeng：负责人编号
     @Schema(description = "负责人编号", example = "17828")
     private Long ownerUserId;
 

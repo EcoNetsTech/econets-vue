@@ -3,6 +3,7 @@ package cn.econets.blossom.module.crm.controller.admin.permission;
 import cn.hutool.core.collection.CollUtil;
 import cn.econets.blossom.framework.common.pojo.CommonResult;
 import cn.econets.blossom.framework.common.util.collection.CollectionUtils;
+import cn.econets.blossom.framework.common.util.object.BeanUtils;
 import cn.econets.blossom.module.crm.controller.admin.permission.vo.CrmPermissionCreateReqVO;
 import cn.econets.blossom.module.crm.controller.admin.permission.vo.CrmPermissionRespVO;
 import cn.econets.blossom.module.crm.controller.admin.permission.vo.CrmPermissionUpdateReqVO;
@@ -11,6 +12,7 @@ import cn.econets.blossom.module.crm.dal.dataobject.permission.CrmPermissionDO;
 import cn.econets.blossom.module.crm.enums.permission.CrmPermissionLevelEnum;
 import cn.econets.blossom.module.crm.framework.permission.core.annotations.CrmPermission;
 import cn.econets.blossom.module.crm.service.permission.CrmPermissionService;
+import cn.econets.blossom.module.crm.service.permission.bo.CrmPermissionCreateReqBO;
 import cn.econets.blossom.module.system.api.dept.DeptApi;
 import cn.econets.blossom.module.system.api.dept.PostApi;
 import cn.econets.blossom.module.system.api.dept.dto.DeptRespDTO;
@@ -28,6 +30,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;
 import javax.validation.Valid;
 import java.util.*;
+import java.util.stream.Stream;
 
 import static cn.econets.blossom.framework.common.pojo.CommonResult.success;
 import static cn.econets.blossom.framework.common.util.collection.CollectionUtils.convertSet;
@@ -54,7 +57,7 @@ public class CrmPermissionController {
     @PreAuthorize("@ss.hasPermission('crm:permission:create')")
     @CrmPermission(bizTypeValue = "#reqVO.bizType", bizId = "#reqVO.bizId", level = CrmPermissionLevelEnum.OWNER)
     public CommonResult<Boolean> addPermission(@Valid @RequestBody CrmPermissionCreateReqVO reqVO) {
-        permissionService.createPermission(CrmPermissionConvert.INSTANCE.convert(reqVO));
+        permissionService.createPermission(BeanUtils.toBean(reqVO, CrmPermissionCreateReqBO.class));
         return success(true);
     }
 
@@ -103,7 +106,8 @@ public class CrmPermissionController {
         // 拼接数据
         List<AdminUserRespDTO> userList = adminUserApi.getUserList(convertSet(permission, CrmPermissionDO::getUserId));
         Map<Long, DeptRespDTO> deptMap = deptApi.getDeptMap(convertSet(userList, AdminUserRespDTO::getDeptId));
-        Set<Long> postIds = CollectionUtils.convertSetByFlatMap(userList, AdminUserRespDTO::getPostIds, Collection::stream);
+        Set<Long> postIds = CollectionUtils.convertSetByFlatMap(userList, AdminUserRespDTO::getPostIds,
+                item -> item != null ? item.stream() : Stream.empty());
         Map<Long, PostRespDTO> postMap = postApi.getPostMap(postIds);
         return success(CrmPermissionConvert.INSTANCE.convert(permission, userList, deptMap, postMap));
     }

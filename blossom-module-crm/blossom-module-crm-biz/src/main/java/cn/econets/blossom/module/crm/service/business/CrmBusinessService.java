@@ -7,7 +7,8 @@ import cn.econets.blossom.module.crm.controller.admin.business.vo.business.CrmBu
 import cn.econets.blossom.module.crm.dal.dataobject.business.CrmBusinessDO;
 import cn.econets.blossom.module.crm.dal.dataobject.contact.CrmContactDO;
 import cn.econets.blossom.module.crm.dal.dataobject.customer.CrmCustomerDO;
-import cn.econets.blossom.module.crm.service.business.bo.CrmBusinessUpdateFollowUpReqBO;
+import cn.econets.blossom.module.crm.service.business.bo.CrmBusinessUpdateProductReqBO;
+import cn.econets.blossom.module.crm.service.followup.bo.CrmUpdateFollowUpReqBO;
 
 import javax.validation.Valid;
 import java.util.Collection;
@@ -40,7 +41,7 @@ public interface CrmBusinessService {
      *
      * @param updateFollowUpReqBOList 跟进信息
      */
-    void updateContactFollowUpBatch(List<CrmBusinessUpdateFollowUpReqBO> updateFollowUpReqBOList);
+    void updateBusinessFollowUpBatch(List<CrmUpdateFollowUpReqBO> updateFollowUpReqBOList);
 
     /**
      * 删除商机
@@ -48,6 +49,21 @@ public interface CrmBusinessService {
      * @param id 编号
      */
     void deleteBusiness(Long id);
+
+    /**
+     * 商机转移
+     *
+     * @param reqVO  请求
+     * @param userId 用户编号
+     */
+    void transferBusiness(CrmBusinessTransferReqVO reqVO, Long userId);
+
+    /**
+     * 更新商机关联商品
+     *
+     * @param updateProductReqBO 请求
+     */
+    void updateBusinessProduct(CrmBusinessUpdateProductReqBO updateProductReqBO);
 
     /**
      * 获得商机
@@ -103,14 +119,6 @@ public interface CrmBusinessService {
      * @return 商机分页
      */
     PageResult<CrmBusinessDO> getBusinessPageByContact(CrmBusinessPageReqVO pageReqVO);
-
-    /**
-     * 商机转移
-     *
-     * @param reqVO  请求
-     * @param userId 用户编号
-     */
-    void transferBusiness(CrmBusinessTransferReqVO reqVO, Long userId);
 
     /**
      * 获取关联客户的商机数量

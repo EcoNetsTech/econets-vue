@@ -37,7 +37,7 @@ public class CrmBusinessStatusTypeRespVO {
     @ExcelProperty("创建时间")
     private LocalDateTime createTime;
 
-    // TODO  字段后缀改成 statuses，保持和 deptIds 风格一致；CrmBusinessStatusDO 改成 VO 哈；一般不使用 do 直接返回
+    // TODO @ljlleo 字段后缀改成 statuses，保持和 deptIds 风格一致；CrmBusinessStatusDO 改成 VO 哈；一般不使用 do 直接返回
     @Schema(description = "状态集合", requiredMode = Schema.RequiredMode.REQUIRED)
     private List<CrmBusinessStatusDO> statusList;
 

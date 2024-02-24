@@ -6,7 +6,7 @@ import cn.econets.blossom.module.crm.controller.admin.contact.vo.CrmContactSaveR
 import cn.econets.blossom.module.crm.controller.admin.contact.vo.CrmContactTransferReqVO;
 import cn.econets.blossom.module.crm.dal.dataobject.contact.CrmContactDO;
 import cn.econets.blossom.module.crm.dal.dataobject.customer.CrmCustomerDO;
-import cn.econets.blossom.module.crm.service.contact.bo.CrmContactUpdateFollowUpReqBO;
+import cn.econets.blossom.module.crm.service.followup.bo.CrmUpdateFollowUpReqBO;
 
 import javax.validation.Valid;
 import java.util.Collection;
@@ -62,7 +62,7 @@ public interface CrmContactService {
      *
      * @param updateFollowUpReqBOList 跟进信息
      */
-    void updateContactFollowUpBatch(List<CrmContactUpdateFollowUpReqBO> updateFollowUpReqBOList);
+    void updateContactFollowUpBatch(List<CrmUpdateFollowUpReqBO> updateFollowUpReqBOList);
 
     /**
      * 获得联系人
@@ -79,7 +79,7 @@ public interface CrmContactService {
      * @param userId 用户编号
      * @return 联系人列表
      */
-    List<CrmContactDO> getContactList(Collection<Long> ids, Long userId);
+    List<CrmContactDO> getContactListByIds(Collection<Long> ids, Long userId);
 
     /**
      * 获得联系人列表
@@ -87,7 +87,7 @@ public interface CrmContactService {
      * @param ids 编号
      * @return 联系人列表
      */
-    List<CrmContactDO> getContactList(Collection<Long> ids);
+    List<CrmContactDO> getContactListByIds(Collection<Long> ids);
 
     /**
      * 获得联系人列表

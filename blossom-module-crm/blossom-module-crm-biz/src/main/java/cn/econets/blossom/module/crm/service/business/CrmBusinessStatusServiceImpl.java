@@ -51,7 +51,7 @@ public class CrmBusinessStatusServiceImpl implements CrmBusinessStatusService {
     public void deleteBusinessStatus(Long id) {
         // 校验存在
         validateBusinessStatusExists(id);
-        // TODO  这里可以考虑，如果有商机在使用，不允许删除
+        // TODO @ljlleo 这里可以考虑，如果有商机在使用，不允许删除
         // 删除
         businessStatusMapper.deleteById(id);
     }

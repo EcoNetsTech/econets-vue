@@ -8,6 +8,7 @@ import cn.econets.blossom.module.crm.controller.admin.contact.vo.CrmContactRespV
 import cn.econets.blossom.module.crm.controller.admin.contact.vo.CrmContactTransferReqVO;
 import cn.econets.blossom.module.crm.dal.dataobject.contact.CrmContactDO;
 import cn.econets.blossom.module.crm.dal.dataobject.customer.CrmCustomerDO;
+import cn.econets.blossom.module.crm.service.followup.bo.CrmUpdateFollowUpReqBO;
 import cn.econets.blossom.module.crm.service.permission.bo.CrmPermissionTransferReqBO;
 import cn.econets.blossom.module.system.api.user.dto.AdminUserRespDTO;
 import org.mapstruct.Mapper;
@@ -63,6 +64,13 @@ public interface CrmContactConvert {
         contactRespVO.setAreaName(AreaUtils.format(contactRespVO.getAreaId()));
         findAndThen(userMap, contactRespVO.getOwnerUserId(), user -> contactRespVO.setOwnerUserName(user.getNickname()));
         findAndThen(userMap, Long.parseLong(contactRespVO.getCreator()), user -> contactRespVO.setCreatorName(user.getNickname()));
+    }
+
+    @Mapping(target = "id", source = "reqBO.bizId")
+    CrmContactDO convert(CrmUpdateFollowUpReqBO reqBO);
+
+    default List<CrmContactDO> convertList(List<CrmUpdateFollowUpReqBO> list) {
+        return CollectionUtils.convertList(list, INSTANCE::convert);
     }
 
 }

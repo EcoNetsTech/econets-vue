@@ -34,7 +34,7 @@ public class CrmReceivablePlanDO extends BaseDO {
     /**
      * 回款ID
      *
-     * TODO 少关联实体；
+     * TODO @liuhongfeng：少关联实体；
      */
     private Long receivableId;
     /**
@@ -60,19 +60,19 @@ public class CrmReceivablePlanDO extends BaseDO {
     /**
      * 客户 ID
      *
-     * TODO 少关联实体；
+     * TODO @liuhongfeng：少关联实体；
      */
     private Long customerId;
     /**
      * 合同 ID
      *
-     * TODO 少关联实体；
+     * TODO @liuhongfeng：少关联实体；
      */
     private Long contractId;
     /**
      * 负责人 ID
      *
-     * TODO 少关联实体；
+     * TODO @liuhongfeng：少关联实体；
      */
     private Long ownerUserId;
     /**

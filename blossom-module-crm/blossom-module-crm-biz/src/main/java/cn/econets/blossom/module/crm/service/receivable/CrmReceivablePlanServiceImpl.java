@@ -23,10 +23,11 @@ import cn.econets.blossom.module.crm.service.permission.bo.CrmPermissionCreateRe
 import com.mzt.logapi.context.LogRecordContext;
 import com.mzt.logapi.service.impl.DiffParseFunction;
 import com.mzt.logapi.starter.annotation.LogRecord;
+import javax.annotation.Resource;
+
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.List;
 
@@ -34,7 +35,7 @@ import static cn.econets.blossom.framework.common.exception.util.ServiceExceptio
 import static cn.econets.blossom.module.crm.enums.ErrorCodeConstants.*;
 import static cn.econets.blossom.module.crm.enums.LogRecordConstants.*;
 
-// TODO 参考 CrmReceivableServiceImpl 写的 todo 哈；
+// TODO @liuhongfeng：参考 CrmReceivableServiceImpl 写的 todo 哈；
 
 /**
  * 回款计划 Service 实现类
@@ -58,8 +59,8 @@ public class CrmReceivablePlanServiceImpl implements CrmReceivablePlanService {
     @LogRecord(type = CRM_RECEIVABLE_PLAN_TYPE, subType = CRM_RECEIVABLE_PLAN_CREATE_SUB_TYPE, bizNo = "{{#receivablePlan.id}}",
             success = CRM_RECEIVABLE_PLAN_CREATE_SUCCESS)
     public Long createReceivablePlan(CrmReceivablePlanCreateReqVO createReqVO, Long userId) {
-        // TODO 第几期的计算；基于是 contractId + contractDO 的第几个还款
-        // TODO  contractId：校验合同是否存在
+        // TODO @liuhongfeng：第几期的计算；基于是 contractId + contractDO 的第几个还款
+        // TODO @liuhongfeng contractId：校验合同是否存在
         // 插入
         CrmReceivablePlanDO receivablePlan = CrmReceivablePlanConvert.INSTANCE.convert(createReqVO);
         receivablePlan.setFinishStatus(false);
@@ -100,7 +101,7 @@ public class CrmReceivablePlanServiceImpl implements CrmReceivablePlanService {
             success = CRM_RECEIVABLE_PLAN_UPDATE_SUCCESS)
     @CrmPermission(bizType = CrmBizTypeEnum.CRM_RECEIVABLE_PLAN, bizId = "#updateReqVO.id", level = CrmPermissionLevelEnum.WRITE)
     public void updateReceivablePlan(CrmReceivablePlanUpdateReqVO updateReqVO) {
-        // TODO 如果已经有对应的还款，则不允许编辑；
+        // TODO @liuhongfeng：如果已经有对应的还款，则不允许编辑；
         // 校验存在
         CrmReceivablePlanDO oldReceivablePlan = validateReceivablePlanExists(updateReqVO.getId());
 

@@ -1,6 +1,6 @@
 package cn.econets.blossom.framework.excel.core.convert;
 
-import cn.econets.blossom.framework.dict.core.DictFrameworkUtils;
+import cn.econets.blossom.framework.dict.core.util.DictFrameworkUtils;
 import cn.econets.blossom.framework.excel.core.annotations.DictFormat;
 import cn.hutool.core.convert.Convert;
 import com.alibaba.excel.converters.Converter;

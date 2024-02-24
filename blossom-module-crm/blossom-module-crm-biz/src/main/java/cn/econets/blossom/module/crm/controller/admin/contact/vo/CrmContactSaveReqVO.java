@@ -22,7 +22,7 @@ public class CrmContactSaveReqVO {
     @Schema(description = "主键", example = "3167")
     private Long id;
 
-    @Schema(description = "姓名", example = "芋艿")
+    @Schema(description = "姓名", example = "econets")
     @NotNull(message = "姓名不能为空")
     @DiffLogField(name = "姓名")
     private String name;

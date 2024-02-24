@@ -2,6 +2,7 @@ package cn.econets.blossom.module.crm.dal.dataobject.followup;
 
 import cn.econets.blossom.framework.mybatis.core.dataobject.BaseDO;
 import cn.econets.blossom.framework.mybatis.core.type.LongListTypeHandler;
+import cn.econets.blossom.framework.mybatis.core.type.StringListTypeHandler;
 import cn.econets.blossom.module.crm.dal.dataobject.business.CrmBusinessDO;
 import cn.econets.blossom.module.crm.dal.dataobject.contact.CrmContactDO;
 import cn.econets.blossom.module.crm.enums.DictTypeConstants;
@@ -66,6 +67,17 @@ public class CrmFollowUpRecordDO extends BaseDO {
     private LocalDateTime nextTime;
 
     /**
+     * 图片
+     */
+    @TableField(typeHandler = StringListTypeHandler.class)
+    private List<String> picUrls;
+    /**
+     * 附件
+     */
+    @TableField(typeHandler = StringListTypeHandler.class)
+    private List<String> fileUrls;
+
+    /**
      * 关联的商机编号数组
      *
      * 关联 {@link CrmBusinessDO#getId()}
@@ -79,5 +91,6 @@ public class CrmFollowUpRecordDO extends BaseDO {
      */
     @TableField(typeHandler = LongListTypeHandler.class)
     private List<Long> contactIds;
+
 
 }

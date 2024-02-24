@@ -37,4 +37,9 @@ public class DeptApiImpl implements DeptApi {
         deptService.validateDeptList(ids);
     }
 
+    @Override
+    public List<DeptRespDTO> getChildDeptList(Long id) {
+        List<DeptDO> childDeptList = deptService.getChildDeptList(id);
+        return BeanUtils.toBean(childDeptList, DeptRespDTO.class);
+    }
 }

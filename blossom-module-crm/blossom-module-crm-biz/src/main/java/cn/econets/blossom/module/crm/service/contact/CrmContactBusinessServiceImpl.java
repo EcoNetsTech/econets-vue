@@ -6,6 +6,9 @@ import cn.econets.blossom.module.crm.dal.dataobject.business.CrmBusinessDO;
 import cn.econets.blossom.module.crm.dal.dataobject.contact.CrmContactBusinessDO;
 import cn.econets.blossom.module.crm.dal.dataobject.contact.CrmContactDO;
 import cn.econets.blossom.module.crm.dal.mysql.contactbusinesslink.CrmContactBusinessMapper;
+import cn.econets.blossom.module.crm.enums.common.CrmBizTypeEnum;
+import cn.econets.blossom.module.crm.enums.permission.CrmPermissionLevelEnum;
+import cn.econets.blossom.module.crm.framework.permission.core.annotations.CrmPermission;
 import cn.econets.blossom.module.crm.service.business.CrmBusinessService;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
@@ -19,7 +22,6 @@ import static cn.econets.blossom.framework.common.exception.util.ServiceExceptio
 import static cn.econets.blossom.module.crm.enums.ErrorCodeConstants.BUSINESS_NOT_EXISTS;
 import static cn.econets.blossom.module.crm.enums.ErrorCodeConstants.CONTACT_NOT_EXISTS;
 
-// TODO 数据权限的校验；每个操作；
 /**
  * 联系人与商机的关联 Service 实现类
  *
@@ -39,6 +41,7 @@ public class CrmContactBusinessServiceImpl implements CrmContactBusinessService 
     private CrmContactService contactService;
 
     @Override
+    @CrmPermission(bizType = CrmBizTypeEnum.CRM_CONTACT, bizId = "#createReqVO.contactId", level = CrmPermissionLevelEnum.WRITE)
     public void createContactBusinessList(CrmContactBusinessReqVO createReqVO) {
         CrmContactDO contact = contactService.getContact(createReqVO.getContactId());
         if (contact == null) {
@@ -64,6 +67,7 @@ public class CrmContactBusinessServiceImpl implements CrmContactBusinessService 
     }
 
     @Override
+    @CrmPermission(bizType = CrmBizTypeEnum.CRM_CONTACT, bizId = "#deleteReqVO.contactId", level = CrmPermissionLevelEnum.WRITE)
     public void deleteContactBusinessList(CrmContactBusinessReqVO deleteReqVO) {
         CrmContactDO contact = contactService.getContact(deleteReqVO.getContactId());
         if (contact == null) {
@@ -75,13 +79,20 @@ public class CrmContactBusinessServiceImpl implements CrmContactBusinessService 
     }
 
     @Override
+    @CrmPermission(bizType = CrmBizTypeEnum.CRM_CONTACT, bizId = "#contactId", level = CrmPermissionLevelEnum.WRITE)
     public void deleteContactBusinessByContactId(Long contactId) {
-        contactBusinessMapper.delete(CrmContactBusinessDO::getContactId,contactId);
+        contactBusinessMapper.delete(CrmContactBusinessDO::getContactId, contactId);
     }
 
     @Override
+    @CrmPermission(bizType = CrmBizTypeEnum.CRM_CONTACT, bizId = "#contactId", level = CrmPermissionLevelEnum.READ)
     public List<CrmContactBusinessDO> getContactBusinessListByContactId(Long contactId) {
         return contactBusinessMapper.selectListByContactId(contactId);
+    }
+
+    @Override
+    public void insert(CrmContactBusinessDO contactBusiness) {
+        contactBusinessMapper.insert(contactBusiness);
     }
 
 }

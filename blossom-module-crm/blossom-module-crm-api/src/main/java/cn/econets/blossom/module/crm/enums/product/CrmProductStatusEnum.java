@@ -9,7 +9,6 @@ import java.util.Arrays;
 /**
  * CRM 商品状态
  *
- * @since 2023-11-30 21:53
  */
 @Getter
 @AllArgsConstructor
