@@ -63,7 +63,7 @@ public class CrmBusinessStatusTypeServiceImpl implements CrmBusinessStatusTypeSe
         CrmBusinessStatusTypeDO updateObj = BeanUtils.toBean(updateReqVO, CrmBusinessStatusTypeDO.class);
         businessStatusTypeMapper.updateById(updateObj);
         // 更新状态（删除 + 更新）
-        // TODO  可以参考 DeliveryExpressTemplateServiceImpl 的 updateExpressTemplateFree 方法；主要没变化的，还是不删除了哈。
+        // TODO @ljlleo 可以参考 DeliveryExpressTemplateServiceImpl 的 updateExpressTemplateFree 方法；主要没变化的，还是不删除了哈。
         businessStatusMapper.delete(updateReqVO.getId());
         updateReqVO.getStatusList().forEach(status -> status.setTypeId(updateReqVO.getId()));
         businessStatusMapper.insertBatch(BeanUtils.toBean(updateReqVO.getStatusList(), CrmBusinessStatusDO.class));
@@ -89,7 +89,7 @@ public class CrmBusinessStatusTypeServiceImpl implements CrmBusinessStatusTypeSe
         }
     }
 
-    // TODO  这个方法，这个参考 validateDeptNameUnique 实现。
+    // TODO @ljlleo 这个方法，这个参考 validateDeptNameUnique 实现。
     private void validateBusinessStatusTypeExists(String name, Long id) {
         CrmBusinessStatusTypeDO businessStatusTypeDO = businessStatusTypeMapper.selectByIdAndName(id, name);
         if (businessStatusTypeDO != null) {

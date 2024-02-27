@@ -54,8 +54,8 @@ public interface CrmBusinessStatusService {
      */
     PageResult<CrmBusinessStatusDO> getBusinessStatusPage(CrmBusinessStatusPageReqVO pageReqVO);
 
-    // TODO  常用的 ids 之类的查询，可以封装单独的方法，不用走类似 QueryVO，用起来更方便。
-    // TODO  方法名用 getBusinessStatusList
+    // TODO @ljlleo 常用的 ids 之类的查询，可以封装单独的方法，不用走类似 QueryVO，用起来更方便。
+    // TODO @ljlleo 方法名用 getBusinessStatusList
     /**
      * 获得商机状态分页
      *

@@ -40,7 +40,6 @@ import static cn.econets.blossom.module.crm.enums.LogRecordConstants.*;
 /**
  * CRM 回款 Service 实现类
  *
- *
  */
 @Service
 @Validated
@@ -69,24 +68,24 @@ public class CrmReceivableServiceImpl implements CrmReceivableService {
         }
         receivable.setAuditStatus(CrmAuditStatusEnum.DRAFT.getStatus());
 
-        // TODO 一般来说，逻辑的写法，是要先检查，后操作 db；所以，你这个 check 应该放到  CrmReceivableDO receivable 之前；
+        // TODO @liuhongfeng：一般来说，逻辑的写法，是要先检查，后操作 db；所以，你这个 check 应该放到  CrmReceivableDO receivable 之前；
         checkReceivable(receivable);
 
         receivableMapper.insert(receivable);
         // 3. 创建数据权限
         permissionService.createPermission(new CrmPermissionCreateReqBO().setBizType(CrmBizTypeEnum.CRM_RECEIVABLE.getType())
                 .setBizId(receivable.getId()).setUserId(userId).setLevel(CrmPermissionLevelEnum.OWNER.getLevel())); // 设置当前操作的人为负责人
-        // TODO 需要更新关联的 plan
+        // TODO @liuhongfeng：需要更新关联的 plan
 
         // 4. 记录操作日志上下文
         LogRecordContext.putVariable("receivable", receivable);
         return receivable.getId();
     }
 
-    // TODO 这里的括号要注意排版；
+    // TODO @liuhongfeng：这里的括号要注意排版；
     private void checkReceivable(CrmReceivableDO receivable) {
-        // TODO 校验 no 的唯一性
-        // TODO 这个放在参数校验合适
+        // TODO @liuhongfeng：校验 no 的唯一性
+        // TODO @liuhongfeng：这个放在参数校验合适
         if (ObjectUtil.isNull(receivable.getContractId())) {
             throw exception(CONTRACT_NOT_EXISTS);
         }
@@ -115,28 +114,28 @@ public class CrmReceivableServiceImpl implements CrmReceivableService {
     public void updateReceivable(CrmReceivableUpdateReqVO updateReqVO) {
         // 校验存在
         CrmReceivableDO oldReceivable = validateReceivableExists(updateReqVO.getId());
-        // TODO 只有在草稿、审核中，可以提交修改
+        // TODO @liuhongfeng：只有在草稿、审核中，可以提交修改
 
         // 更新还款
         CrmReceivableDO updateObj = CrmReceivableConvert.INSTANCE.convert(updateReqVO);
         receivableMapper.updateById(updateObj);
 
-        // TODO 需要更新关联的 plan
+        // TODO @liuhongfeng：需要更新关联的 plan
         // 3. 记录操作日志上下文
         LogRecordContext.putVariable(DiffParseFunction.OLD_OBJECT, BeanUtils.toBean(oldReceivable, CrmReceivableUpdateReqVO.class));
         LogRecordContext.putVariable("receivable", oldReceivable);
     }
 
-    // TODO 缺一个取消合同的接口；只有草稿、审批中可以取消；CrmAuditStatusEnum
+    // TODO @liuhongfeng：缺一个取消合同的接口；只有草稿、审批中可以取消；CrmAuditStatusEnum
 
-    // TODO 缺一个发起审批的接口；只有草稿可以发起审批；CrmAuditStatusEnum
+    // TODO @liuhongfeng：缺一个发起审批的接口；只有草稿可以发起审批；CrmAuditStatusEnum
 
     @Override
     @LogRecord(type = CRM_RECEIVABLE_TYPE, subType = CRM_RECEIVABLE_DELETE_SUB_TYPE, bizNo = "{{#id}}",
             success = CRM_RECEIVABLE_DELETE_SUCCESS)
     @CrmPermission(bizType = CrmBizTypeEnum.CRM_RECEIVABLE, bizId = "#id", level = CrmPermissionLevelEnum.OWNER)
     public void deleteReceivable(Long id) {
-        // TODO 如果被 CrmReceivablePlanDO 所使用，则不允许删除
+        // TODO @liuhongfeng：如果被 CrmReceivablePlanDO 所使用，则不允许删除
         // 校验存在
         CrmReceivableDO receivable = validateReceivableExists(id);
         // 删除

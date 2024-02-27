@@ -24,6 +24,7 @@ public class CrmPermissionUtils {
     /**
      * 静态内部类实现单例获取
      *
+     * @author HUIHUI
      */
     private static class SingletonManager {
 

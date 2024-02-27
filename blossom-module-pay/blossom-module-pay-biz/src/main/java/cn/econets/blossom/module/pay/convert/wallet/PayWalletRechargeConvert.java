@@ -1,6 +1,6 @@
 package cn.econets.blossom.module.pay.convert.wallet;
 
-import cn.econets.blossom.framework.dict.core.DictFrameworkUtils;
+import cn.econets.blossom.framework.dict.core.util.DictFrameworkUtils;
 import cn.econets.blossom.framework.common.pojo.PageResult;
 import cn.econets.blossom.framework.common.util.collection.CollectionUtils;
 import cn.econets.blossom.framework.common.util.collection.MapUtils;

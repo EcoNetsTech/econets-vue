@@ -1,7 +1,7 @@
 package cn.econets.blossom.module.trade.convert.brokerage;
 
 import cn.econets.blossom.framework.common.pojo.PageResult;
-import cn.econets.blossom.framework.dict.core.DictFrameworkUtils;
+import cn.econets.blossom.framework.dict.core.util.DictFrameworkUtils;
 import cn.econets.blossom.module.member.api.user.dto.MemberUserRespDTO;
 import cn.econets.blossom.module.trade.controller.admin.brokerage.vo.withdraw.BrokerageWithdrawPageReqVO;
 import cn.econets.blossom.module.trade.controller.admin.brokerage.vo.withdraw.BrokerageWithdrawRespVO;

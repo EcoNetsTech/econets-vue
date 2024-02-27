@@ -52,7 +52,7 @@ public class CrmBusinessDO extends BaseDO {
     /**
      * 客户编号
      *
-     * TODO 这个字段，后续要写下关联的实体哈
+     * TODO @ljileo：这个字段，后续要写下关联的实体哈
      * 关联 {@link CrmCustomerDO#getId()}
      */
     private Long customerId;
@@ -94,8 +94,6 @@ public class CrmBusinessDO extends BaseDO {
     private LocalDateTime contactLastTime;
     /**
      * 跟进状态
-     *
-     * TODO 目前就是 Boolean；是否跟进
      */
     private Boolean followUpStatus;
 

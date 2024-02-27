@@ -14,8 +14,8 @@ import cn.econets.blossom.module.crm.controller.admin.business.vo.type.CrmBusine
 import cn.econets.blossom.module.crm.controller.admin.business.vo.type.CrmBusinessStatusTypeQueryVO;
 import cn.econets.blossom.module.crm.controller.admin.business.vo.type.CrmBusinessStatusTypeRespVO;
 import cn.econets.blossom.module.crm.controller.admin.business.vo.type.CrmBusinessStatusTypeSaveReqVO;
-import cn.econets.blossom.module.crm.convert.businessstatus.CrmBusinessStatusConvert;
-import cn.econets.blossom.module.crm.convert.businessstatustype.CrmBusinessStatusTypeConvert;
+import cn.econets.blossom.module.crm.convert.business.CrmBusinessStatusConvert;
+import cn.econets.blossom.module.crm.convert.business.CrmBusinessStatusTypeConvert;
 import cn.econets.blossom.module.crm.dal.dataobject.business.CrmBusinessStatusDO;
 import cn.econets.blossom.module.crm.dal.dataobject.business.CrmBusinessStatusTypeDO;
 import cn.econets.blossom.module.crm.service.business.CrmBusinessStatusService;
@@ -40,7 +40,7 @@ import java.util.Set;
 import static cn.econets.blossom.framework.common.pojo.CommonResult.success;
 import static cn.econets.blossom.framework.operatelog.core.enums.OperateTypeEnum.EXPORT;
 
-@Tag(name = "管理后台 - 商机状态类型")
+@Tag(name = "管理后台 - CRM 商机状态类型")
 @RestController
 @RequestMapping("/crm/business-status-type")
 @Validated
@@ -86,7 +86,7 @@ public class CrmBusinessStatusTypeController {
     public CommonResult<CrmBusinessStatusTypeRespVO> getBusinessStatusType(@RequestParam("id") Long id) {
         CrmBusinessStatusTypeDO statusType = businessStatusTypeService.getBusinessStatusType(id);
         // 处理状态回显
-        // TODO 可以在 businessStatusService 加个 getBusinessStatusListByTypeId 方法，直接返回 List<CrmBusinessStatusDO> 哈，常用的，尽量封装个简单易懂的方法，不用追求绝对通用哈；
+        // TODO @lzxhqs：可以在 businessStatusService 加个 getBusinessStatusListByTypeId 方法，直接返回 List<CrmBusinessStatusDO> 哈，常用的，尽量封装个简单易懂的方法，不用追求绝对通用哈；
         CrmBusinessStatusQueryVO queryVO = new CrmBusinessStatusQueryVO();
         queryVO.setTypeId(id);
         List<CrmBusinessStatusDO> statusList = businessStatusService.selectList(queryVO);
@@ -127,7 +127,7 @@ public class CrmBusinessStatusTypeController {
         return success(BeanUtils.toBean(list, CrmBusinessStatusTypeRespVO.class));
     }
 
-    // TODO  这个接口，是不是可以和 getBusinessStatusTypeList 合并成一个？
+    // TODO @ljlleo 这个接口，是不是可以和 getBusinessStatusTypeList 合并成一个？
     @GetMapping("/get-status-list")
     @Operation(summary = "获得商机状态列表")
     @PreAuthorize("@ss.hasPermission('crm:business-status:query')")

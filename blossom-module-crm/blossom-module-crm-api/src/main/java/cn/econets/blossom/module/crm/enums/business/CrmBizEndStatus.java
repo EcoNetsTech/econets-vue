@@ -8,11 +8,6 @@ import lombok.RequiredArgsConstructor;
 import java.util.Arrays;
 
 // TODO 1）title、description、create 可以删除，非标准的 javadoc 注释哈，然后可以在类上加下这个类的注释；2）CrmBizEndStatus 改成 CrmBusinessEndStatus，非必要不缩写哈，可阅读比较重要
-/**
- * @version 1.0
- * @title CrmBizEndStatus
- * @description
- */
 @RequiredArgsConstructor
 @Getter
 public enum CrmBizEndStatus implements IntArrayValuable {
@@ -23,7 +18,7 @@ public enum CrmBizEndStatus implements IntArrayValuable {
 
     public static final int[] ARRAYS = Arrays.stream(values()).mapToInt(CrmBizEndStatus::getStatus).toArray();
 
-    // TODO 这里的方法，建议放到 49 行之后；一般类里是，静态变量，普通变量；静态方法；普通方法
+    // TODO @lzxhqs：这里的方法，建议放到 49 行之后；一般类里是，静态变量，普通变量；静态方法；普通方法
     public static boolean isWin(Integer status) {
         return ObjectUtil.equal(WIN.getStatus(), status);
     }

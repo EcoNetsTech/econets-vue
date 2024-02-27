@@ -14,7 +14,6 @@ import java.util.List;
 /**
  * CRM 回款 Service 接口
  *
- *
  */
 public interface CrmReceivableService {
 

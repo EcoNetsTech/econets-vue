@@ -41,7 +41,7 @@ import static cn.econets.blossom.framework.operatelog.core.enums.OperateTypeEnum
 import static cn.econets.blossom.framework.security.core.util.SecurityFrameworkUtils.getLoginUserId;
 import static cn.econets.blossom.module.crm.enums.ErrorCodeConstants.CUSTOMER_NOT_EXISTS;
 
-@Tag(name = "管理后台 - 商机")
+@Tag(name = "管理后台 - CRM 商机")
 @RestController
 @RequestMapping("/crm/business")
 @Validated
@@ -169,7 +169,7 @@ public class CrmBusinessController {
     @PutMapping("/transfer")
     @Operation(summary = "商机转移")
     @PreAuthorize("@ss.hasPermission('crm:business:update')")
-    public CommonResult<Boolean> transfer(@Valid @RequestBody CrmBusinessTransferReqVO reqVO) {
+    public CommonResult<Boolean> transferBusiness(@Valid @RequestBody CrmBusinessTransferReqVO reqVO) {
         businessService.transferBusiness(reqVO, getLoginUserId());
         return success(true);
     }

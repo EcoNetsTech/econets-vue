@@ -2,6 +2,7 @@ package cn.econets.blossom.module.crm.dal.dataobject.clue;
 
 import cn.econets.blossom.framework.mybatis.core.dataobject.BaseDO;
 import cn.econets.blossom.module.crm.dal.dataobject.customer.CrmCustomerDO;
+import cn.econets.blossom.module.crm.enums.DictTypeConstants;
 import com.baomidou.mybatisplus.annotation.KeySequence;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
@@ -71,16 +72,44 @@ public class CrmClueDO extends BaseDO {
      * 备注
      */
     private String remark;
-
     /**
      * 负责人的用户编号
-     *
      * 关联 AdminUserDO 的 id 字段
      */
     private Long ownerUserId;
-
-    // TODO 客户级别；
-    // TODO 线索来源；
-    // TODO 客户行业；
-
+    /**
+     * 所属行业
+     * 对应字典 {@link DictTypeConstants#CRM_CUSTOMER_INDUSTRY}
+     */
+    private Integer industryId;
+    /**
+     * 客户等级
+     * 对应字典 {@link DictTypeConstants#CRM_CUSTOMER_LEVEL}
+     */
+    private Integer level;
+    /**
+     * 客户来源
+     * 对应字典 {@link DictTypeConstants#CRM_CUSTOMER_SOURCE}
+     */
+    private Integer source;
+    /**
+     * 网址
+     */
+    private String website;
+    /**
+     * QQ
+     */
+    private String qq;
+    /**
+     * wechat
+     */
+    private String wechat;
+    /**
+     * email
+     */
+    private String email;
+    /**
+     * 客户描述
+     */
+    private String description;
 }

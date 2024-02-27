@@ -69,6 +69,6 @@ public class CrmBusinessExcelVO {
     private LocalDateTime contactLastTime;
 
     @ExcelProperty("跟进状态")
-    private Boolean followUpStatus;
+    private Integer followUpStatus;
 
 }

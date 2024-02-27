@@ -83,15 +83,15 @@ public class CrmQueryWrapperUtils {
         if (CrmPermissionUtils.isCrmAdmin()) {// 管理员不需要数据权限
             return;
         }
-
         query.innerJoin(CrmPermissionDO.class, on ->
                 on.eq(CrmPermissionDO::getBizType, bizType).in(CrmPermissionDO::getBizId, bizIds)
-                        .in(CollUtil.isNotEmpty(bizIds), CrmPermissionDO::getUserId, userId));
+                        .eq(CollUtil.isNotEmpty(bizIds), CrmPermissionDO::getUserId, userId));
     }
 
     /**
      * 静态内部类实现单例获取
      *
+     * @author HUIHUI
      */
     private static class SingletonManager {
 

@@ -44,7 +44,7 @@ public class CrmBusinessRespVO {
     @Schema(description = "商机金额", example = "12371")
     private Integer price;
 
-    // TODO 折扣使用 Integer 类型，存储时，默认 * 100；展示的时候，前端需要 / 100；避免精度丢失问题
+    // TODO @ljileo：折扣使用 Integer 类型，存储时，默认 * 100；展示的时候，前端需要 / 100；避免精度丢失问题
     @Schema(description = "整单折扣")
     private Integer discountPercent;
 
